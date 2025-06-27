@@ -96,6 +96,11 @@
   font-weight: 700;
   color: #111111;
 }
+.reasons__img {
+  display: block;
+  width: 91.7948717949vw;
+  height: 51.5384615385vw;
+}
 
 .service {
   padding: 14.358974359vw 4.1025641026vw 14.358974359vw 4.1025641026vw;
@@ -130,6 +135,11 @@
   color: #fff;
   line-height: 1.75;
 }
+.service__img {
+  display: block;
+  width: 25.641025641vw;
+  height: 25.641025641vw;
+}
 
 .case {
   padding: 14.358974359vw 0vw 14.358974359vw 0vw;
@@ -151,6 +161,7 @@
   font-weight: 700;
 }
 .case__img {
+  display: block;
   width: 91.7948717949vw;
   height: 51.5384615385vw;
   margin: 0 auto;
@@ -160,4 +171,23 @@
   font-size: 4.6153846154vw;
   font-weight: 700;
   padding: 4.1025641026vw 4.1025641026vw 8.2051282051vw 4.6153846154vw;
+}
+
+.news {
+  padding: 14.358974359vw 0vw 14.358974359vw 0vw;
+}
+.news__title {
+  font-size: 4.6153846154vw;
+  color: #168352;
+  font-family: Montserrat;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 6.1538461538vw 0;
+}
+.news__translation {
+  font-family: Noto Sans JP;
+  font-size: 5.1282051282vw;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */
