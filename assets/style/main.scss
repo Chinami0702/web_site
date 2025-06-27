@@ -43,3 +43,21 @@ $breakpoints: (
   @return calc($px * 100vw / $pc-full-width);
 }
 
+//intro
+.intro{
+  padding: vw(22) vw(15) 0 vw(15);
+
+  &__container{
+    width: vw(358);
+    margin: 0 auto;
+  }
+  &__title{
+    font-size: vw(28);
+    font-weight: 700;
+    margin-bottom: vw(32);
+  }
+  &__text{
+    font-size: vw(15);
+    font-weight: 600;
+  }
+}

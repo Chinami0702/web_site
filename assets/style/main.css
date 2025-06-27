@@ -1,1 +1,16 @@
-/*# sourceMappingURL=main.css.map */
+.intro {
+  padding: 5.641025641vw 3.8461538462vw 0 3.8461538462vw;
+}
+.intro__container {
+  width: 91.7948717949vw;
+  margin: 0 auto;
+}
+.intro__title {
+  font-size: 7.1794871795vw;
+  font-weight: 700;
+  margin-bottom: 8.2051282051vw;
+}
+.intro__text {
+  font-size: 3.8461538462vw;
+  font-weight: 600;
+}/*# sourceMappingURL=main.css.map */
