@@ -25,5 +25,139 @@
 }
 
 .about {
-  padding: 14.358974359vw 3.8461538462vw 0 3.8461538462vw;
+  padding: 14.358974359vw 0 0 0;
+}
+.about__title {
+  font-size: 4.6153846154vw;
+  color: #168352;
+  font-family: Montserrat;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 6.1538461538vw 0;
+}
+.about__translation {
+  font-family: Noto Sans JP;
+  font-size: 5.1282051282vw;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+}
+.about__wrapper {
+  background-image: url(/assets/image/about_us_sp.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 139.7435897436vw;
+  padding: 8.2051282051vw 4.1025641026vw;
+}
+.about__box {
+  background-color: rgba(255, 255, 255, 0.8);
+  border-radius: 8.2051282051vw;
+  padding: 6.1538461538vw;
+}
+.about__subtitle {
+  font-size: 4.6153846154vw;
+  font-weight: 700;
+  line-height: 1.75;
+}
+.about__text {
+  font-size: 3.8461538462vw;
+  font-weight: 500;
+  line-height: 1.6;
+}
+
+.reasons {
+  padding: 14.358974359vw 4.1025641026vw 14.358974359vw 4.1025641026vw;
+  background-color: #f3f9f6;
+}
+.reasons__title {
+  font-size: 4.6153846154vw;
+  color: #168352;
+  font-family: Montserrat;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 6.1538461538vw 0;
+}
+.reasons__translation {
+  font-family: Noto Sans JP;
+  font-size: 5.1282051282vw;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+}
+.reasons__text {
+  background-color: #fff;
+  padding: 5.1282051282vw 4.1025641026vw;
+  border-bottom-left-radius: 6.1538461538vw;
+  border-bottom-right-radius: 6.1538461538vw;
+  margin: 0 0 5.1282051282vw 0;
+  box-shadow: 2px 2px 2px #eee;
+  font-size: 4.6153846154vw;
+  font-weight: 700;
+  color: #111111;
+}
+
+.service {
+  padding: 14.358974359vw 4.1025641026vw 14.358974359vw 4.1025641026vw;
+}
+.service__title {
+  font-size: 4.6153846154vw;
+  color: #168352;
+  font-family: Montserrat;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 6.1538461538vw 0;
+}
+.service__translation {
+  font-family: Noto Sans JP;
+  font-size: 5.1282051282vw;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+}
+.service__item {
+  background-color: #168352;
+  border-radius: 6.1538461538vw;
+  display: flex;
+  align-items: center;
+  gap: 5.1282051282vw;
+  padding: 5.1282051282vw 6.1538461538vw;
+  margin: 0 0 5.1282051282vw 0;
+}
+.service__txt {
+  font-size: 4.6153846154vw;
+  font-weight: 600;
+  color: #fff;
+  line-height: 1.75;
+}
+
+.case {
+  padding: 14.358974359vw 0vw 14.358974359vw 0vw;
+  background-color: #f3f9f6;
+}
+.case__title {
+  font-size: 4.6153846154vw;
+  color: #168352;
+  font-family: Montserrat;
+  font-weight: 600;
+  text-align: center;
+  margin: 0 0 6.1538461538vw 0;
+}
+.case__translation {
+  font-family: Noto Sans JP;
+  font-size: 5.1282051282vw;
+  color: #000;
+  text-align: center;
+  font-weight: 700;
+}
+.case__img {
+  width: 91.7948717949vw;
+  height: 51.5384615385vw;
+  margin: 0 auto;
+}
+.case__text {
+  color: #09947b;
+  font-size: 4.6153846154vw;
+  font-weight: 700;
+  padding: 4.1025641026vw 4.1025641026vw 8.2051282051vw 4.6153846154vw;
 }/*# sourceMappingURL=main.css.map */
