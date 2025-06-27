@@ -9,8 +9,21 @@
   font-size: 7.1794871795vw;
   font-weight: 700;
   margin-bottom: 8.2051282051vw;
+  font-family: Noto Sans JP;
 }
 .intro__text {
   font-size: 3.8461538462vw;
-  font-weight: 600;
+  font-weight: 550;
+  font-family: Noto Sans JP;
+  line-height: 1.75;
+  margin: 0 0 8.2051282051vw 0;
+}
+.intro__img {
+  width: 91.7948717949vw;
+  height: 115.3846153846vw;
+  margin: 0 auto;
+}
+
+.about {
+  padding: 14.358974359vw 3.8461538462vw 0 3.8461538462vw;
 }/*# sourceMappingURL=main.css.map */

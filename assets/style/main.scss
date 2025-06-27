@@ -55,9 +55,22 @@ $breakpoints: (
     font-size: vw(28);
     font-weight: 700;
     margin-bottom: vw(32);
+    font-family: Noto Sans JP;
   }
   &__text{
     font-size: vw(15);
-    font-weight: 600;
+    font-weight: 550;
+    font-family: Noto Sans JP;
+    line-height: 1.75;
+    margin:0 0 vw(32) 0;
   }
+  &__img{
+    width: vw(358);
+    height: vw(450);
+    margin: 0 auto;
+  }
+}
+.about{
+  padding: vw(56) vw(15) 0 vw(15);
+  
 }
