@@ -94,16 +94,18 @@ $breakpoints: (
         text-align: center;
         font-weight: 700;
     }
-    &__wrapper{
+
+    &__wrapper {
         background-image: url(/assets/image/about_us_sp.png);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
         height: vw(545);
-        padding: vw(32) vw(16) ;
+        padding: vw(32) vw(16);
     }
-    &__box{
-        background-color: rgba(255,255,255,0.8);
+
+    &__box {
+        background-color: rgba(255, 255, 255, 0.8);
         border-radius: vw(32);
         padding: vw(24);
     }
@@ -113,17 +115,20 @@ $breakpoints: (
         font-weight: 700;
         line-height: 1.75;
     }
-    &__text{
+
+    &__text {
         font-size: vw(15);
         font-weight: 500;
         line-height: 1.6;
     }
 }
+
 //reasons
-.reasons{
+.reasons {
     padding: vw(56) vw(16) vw(56) vw(16);
     background-color: #f3f9f6;
-   &__title {
+
+    &__title {
         font-size: vw(18);
         color: #168352;
         font-family: Montserrat;
@@ -139,10 +144,11 @@ $breakpoints: (
         text-align: center;
         font-weight: 700;
     }
-    &__text{
+
+    &__text {
         background-color: #fff;
         padding: vw(20) vw(16);
-        border-bottom-left-radius:vw(24) ;
+        border-bottom-left-radius: vw(24);
         border-bottom-right-radius: vw(24);
         margin: 0 0 vw(20) 0;
         box-shadow: 2px 2px 2px #eee;
@@ -150,16 +156,19 @@ $breakpoints: (
         font-weight: 700;
         color: #111111;
     }
-    &__img{
+
+    &__img {
         display: block;
         width: vw(358);
         height: vw(201);
     }
-} 
+}
+
 //service
-.service{
-      padding: vw(56) vw(16) vw(56) vw(16);
-   &__title {
+.service {
+    padding: vw(56) vw(16) vw(56) vw(16);
+
+    &__title {
         font-size: vw(18);
         color: #168352;
         font-family: Montserrat;
@@ -175,33 +184,45 @@ $breakpoints: (
         text-align: center;
         font-weight: 700;
     }
-    &__item{
+
+    &__item {
         background-color: #168352;
         border-radius: vw(24);
+        padding: vw(20) vw(24);
+        margin: 0 0 vw(20) 0;
         display: flex;
         align-items: center;
         gap: vw(20);
-        padding: vw(20) vw(24);
-        margin: 0 0 vw(20) 0;
     }
-    &__txt{
+
+    &__item:hover {
+        background-color: #dffaec;
+
+        .service__txt {
+            color: #168352;
+        }
+    }
+
+    &__txt {
         font-size: vw(18);
         font-weight: 600;
         color: #fff;
         line-height: 1.75;
-    };
-    &__img{
+    }
+
+    &__img {
         display: block;
-        width:vw(100) ;
+        width: vw(100);
         height: vw(100);
     }
 }
+
 //case
-.case{
-      padding: vw(56) vw(0) vw(56) vw(0);
-      background-color: #f3f9f6;
-      
-   &__title {
+.case {
+    padding: vw(56) vw(0) vw(56) vw(0);
+    background-color: #f3f9f6;
+
+    &__title {
         font-size: vw(18);
         color: #168352;
         font-family: Montserrat;
@@ -217,24 +238,27 @@ $breakpoints: (
         text-align: center;
         font-weight: 700;
     }
-    &__img{
+
+    &__img {
         display: block;
         width: vw(358);
         height: vw(201);
         margin: 0 auto;
     }
-    &__text{
+
+    &__text {
         color: #09947b;
         font-size: vw(18);
         font-weight: 700;
         padding: vw(16) vw(16) vw(32) vw(18);
     }
 }
+
 //news
-.news{
-          padding: vw(56) vw(0) vw(56) vw(0);
-      
-   &__title {
+.news {
+    padding: vw(56) vw(0) vw(56) vw(0);
+
+    &__title {
         font-size: vw(18);
         color: #168352;
         font-family: Montserrat;
@@ -249,5 +273,11 @@ $breakpoints: (
         color: #000;
         text-align: center;
         font-weight: 700;
+    }
+    &__wrapper{
+        padding: vw(16) vw(28) vw(16) vw(15);
+    }
+    &__box{
+        display: flex;
     }
 }

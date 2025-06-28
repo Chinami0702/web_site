@@ -123,11 +123,17 @@
 .service__item {
   background-color: #168352;
   border-radius: 6.1538461538vw;
+  padding: 5.1282051282vw 6.1538461538vw;
+  margin: 0 0 5.1282051282vw 0;
   display: flex;
   align-items: center;
   gap: 5.1282051282vw;
-  padding: 5.1282051282vw 6.1538461538vw;
-  margin: 0 0 5.1282051282vw 0;
+}
+.service__item:hover {
+  background-color: #dffaec;
+}
+.service__item:hover .service__txt {
+  color: #168352;
 }
 .service__txt {
   font-size: 4.6153846154vw;
@@ -190,4 +196,10 @@
   color: #000;
   text-align: center;
   font-weight: 700;
+}
+.news__wrapper {
+  padding: 4.1025641026vw 7.1794871795vw 4.1025641026vw 3.8461538462vw;
+}
+.news__box {
+  display: flex;
 }/*# sourceMappingURL=main.css.map */
