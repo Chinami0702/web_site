@@ -28,16 +28,19 @@
 
 <body>
     <header class="header">
-        <img src="#" alt="">
+        <img src="/assets/image/logo.svg" alt="Kirameki Farm" class="header__logo">
+        <button class="hamburger-menu" id="js-hamburger-menu">
+            <span class="hamburger-menu__bar"></span>
+            <span class="hamburger-menu__bar"></span>
+            <span class="hamburger-menu__bar"></span>
+        </button>
         <nav class="header__nav">
             <ul class="header__list">
-                <li class="header__item"><a href="/price/price.html">価格・スペック</a></li>
-                <li class="header__item"><a href="/faq/qa.html">よくあるご質問</a></li>
+                <li class="header__item"><a href="#" class="header__link">トップ</a></li>
+                <li class="header__item"><a href="/price" class="header__link">価格・スペック</a></li>
+                <li class="header__item"><a href="/faq" class="header__link">よくあるご質問</a></li>
             </ul>
         </nav>
-        <div></div>
-        <div></div>
-        <div></div>
     </header><!--header-->
     <main>
         <section class="intro">
@@ -211,7 +214,7 @@
                         <dd class="news__text"><a href="#">害虫撃退！キラメキファームの自然環境に優しい取り組み</a></dd>
                     </div>
                     <div class="news__wrapper">
-                        <div>
+                        <div class="news__box">
                             <dt class="news__date">2023.02.01</dt>
                             <dd class="news__summery">お知らせ</dd>
                         </div>
@@ -233,15 +236,18 @@
                     </div>
                 </dl>
             </div>
-            <div class="button">
-                <p><a href="/news">ニュース一覧へ</a></p>
+            <div class="news__button">
+                <p><a href="/news" class="news__btn">ニュース一覧へ</a></p>
             </div>
         </section><!--news-->
     </main>
     <footer class="footer">
         <p>価格・スペック</p>
+        <p>|</p>
         <p>よくあるご質問</p>
     </footer><!--footer-->
+    <script src="/assets/script/jquery-3.7.1.min (1).js"></script>
+    <script src="/assets/script/main.js"></script>
 </body>
 
 </html>
