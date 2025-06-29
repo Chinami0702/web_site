@@ -27,18 +27,37 @@
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <div class="header__container">
-            <img src="#" alt="">
-            <h1>よくあるご質問</h1>
-            <div class="header__wrapper">
-                <p class="gototop"><a href="/index.html">トップ</a></p>
-                <p>＞</p>
-                <p>よくあるご質問</p>
+            <h1><img src="/assets/image/logo.svg" alt="Kirameki Farm" class="header__logo">
+            </h1>
+            <button class="hamburger-menu" id="js-hamburger-menu">
+                <span class="hamburger-menu__bar"></span>
+                <span class="hamburger-menu__bar"></span>
+                <span class="hamburger-menu__bar"></span>
+            </button>
+            <nav class="header__nav">
+                <ul class="header__list">
+                    <li class="header__item header__special"><a href="/index.html" class="header__link">トップ</a></li>
+                    <li class="header__item"><a href="/price" class="header__link">価格・スペック</a></li>
+                    <li class="header__item"><a href="/faq" class="header__link">よくあるご質問</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header><!--header-->
+    <main>
+        <div class="main-three">
+            <div class="header__container">
+                <img src="#" alt="">
+                <h1>よくあるご質問</h1>
+                <div class="header__wrapper">
+                    <p class="gototop"><a href="/index.html">トップ</a></p>
+                    <p>＞</p>
+                    <p>よくあるご質問</p>
+                </div>
             </div>
         </div>
-    </header>
-    <main>
+
         <div class="qa">
             <div class="qa__container">
                 <dl class="qa__over">
@@ -151,6 +170,8 @@
         <p>|</p>
         <p>よくあるご質問</p>
     </footer><!--footer-->
+    <script src="/assets/script/jquery-3.7.1.min (1).js"></script>
+    <script src="/assets/script/main.js"></script>
 
 </body>
 
