@@ -704,6 +704,27 @@
   padding: 14.358974359vw 0vw 14.358974359vw 0vw;
   background-color: #f3f9f6;
 }
+@media screen and (min-width: 768px) {
+  .case {
+    padding: 5.4368932039vw 0vw 5.4368932039vw 0vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .case {
+    padding: 3.5rem 0rem 3.5rem 0rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .case__container {
+    width: 113.3980582524vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .case__container {
+    width: 73rem;
+  }
+}
 .case__title {
   font-size: 4.6153846154vw;
   color: #168352;
@@ -712,6 +733,18 @@
   text-align: center;
   margin: 0 0 6.1538461538vw 0;
 }
+@media screen and (min-width: 768px) {
+  .case__title {
+    font-size: 1.9417475728vw;
+    margin: 0 0 2.3300970874vw 0;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .case__title {
+    font-size: 1.25rem;
+    margin: 0 0 1.5rem 0;
+  }
+}
 .case__translation {
   font-family: Noto Sans JP;
   font-size: 5.1282051282vw;
@@ -719,11 +752,47 @@
   text-align: center;
   font-weight: 700;
 }
+@media screen and (min-width: 768px) {
+  .case__translation {
+    font-size: 2.7184466019vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .case__translation {
+    font-size: 1.75rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .case__list {
+    display: flex;
+    gap: 2.0388349515vw;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .case__list {
+    gap: 1.3125rem;
+  }
+}
 .case__img {
   display: block;
   width: 91.7948717949vw;
   height: 51.5384615385vw;
   margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .case__img {
+    width: 35.8252427184vw;
+    height: 21.9417475728vw;
+    margin: 0;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .case__img {
+    width: 23.0625rem;
+    height: 14.125rem;
+  }
 }
 .case__text {
   color: #09947b;
@@ -731,9 +800,44 @@
   font-weight: 700;
   padding: 4.1025641026vw 4.1025641026vw 8.2051282051vw 4.6153846154vw;
 }
+@media screen and (min-width: 768px) {
+  .case__text {
+    width: 35.4368932039vw;
+    font-size: 1.8446601942vw;
+    padding: 1.5533980583vw 1.5533980583vw 3.1067961165vw 1.7475728155vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .case__text {
+    width: 22.8125rem;
+    font-size: 1.1875rem;
+    padding: 1rem 1rem 2rem 1.125rem;
+  }
+}
 
 .news {
   padding: 14.358974359vw 0vw 14.358974359vw 0vw;
+}
+@media screen and (min-width: 768px) {
+  .news {
+    padding: 5.4368932039vw 0vw 5.4368932039vw 0vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .news {
+    padding: 3.5rem 0rem 3.5rem 0rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .news__container {
+    width: 87.3786407767vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .news__container {
+    width: 56.25rem;
+  }
 }
 .news__title {
   font-size: 4.6153846154vw;
@@ -743,6 +847,18 @@
   text-align: center;
   margin: 0 0 6.1538461538vw 0;
 }
+@media screen and (min-width: 768px) {
+  .news__title {
+    font-size: 1.9417475728vw;
+    margin: 0 0 2.3300970874vw 0;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .news__title {
+    font-size: 1.25rem;
+    margin: 0 0 1.5rem 0;
+  }
+}
 .news__translation {
   font-family: Noto Sans JP;
   font-size: 5.1282051282vw;
@@ -750,10 +866,36 @@
   text-align: center;
   font-weight: 700;
 }
+@media screen and (min-width: 768px) {
+  .news__translation {
+    font-size: 2.7184466019vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .news__translation {
+    font-size: 1.75rem;
+  }
+}
 .news__wrapper {
   padding: 4.1025641026vw 0vw 4.1025641026vw 0vw;
   border-top: 2px solid #dddddd;
   margin: 0 3.8461538462vw;
+}
+@media screen and (min-width: 768px) {
+  .news__wrapper {
+    display: flex;
+    gap: 2.3300970874vw;
+    align-items: center;
+    padding: 1.5533980583vw 0vw 1.5533980583vw 0vw;
+    margin: 0 1.4563106796vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .news__wrapper {
+    gap: 1.5rem;
+    padding: 1rem 0rem 1rem 0rem;
+    margin: 0 0.9375rem;
+  }
 }
 .news__wrapper:last-child {
   border-bottom: 2px solid #dddddd;
@@ -764,9 +906,31 @@
   gap: 4.6153846154vw;
   margin-bottom: 4.1025641026vw;
 }
+@media screen and (min-width: 768px) {
+  .news__box {
+    gap: 1.7475728155vw;
+    margin-bottom: 0vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .news__box {
+    gap: 1.125rem;
+    margin-bottom: 0rem;
+  }
+}
 .news__date {
   font-size: 3.8461538462vw;
   font-weight: 400;
+}
+@media screen and (min-width: 768px) {
+  .news__date {
+    font-size: 1.359223301vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .news__date {
+    font-size: 0.875rem;
+  }
 }
 .news__summery {
   display: flex;
@@ -778,10 +942,34 @@
   border-radius: 1.0256410256vw;
   color: #fff;
 }
+@media screen and (min-width: 768px) {
+  .news__summery {
+    width: 13.0097087379vw;
+    height: 2.7184466019vw;
+    border-radius: 0.3883495146vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .news__summery {
+    width: 8.375rem;
+    height: 1.75rem;
+    border-radius: 0.25rem;
+  }
+}
 .news__text {
   font-size: 3.8461538462vw;
   font-weight: 700;
   color: #09947b;
+}
+@media screen and (min-width: 768px) {
+  .news__text {
+    font-size: 1.4563106796vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .news__text {
+    font-size: 0.9375rem;
+  }
 }
 .news__button {
   width: 76.9230769231vw;
@@ -800,6 +988,22 @@
   transform: translateY(6px);
   box-shadow: none;
 }
+@media screen and (min-width: 768px) {
+  .news__button {
+    width: 29.1262135922vw;
+    height: 6.4077669903vw;
+    border-radius: 3.2038834951vw;
+    margin: 2.3300970874vw auto 0 auto;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .news__button {
+    width: 18.75rem;
+    height: 4.125rem;
+    border-radius: 2.0625rem;
+    margin: 1.5rem auto 0 auto;
+  }
+}
 
 .footer {
   display: flex;
@@ -811,4 +1015,18 @@
   font-size: 3.3333333333vw;
   font-weight: 400;
   color: #fff;
+}
+@media screen and (min-width: 768px) {
+  .footer {
+    gap: 1.5533980583vw;
+    padding: 3.3009708738vw 6.0194174757vw;
+    font-size: 1.2621359223vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .footer {
+    gap: 1rem;
+    padding: 2.125rem 3.875rem;
+    font-size: 0.8125rem;
+  }
 }/*# sourceMappingURL=main.css.map */

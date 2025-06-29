@@ -745,6 +745,25 @@ $breakpoints: (
     padding: vw(56) vw(0) vw(56) vw(0);
     background-color: #f3f9f6;
 
+    @include mq() {
+        padding: vwt(56) vwt(0) vwt(56) vwt(0);
+    }
+
+    @include mq(lg) {
+        padding: px2Rem(56) px2Rem(0) px2Rem(56) px2Rem(0);
+    }
+
+    &__container {
+        @include mq() {
+            width: vwt(1168);
+            margin: 0 auto;
+        }
+
+        @include mq(lg) {
+            width: px2Rem(1168);
+        }
+    }
+
     &__title {
         font-size: vw(18);
         color: #168352;
@@ -752,6 +771,16 @@ $breakpoints: (
         font-weight: 600;
         text-align: center;
         margin: 0 0 vw(24) 0;
+
+        @include mq() {
+            font-size: vwt(20);
+            margin: 0 0 vwt(24) 0;
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(20);
+            margin: 0 0 px2Rem(24) 0;
+        }
     }
 
     &__translation {
@@ -760,6 +789,27 @@ $breakpoints: (
         color: #000;
         text-align: center;
         font-weight: 700;
+
+        @include mq() {
+            font-size: vwt(28);
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(28);
+        }
+    }
+
+    &__list {
+        @include mq() {
+            display: flex;
+            gap: vwt(21);
+            justify-content: center;
+            align-items: center;
+        }
+
+        @include mq(lg) {
+            gap: px2Rem(21)
+        }
     }
 
     &__img {
@@ -767,6 +817,17 @@ $breakpoints: (
         width: vw(358);
         height: vw(201);
         margin: 0 auto;
+
+        @include mq() {
+            width: vwt(369);
+            height: vwt(226);
+            margin: 0;
+        }
+
+        @include mq(lg) {
+            width: px2Rem(369);
+            height: px2Rem(226);
+        }
     }
 
     &__text {
@@ -774,12 +835,44 @@ $breakpoints: (
         font-size: vw(18);
         font-weight: 700;
         padding: vw(16) vw(16) vw(32) vw(18);
+
+        @include mq() {
+            width: vwt(365);
+            font-size: vwt(19);
+            padding: vwt(16) vwt(16) vwt(32) vwt(18);
+        }
+
+        @include mq(lg) {
+            width: px2Rem(365);
+            font-size: px2Rem(19);
+            padding: px2Rem(16) px2Rem(16) px2Rem(32) px2Rem(18);
+        }
     }
 }
 
 //news
 .news {
     padding: vw(56) vw(0) vw(56) vw(0);
+
+    @include mq() {
+        padding: vwt(56) vwt(0) vwt(56) vwt(0);
+    }
+
+    @include mq(lg) {
+        padding: px2Rem(56) px2Rem(0) px2Rem(56) px2Rem(0);
+    }
+
+    &__container {
+        @include mq() {
+            width: vwt(900);
+            margin: 0 auto;
+        }
+
+        @include mq(lg) {
+            width: px2Rem(900);
+        }
+    }
+
 
     &__title {
         font-size: vw(18);
@@ -788,6 +881,16 @@ $breakpoints: (
         font-weight: 600;
         text-align: center;
         margin: 0 0 vw(24) 0;
+
+        @include mq() {
+            font-size: vwt(20);
+            margin: 0 0 vwt(24) 0;
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(20);
+            margin: 0 0 px2Rem(24) 0;
+        }
     }
 
     &__translation {
@@ -796,12 +899,34 @@ $breakpoints: (
         color: #000;
         text-align: center;
         font-weight: 700;
+
+        @include mq() {
+            font-size: vwt(28);
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(28);
+        }
     }
 
     &__wrapper {
         padding: vw(16) vw(0) vw(16) vw(0);
         border-top: 2px solid #dddddd;
         margin: 0 vw(15);
+
+        @include mq() {
+            display: flex;
+            gap: vwt(24);
+            align-items: center;
+            padding: vwt(16) vwt(0) vwt(16) vwt(0);
+            margin: 0 vwt(15);
+        }
+
+        @include mq(lg) {
+            gap: px2Rem(24);
+            padding: px2Rem(16) px2Rem(0) px2Rem(16) px2Rem(0);
+            margin: 0 px2Rem(15);
+        }
     }
 
     &__wrapper:last-child {
@@ -813,11 +938,29 @@ $breakpoints: (
         align-items: center;
         gap: vw(18);
         margin-bottom: vw(16);
+
+        @include mq() {
+            gap: vwt(18);
+            margin-bottom: vwt(0);
+        }
+
+        @include mq(lg) {
+            gap: px2Rem(18);
+            margin-bottom: px2Rem(0);
+        }
     }
 
     &__date {
         font-size: vw(15);
         font-weight: 400;
+
+        @include mq() {
+            font-size: vwt(14);
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(14);
+        }
     }
 
     &__summery {
@@ -829,12 +972,32 @@ $breakpoints: (
         background-color: #473221;
         border-radius: vw(4);
         color: #fff;
+
+        @include mq() {
+            width: vwt(134);
+            height: vwt(28);
+            border-radius: vwt(4);
+        }
+
+        @include mq(lg) {
+            width: px2Rem(134);
+            height: px2Rem(28);
+            border-radius: px2Rem(4);
+        }
     }
 
     &__text {
         font-size: vw(15);
         font-weight: 700;
         color: #09947b;
+
+        @include mq() {
+            font-size: vwt(15);
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(15);
+        }
     }
 
     //button
@@ -855,6 +1018,20 @@ $breakpoints: (
             transform: translateY(6px);
             box-shadow: none;
         }
+
+        @include mq() {
+            width: vwt(300);
+            height: vwt(66);
+            border-radius: vwt(33);
+            margin: vwt(24) auto 0 auto;
+        }
+
+        @include mq(lg) {
+            width: px2Rem(300);
+            height: px2Rem(66);
+            border-radius: px2Rem(33);
+            margin: px2Rem(24) auto 0 auto;
+        }
     }
 }
 
@@ -869,4 +1046,16 @@ $breakpoints: (
     font-size: vw(13);
     font-weight: 400;
     color: #fff;
+
+    @include mq() {
+        gap: vwt(16);
+        padding: vwt(34) vwt(62);
+        font-size: vwt(13);
+    }
+
+    @include mq(lg) {
+        gap: px2Rem(16);
+        padding: px2Rem(34) px2Rem(62);
+        font-size: px2Rem(13);
+    }
 }
