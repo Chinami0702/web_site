@@ -185,32 +185,32 @@ $breakpoints: (
     height: 2px;
     background: #242424;
     position: absolute;
-    left: vw(128);
+    left: vw(328);
     transition: .5s;
 }
 
 .hamburger-menu__bar:first-child {
-    top: -15px;
+    top: -30px;
 }
 
 .hamburger-menu__bar:nth-child(2) {
-    top: -7px;
+    top: -23px;
 }
 
 .hamburger-menu__bar:last-child {
-    top: 1px;
+    top: -15px;
 }
 
 .hamburger-menu--open .hamburger-menu__bar {
-    top: 50%;
+    top: vw(-20);
 }
 
 .hamburger-menu--open .hamburger-menu__bar:first-child {
-    transform: translateX(-50%) translateY(-50%) rotate(45deg);
+    transform: translateX(-20%) translateY(-20%) rotate(45deg);
 }
 
 .hamburger-menu--open .hamburger-menu__bar:last-child {
-    transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+    transform: translateX(-20%) translateY(-20%) rotate(-45deg);
 }
 
 .hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
