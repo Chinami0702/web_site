@@ -1002,6 +1002,7 @@ $breakpoints: (
 
     //button
     &__button {
+        cursor: pointer;
         width: vw(300);
         height: vw(66);
         color: #fff;

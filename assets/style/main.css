@@ -972,6 +972,7 @@
   }
 }
 .news__button {
+  cursor: pointer;
   width: 76.9230769231vw;
   height: 16.9230769231vw;
   color: #fff;
