@@ -7,11 +7,7 @@ $(function () {
 const swiper = new Swiper('.swiper', {
     loop: true,
     autoplay: {
-      delay: 1000,
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
+      delay: 100000,
     },
     pagination: {
       el: '.swiper-pagination',

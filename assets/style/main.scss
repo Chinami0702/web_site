@@ -1183,6 +1183,10 @@ $breakpoints: (
     background-color: #1b7f5b;
 }
 
+.swiper {
+    --swiper-pagination-bottom: 70px;
+}
+
 //gallery
 .gallery {
     padding: vw(10) vw(5);
@@ -1194,10 +1198,95 @@ $breakpoints: (
     @include mq(lg) {
         padding: px2Rem(10) px2Rem(5);
     }
-    &__img{
+
+    &__container {
+        width: vw(358);
+        margin: 0 auto;
+
+        @include mq() {
+            width: vwt(358);
+            margin: 0 auto;
+        }
+
+        @include mq(lg) {
+            width: px2Rem(358);
+            margin: 0 auto;
+        }
+
+    }
+
+    &__img {
         width: vw(358);
         height: vw(237);
         border-radius: vw(24);
+        margin: 0 auto vw(63) auto;
+
+        @include mq() {
+            width: vwt(358);
+            height: vwt(237);
+            border-radius: vwt(24);
+            margin: 0 auto vwt(64) auto;
+        }
+
+        @include mq(lg) {
+            width: px2Rem(358);
+            height: px2Rem(237);
+            border-radius: px2Rem(24);
+            margin: 0 auto px2Rem(64) auto;
+        }
+    }
+}
+//feature
+.feature{
+     padding: vw(10) vw(5);
+
+    @include mq() {
+        padding: vwt(10) vwt(5);
     }
 
+    @include mq(lg) {
+        padding: px2Rem(10) px2Rem(5);
+    }
+
+    &__container {
+        width: vw(358);
+        margin: 0 auto;
+
+        @include mq() {
+            width: vwt(358);
+            margin: 0 auto;
+        }
+
+        @include mq(lg) {
+            width: px2Rem(358);
+            margin: 0 auto;
+        }
+
+    }
+       &__img {
+        width: vw(358);
+        height: vw(200);
+        border-radius: vw(24);
+        margin: 0 auto vw(16) auto;
+
+        @include mq() {
+            width: vwt(358);
+            height: vwt(200);
+            border-radius: vwt(24);
+            margin: 0 auto vwt(16) auto;
+        }
+
+        @include mq(lg) {
+            width: px2Rem(358);
+            height: px2Rem(200);
+            border-radius: px2Rem(24);
+            margin: 0 auto px2Rem(16) auto;
+        }
+    }
+    &__txt{
+        font-size: vw(18);
+        font-weight: 700;
+        margin: 0 0 vw(40) 0;
+    }
 }
+

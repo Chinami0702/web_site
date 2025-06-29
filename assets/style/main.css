@@ -1158,6 +1158,10 @@
   background-color: #1b7f5b;
 }
 
+.swiper {
+  --swiper-pagination-bottom: 70px;
+}
+
 .gallery {
   padding: 2.5641025641vw 1.2820512821vw;
 }
@@ -1171,8 +1175,98 @@
     padding: 0.625rem 0.3125rem;
   }
 }
+.gallery__container {
+  width: 91.7948717949vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .gallery__container {
+    width: 34.7572815534vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .gallery__container {
+    width: 22.375rem;
+    margin: 0 auto;
+  }
+}
 .gallery__img {
   width: 91.7948717949vw;
   height: 60.7692307692vw;
   border-radius: 6.1538461538vw;
+  margin: 0 auto 16.1538461538vw auto;
+}
+@media screen and (min-width: 768px) {
+  .gallery__img {
+    width: 34.7572815534vw;
+    height: 23.0097087379vw;
+    border-radius: 2.3300970874vw;
+    margin: 0 auto 6.213592233vw auto;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .gallery__img {
+    width: 22.375rem;
+    height: 14.8125rem;
+    border-radius: 1.5rem;
+    margin: 0 auto 4rem auto;
+  }
+}
+
+.feature {
+  padding: 2.5641025641vw 1.2820512821vw;
+}
+@media screen and (min-width: 768px) {
+  .feature {
+    padding: 0.9708737864vw 0.4854368932vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .feature {
+    padding: 0.625rem 0.3125rem;
+  }
+}
+.feature__container {
+  width: 91.7948717949vw;
+  margin: 0 auto;
+}
+@media screen and (min-width: 768px) {
+  .feature__container {
+    width: 34.7572815534vw;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .feature__container {
+    width: 22.375rem;
+    margin: 0 auto;
+  }
+}
+.feature__img {
+  width: 91.7948717949vw;
+  height: 51.2820512821vw;
+  border-radius: 6.1538461538vw;
+  margin: 0 auto 4.1025641026vw auto;
+}
+@media screen and (min-width: 768px) {
+  .feature__img {
+    width: 34.7572815534vw;
+    height: 19.4174757282vw;
+    border-radius: 2.3300970874vw;
+    margin: 0 auto 1.5533980583vw auto;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .feature__img {
+    width: 22.375rem;
+    height: 12.5rem;
+    border-radius: 1.5rem;
+    margin: 0 auto 1rem auto;
+  }
+}
+.feature__txt {
+  font-size: 4.6153846154vw;
+  font-weight: 700;
+  margin: 0 0 10.2564102564vw 0;
 }/*# sourceMappingURL=main.css.map */
