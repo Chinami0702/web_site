@@ -105,6 +105,8 @@ $breakpoints: (
         border-radius: vw(24);
 
         @include mq() {
+            border-radius: vwt(24);
+            width: vwt(358);
             display: flex;
             position: static;
             width: auto;
@@ -113,6 +115,8 @@ $breakpoints: (
         }
 
         @include mq(lg) {
+            border-radius: px2Rem(24);
+            width: px2Rem(358);
             display: flex;
         }
     }
@@ -238,7 +242,6 @@ $breakpoints: (
 
         @include mq(lg) {
             max-width: px2Rem(1168);
-            margin: 0 auto;
         }
     }
 
@@ -250,16 +253,19 @@ $breakpoints: (
 
         @include mq() {
             font-size: vwt(40);
+            margin-bottom: vwt(32);
         }
 
         @include mq(lg) {
             font-size: px2Rem(40);
+            margin-bottom: px2Rem(32);
         }
     }
 
     &__wrapper {
         @include mq() {
             display: flex;
+            justify-content: space-around;
             gap: vwt(50);
         }
 
@@ -295,14 +301,14 @@ $breakpoints: (
 
         @include mq() {
             display: block;
-            // width: vwt(1168);
+            width: vwt(1168);
             height: auto;
             margin: 0;
         }
 
         @include mq(lg) {
             display: block;
-            // width: px2Rem(1168);
+            width: px2Rem(1168);
             height: auto;
             margin: 0;
         }
@@ -312,11 +318,24 @@ $breakpoints: (
 //about
 .about {
     padding: vw(56) 0 0 0;
-    @include mq(){
-padding: vwt(64) 0 0 0;
+
+    @include mq() {
+        padding: vwt(64) 0 0 0;
     }
-    @include mq(lg){
-padding: px2Rem(64) 0 0 0;
+
+    @include mq(lg) {
+        padding: px2Rem(64) 0 0 0;
+    }
+
+    &__container {
+        @include mq() {
+            width: vwt(955);
+            margin: 0 auto;
+        }
+
+        @include mq(lg) {
+            width: px2Rem(955);
+        }
     }
 
     &__title {
@@ -329,10 +348,12 @@ padding: px2Rem(64) 0 0 0;
 
         @include mq() {
             font-size: vwt(20);
+            margin: 0 0 vwt(24) 0;
         }
 
         @include mq(lg) {
             font-size: px2Rem(20);
+            margin: 0 0 px2Rem(24) 0;
         }
     }
 
@@ -359,24 +380,82 @@ padding: px2Rem(64) 0 0 0;
         background-position: center;
         height: vw(545);
         padding: vw(32) vw(16);
+
+        @include mq() {
+            background-image: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: auto;
+            padding: vwt(32) vwt(10);
+        }
+
+        @include mq(lg) {
+            height: auto;
+            padding: px2Rem(32) px2Rem(10);
+        }
     }
 
     &__box {
         background-color: rgba(255, 255, 255, 0.8);
         border-radius: vw(32);
         padding: vw(24);
+
+        @include mq() {
+            padding: vwt(10);
+            border-radius: vwt(32);
+        }
+
+        @include mq(lg) {
+            padding: px2Rem(10);
+            border-radius: px2Rem(32);
+        }
     }
 
     &__subtitle {
         font-size: vw(18);
         font-weight: 700;
         line-height: 1.75;
+
+        @include mq() {
+            width: vwt(395);
+            font-size: vwt(20);
+            margin-bottom: vwt(40);
+        }
+
+        @include mq(lg) {
+            width: px2Rem(395);
+            font-size: px2Rem(20);
+            margin-bottom: px2Rem(40);
+        }
     }
 
     &__text {
         font-size: vw(15);
         font-weight: 500;
         line-height: 1.6;
+
+        @include mq() {
+            width: vwt(410);
+            font-size: vwt(15);
+        }
+
+        @include mq(lg) {
+            width: px2Rem(410);
+            font-size: px2Rem(15);
+        }
+    }
+
+    &__img {
+        display: none;
+
+        @include mq() {
+            display: block;
+        }
+
+        @include mq(lg) {
+            display: block;
+        }
     }
 }
 
@@ -385,6 +464,25 @@ padding: px2Rem(64) 0 0 0;
     padding: vw(56) vw(16) vw(56) vw(16);
     background-color: #f3f9f6;
 
+    @include mq() {
+        padding: vwt(64) vwt(16) vwt(64) vwt(16);
+    }
+
+    @include mq(lg) {
+        padding: px2Rem(64) px2Rem(16) px2Rem(64) px2Rem(16);
+    }
+
+    &__container {
+        @include mq() {
+            width: vwt(1168);
+            margin: 0 auto;
+        }
+
+        @include mq(lg) {
+            width: px2Rem(1168);
+        }
+    }
+
     &__title {
         font-size: vw(18);
         color: #168352;
@@ -392,6 +490,16 @@ padding: px2Rem(64) 0 0 0;
         font-weight: 600;
         text-align: center;
         margin: 0 0 vw(24) 0;
+
+        @include mq() {
+            font-size: vwt(20);
+            margin: 0 0 vwt(24) 0;
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(20);
+            margin: 0 0 px2Rem(24) 0;
+        }
     }
 
     &__translation {
@@ -400,6 +508,14 @@ padding: px2Rem(64) 0 0 0;
         color: #000;
         text-align: center;
         font-weight: 700;
+
+        @include mq() {
+            font-size: vwt(28);
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(28);
+        }
     }
 
     &__text {
@@ -412,18 +528,67 @@ padding: px2Rem(64) 0 0 0;
         font-size: vw(18);
         font-weight: 700;
         color: #111111;
+
+        @include mq() {
+            width: vwt(369);
+            padding: vwt(20) vwt(16);
+            border-bottom-left-radius: vwt(24);
+            border-bottom-right-radius: vwt(24);
+            font-size: vwt(19);
+        }
+
+        @include mq(lg) {
+            width: px2Rem(369);
+            padding: px2Rem(20)px2Rem(16);
+            border-bottom-left-radius: px2Rem(24);
+            border-bottom-right-radius: px2Rem(24);
+            font-size: px2Rem(19);
+        }
     }
 
     &__img {
         display: block;
         width: vw(358);
         height: vw(201);
+
+        @include mq() {
+            width: vwt(369);
+            height: auto;
+        }
+
+        @include mq(lg) {
+            width: px2Rem(369);
+            height: auto;
+        }
+    }
+
+    &__list {
+        @include mq() {
+            display: flex;
+            justify-content: center;
+            gap: vwt(30);
+        }
+
+        @include mq(lg) {
+            gap: px2Rem(30);
+        }
     }
 }
 
 //service
 .service {
     padding: vw(56) vw(16) vw(56) vw(16);
+
+    &__container {
+        @include mq() {
+            width: vwt(1168);
+            margin: 0 auto;
+        }
+
+        @include mq(lg) {
+            width: px2Rem(1168);
+        }
+    }
 
     &__title {
         font-size: vw(18);
@@ -432,6 +597,16 @@ padding: px2Rem(64) 0 0 0;
         font-weight: 600;
         text-align: center;
         margin: 0 0 vw(24) 0;
+
+        @include mq() {
+            font-size: vwt(20);
+            margin: 0 0 vwt(24) 0;
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(20);
+            margin: 0 0 px2Rem(24) 0;
+        }
     }
 
     &__translation {
@@ -440,6 +615,29 @@ padding: px2Rem(64) 0 0 0;
         color: #000;
         text-align: center;
         font-weight: 700;
+
+        @include mq() {
+            font-size: vwt(28);
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(28);
+        }
+    }
+
+    &__list {
+        @include mq() {
+            display: flex;
+            flex-wrap: wrap;
+            row-gap: vwt(40);
+            column-gap: vwt(50);
+            justify-content: center;
+        }
+
+        @include mq(lg) {
+            row-gap: px2Rem(40);
+            column-gap: px2Rem(50);
+        }
     }
 
     &__item {
@@ -458,6 +656,32 @@ padding: px2Rem(64) 0 0 0;
                 color: #168352;
             }
         }
+
+        @include mq() {
+            width: vwt(525);
+            border-radius: vwt(24);
+            padding: vwt(20) vwt(24);
+            margin: 0 0 0 0;
+            gap: vwt(20);
+        }
+
+        @include mq(lg) {
+            width: px2Rem(525);
+            border-radius: px2Rem(24);
+            padding: px2Rem(20) px2Rem(24);
+            margin: 0 0 0 0;
+            gap: px2Rem(20);
+        }
+    }
+
+    &__item-special {
+        @include mq() {
+            width: vwt(333);
+        }
+
+        @include mq(lg) {
+            width: px2Rem(333);
+        }
     }
 
     &__txt {
@@ -465,12 +689,54 @@ padding: px2Rem(64) 0 0 0;
         font-weight: 600;
         color: #fff;
         line-height: 1.75;
+
+        @include mq() {
+            font-size: vwt(24);
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(24);
+        }
+    }
+
+    &__txt-special {
+        @include mq() {
+            font-size: vwt(20);
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(20);
+        }
     }
 
     &__img {
         display: block;
         width: vw(100);
         height: vw(100);
+
+        @include mq() {
+            width: vwt(133);
+            height: vwt(133);
+
+        }
+
+        @include mq(lg) {
+            width: px2Rem(133);
+            height: px2Rem(133);
+
+        }
+    }
+
+    &__img-special {
+        @include mq() {
+            width: vwt(110);
+            height: vwt(110);
+        }
+
+        @include mq(lg) {
+            width: px2Rem(110);
+            height: px2Rem(110);
+        }
     }
 }
 
