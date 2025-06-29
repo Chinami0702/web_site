@@ -23,6 +23,10 @@
         rel="stylesheet">
     <!--自分のcss-->
     <link rel="stylesheet" href="/assets/style/main.css">
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <!-- JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
 </head>
 
@@ -47,30 +51,59 @@
     </header><!--header-->
     <main>
         <div class="main">
-            <picture>
-                <source media="(min-width: 768px)" srcset="/assets/image/header_two_pc.png">
-                <img src="/assets/image/header_two_sp.png" alt="" class="cover-image">
-            </picture>
-            <h1>価格・スペック</h1>
-            <div class="header__wrapper">
-                <p class="gototop"><a href="/index.html">トップ</a></p>
-                <p>＞</p>
-                <p>価格・スペック</p>
-            </div>-
+            <div class="main__container">
+                <picture>
+                    <source media="(min-width: 768px)" srcset="/assets/image/header_two_pc.png">
+                    <img src="/assets/image/header_two_sp.png" alt="" class="main__img">
+                </picture>
+                <h1 class="main__title">価格・スペック</h1>
+                <div class="main__wrapper">
+                    <p class="gototop"><a href="/index.html">トップ</a></p>
+                    <p>＞</p>
+                    <p>価格・スペック</p>
+                </div>
+            </div>
         </div>
-
         <section class="gallery">
             <div class="gallery__container">
-                <h2>ギャラリー</h2>
-                <picture>
-                    <source media="(min-width: 768px)" srcset="/assets/image/gallery_pc.png">
-                    <img src="/assets/image/gallery_sp.png" alt="" class="cover-image">
-                </picture>
+                <h2 class="section__title">ギャラリー</h2>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
+                <div class="swiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="/assets/image/gallery_01_pc.png">
+                                <img src="/assets/image/gallery_01_pc.png" alt="" class="gallery__img">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="/assets/image/gallery_02_pc.png">
+                                <img src="/assets/image/gallery_02_pc.png" alt="" class="gallery__img">
+                            </picture>
+                        </div>
+                        <div class="swiper-slide">
+                            <picture>
+                                <source media="(min-width: 768px)" srcset="/assets/image/gallery_03_pc.png">
+                                <img src="/assets/image/gallery_03_pc.png" alt="" class="gallery__img">
+                            </picture>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+
             </div>
         </section><!--gallery-->
         <section class="feature">
             <div class="feature__container">
-                <h2>特長</h2>
+                <h2 class="section__title">特長</h2>
+                <div class="progress-bar">
+                    <div class="progress-fill"></div>
+                </div>
                 <div class="feature__wrapper">
                     <picture>
                         <source media="(min-width: 768px)" srcset="/assets/image/feature_01_pc.png">
@@ -95,11 +128,17 @@
             </div>
         </section><!--feature-->
         <section class="price">
-            <h2>メーカー希望小売価格</h2>
+            <h2 class="section__title">メーカー希望小売価格</h2>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
             <p>¥550,000<span>（税込）</span></p>
         </section>
         <section class="spec">
-            <h2>スペック</h2>
+            <h2 class="section__title">スペック</h2>
+            <div class="progress-bar">
+                <div class="progress-fill"></div>
+            </div>
             <h3>機体</h3>
             <table>
                 <tr>
