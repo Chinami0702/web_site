@@ -1549,8 +1549,21 @@
 
 .qa__wrapper {
   width: 91.7948717949vw;
-  height: 31.2820512821vw;
-  margin: 0 auto;
+  height: auto;
+  margin: 5.1282051282vw auto;
+  border: 1px solid #cccccc;
+  border-radius: 6.1538461538vw;
+  padding: 5.1282051282vw 7.6923076923vw;
+}
+@media screen and (min-width: 768px) {
+  .qa__wrapper {
+    width: 34.7572815534vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .qa__wrapper {
+    width: 22.375rem;
+  }
 }
 .qa__top-row {
   display: flex;
@@ -1580,7 +1593,8 @@
   cursor: pointer;
 }
 .qa__text {
-  margin-top: 8px;
+  width: 58.4615384615vw;
+  margin: 5.1282051282vw auto;
   font-weight: bold;
 }
 .qa__answer {

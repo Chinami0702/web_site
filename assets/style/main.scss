@@ -1568,19 +1568,26 @@ $breakpoints: (
 .qa {
     &__wrapper {
         width: vw(358);
-        height: vw(122);
-        margin: 0 auto;
-        @include mq(){
+        height: auto;
+        margin: vw(20) auto;
+        border: 1px solid #cccccc;
+        border-radius: vw(24);
+        padding: vw(20) vw(30);
 
+        @include mq() {
+            width: vwt(358);
+  
         }
-        @include mq(lg){
 
+        @include mq(lg) {
+            width: px2Rem(358);
+            
         }
     }
 
     &__top-row {
         display: flex;
-        justify-content: space-between;
+        justify-content:space-between;
         align-items: center;
     }
 
@@ -1611,7 +1618,8 @@ $breakpoints: (
     }
 
     &__text {
-        margin-top: 8px;
+        width: vw(228);
+        margin:vw(20) auto;
         font-weight: bold;
     }
 
