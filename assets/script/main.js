@@ -14,3 +14,12 @@ const swiper = new Swiper('.swiper', {
       clickable: true,
     },
   });
+  $(document).ready(function () {
+  $('.qa__toggle').on('click', function () {
+    const $answer = $(this).closest('.qa__box').find('.qa__answer');
+    const isVisible = $answer.is(':visible');
+
+    $answer.slideToggle(300);
+    $(this).text(isVisible ? '＋' : '−');
+  });
+});
