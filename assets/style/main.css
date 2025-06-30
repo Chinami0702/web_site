@@ -1269,4 +1269,50 @@
   font-size: 4.6153846154vw;
   font-weight: 700;
   margin: 0 0 10.2564102564vw 0;
+}
+@media screen and (min-width: 768px) {
+  .feature__txt {
+    font-size: 1.7475728155vw;
+    margin: 0 0 3.8834951456vw 0;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .feature__txt {
+    font-size: 1.125rem;
+    margin: 0 0 2.5rem 0;
+  }
+}
+
+.price {
+  padding: 2.5641025641vw 0vw;
+}
+@media screen and (min-width: 768px) {
+  .price {
+    padding: 0.9708737864vw 0.4854368932vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .price {
+    padding: 0.625rem 0.3125rem;
+  }
+}
+.price__txt {
+  font-family: Montserrat;
+  font-weight: 700;
+  font-size: 8.2051282051vw;
+  margin: 0 0 0 5.1282051282vw;
+}
+@media screen and (min-width: 768px) {
+  .price__txt {
+    font-size: 3.1067961165vw;
+  }
+}
+@media screen and (min-width: 1030px) {
+  .price__txt {
+    font-size: 2rem;
+  }
+}
+.price__tax {
+  font-size: 4.1025641026vw;
+  font-weight: 700;
 }/*# sourceMappingURL=main.css.map */

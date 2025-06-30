@@ -1236,9 +1236,10 @@ $breakpoints: (
         }
     }
 }
+
 //feature
-.feature{
-     padding: vw(10) vw(5);
+.feature {
+    padding: vw(10) vw(5);
 
     @include mq() {
         padding: vwt(10) vwt(5);
@@ -1263,7 +1264,8 @@ $breakpoints: (
         }
 
     }
-       &__img {
+
+    &__img {
         width: vw(358);
         height: vw(200);
         border-radius: vw(24);
@@ -1283,10 +1285,51 @@ $breakpoints: (
             margin: 0 auto px2Rem(16) auto;
         }
     }
-    &__txt{
+
+    &__txt {
         font-size: vw(18);
         font-weight: 700;
         margin: 0 0 vw(40) 0;
+
+        @include mq() {
+            font-size: vwt(18);
+            margin: 0 0 vwt(40) 0;
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(18);
+            margin: 0 0 px2Rem(40) 0;
+        }
     }
 }
 
+.price {
+    padding: vw(10) vw(00);
+
+    @include mq() {
+        padding: vwt(10) vwt(5);
+    }
+
+    @include mq(lg) {
+        padding: px2Rem(10) px2Rem(5);
+    }
+
+    &__txt {
+        font-family: Montserrat;
+        font-weight: 700;
+        font-size: vw(32);
+        margin: 0 0 0 vw(20);
+
+        @include mq() {
+            font-size: vwt(32);
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(32);
+        }
+    }
+    &__tax{
+        font-size: vw(16);
+        font-weight: 700;
+    }
+}
