@@ -604,14 +604,14 @@
 }
 @media screen and (min-width: 768px) {
   .service__link {
-    width: 42.3387096774vw;
+    width: 100%;
     gap: 1.6129032258vw;
     padding: 1.6129032258vw 0.8064516129vw;
   }
 }
 @media screen and (min-width: 1240px) {
   .service__link {
-    width: 32.8125rem;
+    width: 100%;
     gap: 1.25rem;
     padding: 1.25rem 0.625rem;
   }
