@@ -652,13 +652,13 @@ $breakpoints: (
         padding: vw(20) vw(10);
 
         @include mq() {
-            width: vwt(525);
+            width:100% ;
             gap: vwt(20);
             padding: vwt(20) vwt(10);
         }
 
         @include mq(lg) {
-            width: px2Rem(525);
+            width: 100%;
             gap: px2Rem(20);
             padding: px2Rem(20) px2Rem(10);
         }
