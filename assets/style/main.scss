@@ -99,7 +99,7 @@ $breakpoints: (
         display: none;
         background: #168352;
         position: absolute;
-        top: 50px;
+        top: 70px;
         left: 15px;
         width: vw(358);
         z-index: 9999;
@@ -585,12 +585,12 @@ $breakpoints: (
 
     &__container {
         @include mq() {
-            // width: vwt(1168);
+            max-width: vwt(1168);
             margin: 0 auto;
         }
 
         @include mq(lg) {
-            // width: px2Rem(1168);
+            max-width: px2Rem(1168);
         }
     }
 
@@ -645,19 +645,20 @@ $breakpoints: (
     }
 
     &__link {
+        width: vw(358);
         display: flex;
         align-items: center;
         gap: vw(20);
         padding: vw(20) vw(10);
 
         @include mq() {
-
+            width: vwt(525);
             gap: vwt(20);
             padding: vwt(20) vwt(10);
         }
 
         @include mq(lg) {
-
+            width: px2Rem(525);
             gap: px2Rem(20);
             padding: px2Rem(20) px2Rem(10);
         }
@@ -718,10 +719,12 @@ $breakpoints: (
 
     &__txt-special {
         @include mq() {
+            width: vwt(160);
             font-size: vwt(20);
         }
 
         @include mq(lg) {
+            width: px2Rem(160);
             font-size: px2Rem(20);
         }
     }
@@ -773,12 +776,12 @@ $breakpoints: (
 
     &__container {
         @include mq() {
-            width: vwt(1168);
+            max-width: vwt(1168);
             margin: 0 auto;
         }
 
         @include mq(lg) {
-            width: px2Rem(1168);
+            max-width: px2Rem(1168);
         }
     }
 
@@ -830,6 +833,19 @@ $breakpoints: (
         }
     }
 
+    &__item {
+        padding: 0 vw(15);
+
+        @include mq() {
+
+            padding: 0;
+        }
+
+        @include mq(lg) {
+            padding: 0;
+        }
+    }
+
     &__img {
         display: block;
         width: 100%;
@@ -852,18 +868,18 @@ $breakpoints: (
         color: #09947b;
         font-size: vw(18);
         font-weight: 700;
-        margin: vw(16) vw(16) vw(32) vw(18);
+        margin: vw(16) 0 vw(32) vw(18);
 
         @include mq() {
             width: vwt(365);
             font-size: vwt(19);
-            margin: vwt(16) vwt(16) vwt(32) vwt(18);
+            margin: vwt(16) 0 vwt(32) vwt(18);
         }
 
         @include mq(lg) {
             width: px2Rem(365);
             font-size: px2Rem(19);
-            margin: px2Rem(16) px2Rem(16) px2Rem(32) px2Rem(18);
+            margin: px2Rem(16) 0 px2Rem(32) px2Rem(18);
         }
     }
 }
@@ -953,19 +969,42 @@ $breakpoints: (
     }
 
     &__item {
+        margin: vw(12) vw(20) vw(12) vw(15);
+        border-top: 2px solid #dddddd;
+
+        @include mq() {
+            display: flex;
+            align-items: center;
+            gap: vwt(20);
+             margin:0;
+            padding: vwt(20) vwt(20) vwt(20) vwt(15);
+        }
+
+        @include mq(lg) {
+             gap: px2Rem(20);
+              margin:0;
+            padding: px2Rem(20) px2Rem(20) px2Rem(20) px2Rem(15);
+        }
+    }
+
+    &__item:last-child {
+        border-bottom: 2px solid #dddddd;
+    }
+
+    &__box {
         display: flex;
         align-items: center;
         gap: vw(30);
-        margin-bottom: vw(16);
+        margin: vw(16) 0;
 
         @include mq() {
             gap: vwt(30);
-            margin-bottom: vwt(0);
+            margin: 0;
         }
 
         @include mq(lg) {
             gap: px2Rem(30);
-            margin-bottom: px2Rem(0);
+            margin: 0;
         }
     }
 
@@ -988,17 +1027,20 @@ $breakpoints: (
         align-items: center;
         width: vw(134);
         height: vw(28);
+           font-size: vw(13);
         background-color: #473221;
         border-radius: vw(4);
         color: #fff;
 
         @include mq() {
+            font-size: vwt(13);
             width: vwt(134);
             height: vwt(28);
             border-radius: vwt(4);
         }
 
         @include mq(lg) {
+            font-size: px2Rem(13);
             width: px2Rem(134);
             height: px2Rem(28);
             border-radius: px2Rem(4);
@@ -1016,6 +1058,18 @@ $breakpoints: (
 
         @include mq(lg) {
             font-size: px2Rem(15);
+        }
+    }
+
+    &__text:last-child {
+        margin-bottom: vw(20);
+
+        @include mq() {
+            margin: 0;
+        }
+
+        @include mq(lg) {
+            margin: 0;
         }
     }
 
@@ -1130,11 +1184,11 @@ $breakpoints: (
     &__title {
         font-size: vw(30);
         font-weight: 700;
-        margin: 0 0 vw(32) 0;
+        margin: 0;
 
         @include mq() {
             font-size: vwt(36);
-            margin: 0 0 vwt(32) 0;
+            margin: 0;
             position: absolute;
             bottom: 0;
             left: 0;
@@ -1146,10 +1200,12 @@ $breakpoints: (
         @include mq(lg) {
             font-size: px2Rem(36);
             margin: 0;
-            top: px2Rem(550);
-            left: px2Rem(70);
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            background-color: #fff;
             padding: px2Rem(39) px2Rem(40);
-            border-top-right-radius: px2Rem(40);
+            border-top-right-radius: px2Rem(40)
         }
     }
 
@@ -1490,9 +1546,12 @@ $breakpoints: (
     }
 
     &__table-first {
-      border-top:1px solid #dddddd ;
-      border-left: 1px solid #dddddd ;;
-      border-right: 1px solid #dddddd ;;
+        border-top: 1px solid #dddddd;
+        border-left: 1px solid #dddddd;
+        ;
+        border-right: 1px solid #dddddd;
+        ;
+
         @include mq() {
             width: vwt(752);
             margin: 0 auto;
