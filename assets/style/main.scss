@@ -186,7 +186,7 @@ $breakpoints: (
     height: 2px;
     background: #242424;
     position: absolute;
-    left: vw(328);
+    left: vw(335);
     transition: .5s;
 }
 
@@ -222,7 +222,7 @@ $breakpoints: (
 //index
 //intro
 .intro {
-    padding: vw(22) vw(15) 0 vw(15);
+    padding: vw(20) vw(15) 0 vw(15);
 
     @include mq() {
         padding: vwt(55) vwt(10) 0 vwt(10);
@@ -249,7 +249,7 @@ $breakpoints: (
     &__title {
         font-size: vw(28);
         font-weight: 700;
-        margin-bottom: vw(32);
+        margin-bottom: vw(22);
         font-family: Noto Sans JP;
 
         @include mq() {
@@ -280,7 +280,7 @@ $breakpoints: (
         font-weight: 550;
         font-family: Noto Sans JP;
         line-height: 1.75;
-        margin: 0 0 vw(32) 0;
+        margin: 0 0 vw(28) 0;
 
         @include mq() {
             font-size: vwt(15);
@@ -319,7 +319,7 @@ $breakpoints: (
 //index
 //about
 .about {
-    padding: vw(56) 0 0 0;
+    padding: vw(46) 0 0 0;
 
     @include mq() {
         padding: vwt(64) 0 0 0;
@@ -341,7 +341,7 @@ $breakpoints: (
     }
 
     &__title {
-        font-size: vw(18);
+        font-size: vw(16);
         color: #168352;
         font-family: Montserrat;
         font-weight: 600;
@@ -365,6 +365,7 @@ $breakpoints: (
         color: #000;
         text-align: center;
         font-weight: 700;
+        margin-top: vw(20);
 
         @include mq() {
             font-size: vwt(28);

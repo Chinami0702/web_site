@@ -127,7 +127,7 @@
   height: 2px;
   background: #242424;
   position: absolute;
-  left: 84.1025641026vw;
+  left: 85.8974358974vw;
   transition: 0.5s;
 }
 
@@ -160,7 +160,7 @@
 }
 
 .intro {
-  padding: 5.641025641vw 3.8461538462vw 0 3.8461538462vw;
+  padding: 5.1282051282vw 3.8461538462vw 0 3.8461538462vw;
 }
 @media screen and (min-width: 768px) {
   .intro {
@@ -190,7 +190,7 @@
 .intro__title {
   font-size: 7.1794871795vw;
   font-weight: 700;
-  margin-bottom: 8.2051282051vw;
+  margin-bottom: 5.641025641vw;
   font-family: Noto Sans JP;
 }
 @media screen and (min-width: 768px) {
@@ -222,7 +222,7 @@
   font-weight: 550;
   font-family: Noto Sans JP;
   line-height: 1.75;
-  margin: 0 0 8.2051282051vw 0;
+  margin: 0 0 7.1794871795vw 0;
 }
 @media screen and (min-width: 768px) {
   .intro__text {
@@ -261,7 +261,7 @@
 }
 
 .about {
-  padding: 14.358974359vw 0 0 0;
+  padding: 11.7948717949vw 0 0 0;
 }
 @media screen and (min-width: 768px) {
   .about {
@@ -285,7 +285,7 @@
   }
 }
 .about__title {
-  font-size: 4.6153846154vw;
+  font-size: 4.1025641026vw;
   color: #168352;
   font-family: Montserrat;
   font-weight: 600;
@@ -310,6 +310,7 @@
   color: #000;
   text-align: center;
   font-weight: 700;
+  margin-top: 5.1282051282vw;
 }
 @media screen and (min-width: 768px) {
   .about__translation {
