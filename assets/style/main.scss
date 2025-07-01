@@ -50,6 +50,7 @@ $breakpoints: (
 
     @return calc($px * 100vw / $pc-full-width);
 }
+
 //index
 //header
 .header {
@@ -314,6 +315,7 @@ $breakpoints: (
         }
     }
 }
+
 //index
 //about
 .about {
@@ -458,6 +460,7 @@ $breakpoints: (
         }
     }
 }
+
 //index
 //reasons
 .reasons {
@@ -574,6 +577,7 @@ $breakpoints: (
         }
     }
 }
+
 //index
 //service
 .service {
@@ -739,6 +743,7 @@ $breakpoints: (
         }
     }
 }
+
 //index
 //case
 .case {
@@ -849,6 +854,7 @@ $breakpoints: (
         }
     }
 }
+
 //index
 //news
 .news {
@@ -1035,6 +1041,7 @@ $breakpoints: (
         }
     }
 }
+
 //index
 //footer
 .footer {
@@ -1152,6 +1159,7 @@ $breakpoints: (
 
     }
 }
+
 //price
 //section
 .section {
@@ -1262,6 +1270,7 @@ $breakpoints: (
 
 
 }
+
 //price
 //feature
 .feature {
@@ -1339,6 +1348,7 @@ $breakpoints: (
         }
     }
 }
+
 //price
 //price
 
@@ -1399,6 +1409,7 @@ $breakpoints: (
         }
     }
 }
+
 //price
 //spec
 .spec {
@@ -1511,6 +1522,7 @@ $breakpoints: (
         }
     }
 }
+
 //price
 //お問い合わせ
 
@@ -1672,12 +1684,12 @@ $breakpoints: (
 
         @include mq() {
             width: vwt(743);
-        margin: vwt(20) auto;
+            margin: vwt(20) auto;
         }
 
         @include mq(lg) {
             width: px2Rem(743);
-        margin: px2Rem(20) auto;
+            margin: px2Rem(20) auto;
         }
     }
 
@@ -1689,12 +1701,12 @@ $breakpoints: (
 
         @include mq() {
             margin-top: vwt(12);
-             font-size: vwt(16);
+            font-size: vwt(16);
         }
 
         @include mq(lg) {
             margin-top: px2Rem(12);
-             font-size: px2Rem(16);
+            font-size: px2Rem(16);
         }
     }
 }
