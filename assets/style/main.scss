@@ -50,7 +50,7 @@ $breakpoints: (
 
     @return calc($px * 100vw / $pc-full-width);
 }
-
+//index
 //header
 .header {
     padding: vw(20) 0 0 vw(16);
@@ -218,7 +218,7 @@ $breakpoints: (
 }
 
 
-
+//index
 //intro
 .intro {
     padding: vw(22) vw(15) 0 vw(15);
@@ -314,7 +314,7 @@ $breakpoints: (
         }
     }
 }
-
+//index
 //about
 .about {
     padding: vw(56) 0 0 0;
@@ -458,7 +458,7 @@ $breakpoints: (
         }
     }
 }
-
+//index
 //reasons
 .reasons {
     padding: vw(56) vw(16) vw(56) vw(16);
@@ -574,7 +574,7 @@ $breakpoints: (
         }
     }
 }
-
+//index
 //service
 .service {
     padding: vw(56) vw(16) vw(56) vw(16);
@@ -739,7 +739,7 @@ $breakpoints: (
         }
     }
 }
-
+//index
 //case
 .case {
     padding: vw(56) vw(0) vw(56) vw(0);
@@ -849,7 +849,7 @@ $breakpoints: (
         }
     }
 }
-
+//index
 //news
 .news {
     padding: vw(56) vw(0) vw(56) vw(0);
@@ -1035,7 +1035,7 @@ $breakpoints: (
         }
     }
 }
-
+//index
 //footer
 .footer {
     display: flex;
@@ -1152,7 +1152,8 @@ $breakpoints: (
 
     }
 }
-
+//price
+//section
 .section {
     &__title {
         font-size: vw(22);
@@ -1209,7 +1210,7 @@ $breakpoints: (
     --swiper-pagination-bottom: 70px;
 }
 
-
+//price
 //gallery
 .gallery {
     padding: vw(10) vw(5);
@@ -1261,7 +1262,7 @@ $breakpoints: (
 
 
 }
-
+//price
 //feature
 .feature {
     padding: vw(10) vw(5);
@@ -1338,6 +1339,8 @@ $breakpoints: (
         }
     }
 }
+//price
+//price
 
 .price {
     padding: vw(10) vw(00);
@@ -1396,7 +1399,8 @@ $breakpoints: (
         }
     }
 }
-
+//price
+//spec
 .spec {
     padding: vw(10) vw(0) vw(64) vw(0);
 
@@ -1507,6 +1511,8 @@ $breakpoints: (
         }
     }
 }
+//price
+//お問い合わせ
 
 .button {
     background-image: url(/assets/image/faq.png);
