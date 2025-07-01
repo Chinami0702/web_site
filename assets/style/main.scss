@@ -1575,58 +1575,120 @@ $breakpoints: (
         padding: vw(20) vw(30);
 
         @include mq() {
-            width: vwt(358);
-  
+            width: vwt(800);
+            margin: vwt(20) auto;
+            border-radius: vwt(24);
+            padding: vwt(20) vwt(30);
+
         }
 
         @include mq(lg) {
-            width: px2Rem(358);
-            
+            width: px2Rem(800);
+            margin: px2Rem(20) auto;
+            border-radius: px2Rem(24);
+            padding: px2Rem(20) px2Rem(30);
+
         }
     }
 
     &__top-row {
         display: flex;
-        justify-content:space-between;
+        justify-content: space-between;
         align-items: center;
+
+        @include mq() {}
+
+        @include mq(lg) {}
     }
 
     &__label {
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: vw(8);
+
+        @include mq() {
+            gap: vwt(8);
+        }
+
+        @include mq(lg) {
+            gap: px2Rem(8);
+        }
     }
 
     &__icon {
         color: green;
         font-weight: bold;
+
+        @include mq() {}
+
+        @include mq(lg) {}
     }
 
     &__tag {
-        padding: 2px 8px;
+        padding: vw(2) vw(8);
         border: 1px solid green;
         color: green;
-        font-size: 12px;
-        border-radius: 4px;
+        font-size: vw(12);
+        border-radius: vw(4);
+
+        @include mq() {
+            padding: vwt(2) vwt(8);
+            font-size: vwt(12);
+            border-radius: vwt(4);
+        }
+
+        @include mq(lg) {
+            padding: px2Rem(2) px2Rem(8);
+            font-size: px2Rem(12);
+            border-radius: px2Rem(4);
+        }
     }
 
     &__toggle {
-        font-size: 20px;
+        font-size: vw(20);
         background: none;
         border: none;
         cursor: pointer;
+
+        @include mq() {
+            font-size: vwt(20);
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(20);
+        }
     }
 
     &__text {
         width: vw(228);
-        margin:vw(20) auto;
+        margin: vw(20) auto;
         font-weight: bold;
+
+        @include mq() {
+            width: vwt(743);
+        margin: vwt(20) auto;
+        }
+
+        @include mq(lg) {
+            width: px2Rem(743);
+        margin: px2Rem(20) auto;
+        }
     }
 
     &__answer {
-        margin-top: 12px;
+        margin-top: vw(12);
         display: none;
         color: #333;
-        font-size: 14px;
+        font-size: vw(16);
+
+        @include mq() {
+            margin-top: vwt(12);
+             font-size: vwt(16);
+        }
+
+        @include mq(lg) {
+            margin-top: px2Rem(12);
+             font-size: px2Rem(16);
+        }
     }
 }
