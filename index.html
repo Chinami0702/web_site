@@ -24,7 +24,7 @@
     <!--自分のcss-->
     <link rel="stylesheet" href="/assets/style/main.css">
     <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -50,7 +50,7 @@
         </div>
     </header><!--header-->
     <main>
-        <section class="intro">
+        <div class="intro">
             <div class="intro__container">
                 <div class="intro__wrapper">
                     <p class="intro__title">持続可能な農業を目指す</p>
@@ -61,7 +61,7 @@
                     <img src="/assets/image/intro_sp.png" alt="" class="intro__img">
                 </picture>
             </div>
-        </section><!--intro-->
+        </div><!--intro-->
         <section class="about">
             <div class="about__container">
                 <h2 class="about__title">About Us<span class="about__translation"><br>私たちについて</span></h2>
@@ -114,28 +114,32 @@
                 <h2 class="service__title">Products / Service<span class="service__translation"><br>製品・サービス紹介</span>
                 </h2>
                 <ul class="service__list">
-                    <a href="#" class="service__link">
-                        <li class="service__item">
+                    <li class="service__item">
+                        <a href="#" class="service__link">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/service_01_pc.png">
                                 <img src="/assets/image/service_01_sp.png" alt="" class="service__img">
                             </picture>
                             <p class="service__txt">エネルギーセイバー<br>
                                 農業ドローン</p>
-                        </li>
-                    </a>
-                    <a href="#" class="service__link">
-                        <li class="service__item">
+                        </a>
+                    </li>
+
+
+                    <li class="service__item">
+                        <a href="#" class="service__link">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/service_02_pc.png">
                                 <img src="/assets/image/service_02_sp.png" alt="" class="service__img">
                             </picture>
                             <p class="service__txt">プログレッシブ<br>
                                 ハーベストボット</p>
-                        </li>
-                    </a>
-                    <a href="#" class="service__link">
-                        <li class="service__item service__item-special">
+                        </a>
+                    </li>
+
+
+                    <li class="service__item service__item-special">
+                        <a href="#" class="service__link">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/service_03_pc.png">
                                 <img src="/assets/image/service_03_sp.png" alt=""
@@ -143,10 +147,10 @@
                             </picture>
                             <p class="service__txt service__txt-special">フューチャーファーム
                                 マスター</p>
-                        </li>
-                    </a>
-                    <a href="#" class="service__link">
-                        <li class="service__item service__item-special">
+                        </a>
+                    </li>
+                    <li class="service__item service__item-special">
+                        <a href="#" class="service__link">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/service_04_pc.png">
                                 <img src="/assets/image/service_04_sp.png" alt=""
@@ -154,10 +158,10 @@
                             </picture>
                             <p class="service__txt service__txt-special">ミラクルグローアシス
                                 ト</p>
-                        </li>
-                    </a>
-                    <a href="#" class="service__link">
-                        <li class="service__item service__item-special">
+                        </a>
+                    </li>
+                    <li class="service__item service__item-special">
+                        <a href="#" class="service__link">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/service_05_pc.png">
                                 <img src="/assets/image/service_05_sp.png" alt=""
@@ -165,8 +169,8 @@
                             </picture>
                             <p class="service__txt service__txt-special">インテリジェントプラ
                                 ンター</p>
-                        </li>
-                    </a>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section><!--service-->
@@ -174,34 +178,34 @@
             <div class="case__container">
                 <h2 class="case__title">Case<span class="case__translation"><br>お客様の事例紹介</span></h2>
                 <ul class="case__list">
-                    <a href="#">
-                        <li>
+
+                    <li>
+                        <a href="#">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/case_01_pc.png">
                                 <img src="/assets/image/case_01_sp.png" alt="" class="case__img">
                             </picture>
                             <p class="case__text">利用開始後約1年で売り上げが150％増加</p>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/case_02_pc.png">
                                 <img src="/assets/image/case_02_sp.png" alt="" class="case__img">
                             </picture>
                             <p class="case__text">無駄な作業が減り、30％のコストカットに成功</p>
-                        </li>
-                    </a>
-                    <a href="#">
-                        <li>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/case_03_pc.png">
                                 <img src="/assets/image/case_03_sp.png" alt="" class="case__img">
                             </picture>
                             <p class="case__text">24時間対応のサポートデスクがあるのも安心です</p>
-
-                        </li>
-                    </a>
+                        </a>
+                    </li>
                 </ul>
             </div>
         </section><!--case-->
@@ -209,53 +213,29 @@
             <div class="news__container">
                 <h2 class="news__title">News<span class="news__translation"><br>お知らせ</span></h2>
                 <dl class="news__list">
-                    <div class="news__wrapper">
-                        <div class="news__box">
-                            <dt class="news__date">2023.05.15</dt>
-                            <dd class="news__summery">お知らせ</dd>
-                        </div>
-                        <dd class="news__text"><a href="#">都心で発見！キラメキファームの屋上畑で緑のオアシスが広がる</a></dd>
-                    </div>
-                    <div class="news__wrapper">
-                        <div class="news__box">
-                            <dt class="news__date">2023.04.05</dt>
-                            <dd class="news__summery">ニュースリリース</dd>
-                        </div>
-                        <dd class="news__text"><a href="#">食の安全を守る！キラメキファーム、農産物の品質管理に力を入れる</a></dd>
-                    </div>
-                    <div class="news__wrapper">
-                        <div class="news__box">
-                            <dt class="news__date">2023.03.12</dt>
-                            <dd class="news__summery">ニュースリリース</dd>
-                        </div>
-                        <dd class="news__text"><a href="#">害虫撃退！キラメキファームの自然環境に優しい取り組み</a></dd>
-                    </div>
-                    <div class="news__wrapper">
-                        <div class="news__box">
-                            <dt class="news__date">2023.02.01</dt>
-                            <dd class="news__summery">お知らせ</dd>
-                        </div>
-                        <dd class="news__text"><a href="#">キラメキファーム×最新ドローン技術 目覚ましい成果発表</a></dd>
-                    </div>
-                    <div class="news__wrapper">
-                        <div class="news__box">
-                            <dt class="news__date">2023.05.15</dt>
-                            <dd class="news__summery">ニュースリリース</dd>
-                        </div>
-                        <dd class="news__text"><a href="#">キラメキファーム、無農薬野菜で子供たちの未来を支える</a></dd>
-                    </div>
-                    <div class="news__wrapper">
-                        <div class="news__box">
-                            <dt class="news__date">2023.05.15</dt>
-                            <dd class="news__summery">お知らせ</dd>
-                        </div>
-                        <dd class="news__text"><a href="#">キラメキ農法で収穫量2倍！革新的な農業技術が話題</a></dd>
-                    </div>
+                    <dt class="news__date">2023.05.15</dt>
+                    <dd class="news__summery">お知らせ</dd>
+                    <dd class="news__text"><a href="#">都心で発見！キラメキファームの屋上畑で緑のオアシスが広がる</a></dd>
+                    <dt class="news__date">2023.04.05</dt>
+                    <dd class="news__summery">ニュースリリース</dd>
+                    <dd class="news__text"><a href="#">食の安全を守る！キラメキファーム、農産物の品質管理に力を入れる</a></dd>
+                    <dt class="news__date">2023.03.12</dt>
+                    <dd class="news__summery">ニュースリリース</dd>
+                    <dd class="news__text"><a href="#">害虫撃退！キラメキファームの自然環境に優しい取り組み</a></dd>
+                    <dt class="news__date">2023.02.01</dt>
+                    <dd class="news__summery">お知らせ</dd>
+                    <dd class="news__text"><a href="#">キラメキファーム×最新ドローン技術 目覚ましい成果発表</a></dd>
+                    <dt class="news__date">2023.05.15</dt>
+                    <dd class="news__summery">ニュースリリース</dd>
+                    <dd class="news__text"><a href="#">キラメキファーム、無農薬野菜で子供たちの未来を支える</a></dd>
+                    <dt class="news__date">2023.05.15</dt>
+                    <dd class="news__summery">お知らせ</dd>
+                    <dd class="news__text"><a href="#">キラメキ農法で収穫量2倍！革新的な農業技術が話題</a></dd>
                 </dl>
-            </div>
-            <div class="news__button">
-                <p><a href="/news" class="news__btn">ニュース一覧へ</a></p>
-            </div>
+                <div class="news__button">
+                    <p><a href="/news" class="news__btn">ニュース一覧へ</a></p>
+                </div>
+                </div>
         </section><!--news-->
     </main>
     <footer class=" footer">
@@ -263,7 +243,7 @@
         <p>|</p>
         <p><a href="/faq/qa.html">よくあるご質問</a></p>
     </footer><!--footer-->
-    <script src="/assets/script/jquery-3.7.1.min (1).js"></script>
+    <script src="/assets/script/jquery-3.7.1.min.js"></script>
     <script src="/assets/script/main.js"></script>
 </body>
 
