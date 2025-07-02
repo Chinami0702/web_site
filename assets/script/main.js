@@ -17,12 +17,25 @@ const swiper = new Swiper('.swiper', {
     },
 });
 
+// $(document).ready(function () {
+//     $('.qa__toggle').on('click', function () {
+//         const $answer = $(this).closest('.qa__wrapper').find('.qa__answer');
+//         const isVisible = $answer.is(':visible');
+
+//         $answer.slideToggle(300);
+//         $(this).text(isVisible ? '＋' : '−');
+//     });
+// });
 $(document).ready(function () {
-    $('.qa__toggle').on('click', function () {
-        const $answer = $(this).closest('.qa__wrapper').find('.qa__answer');
+    $('.qa__wrapper').on('click', function () {
+        const $wrapper = $(this);
+        const $answer = $wrapper.find('.qa__answer');
+        const $toggleImg = $wrapper.find('.qa__toggle');
         const isVisible = $answer.is(':visible');
 
         $answer.slideToggle(300);
-        $(this).text(isVisible ? '＋' : '−');
+
+        // アイコンを切り替える
+        $toggleImg.attr('src', isVisible ? '/assets/image/icon_plus.png' : '/assets/image/icon_minus.png');
     });
 });

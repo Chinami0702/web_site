@@ -86,12 +86,12 @@ $breakpoints: (
 
         @include mq() {
             width: vwt(265);
-            height: vwt(33);
+            // height: vwt(33);
         }
 
         @include mq(lg) {
             width: px2Rem(265);
-            height: px2Rem(33);
+            // height: px2Rem(33);
         }
     }
 
@@ -101,13 +101,13 @@ $breakpoints: (
         position: absolute;
         top: 70px;
         left: 15px;
-        width: vw(358);
+        // width: vw(358);
         z-index: 9999;
         border-radius: vw(24);
 
         @include mq() {
             border-radius: vwt(24);
-            width: vwt(358);
+            // width: vwt(358);
             display: flex;
             position: static;
             width: auto;
@@ -117,7 +117,7 @@ $breakpoints: (
 
         @include mq(lg) {
             border-radius: px2Rem(24);
-            width: px2Rem(358);
+            // width: px2Rem(358);
             display: flex;
         }
     }
@@ -543,7 +543,7 @@ $breakpoints: (
 
         @include mq(lg) {
             width: px2Rem(369);
-            padding: px2Rem(20)px2Rem(16);
+            padding: px2Rem (20)px2Rem(16);
             border-bottom-left-radius: px2Rem(24);
             border-bottom-right-radius: px2Rem(24);
             font-size: px2Rem(19);
@@ -569,7 +569,7 @@ $breakpoints: (
     &__list {
         @include mq() {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             gap: vwt(30);
         }
 
@@ -634,14 +634,15 @@ $breakpoints: (
         @include mq() {
             display: flex;
             flex-wrap: wrap;
-            row-gap: vwt(40);
-            column-gap: vwt(50);
-            justify-content: center;
+          
+
+            justify-content: space-between;
         }
 
         @include mq(lg) {
-            row-gap: px2Rem(40);
-            column-gap: px2Rem(50);
+                  display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
         }
     }
 
@@ -649,18 +650,18 @@ $breakpoints: (
         width: vw(358);
         display: flex;
         align-items: center;
-        gap: vw(20);
+       gap: vw(20);
         padding: vw(20) vw(10);
 
         @include mq() {
-            width:100% ;
-            gap: vwt(20);
+            width: 100%;
+          
             padding: vwt(20) vwt(10);
         }
 
         @include mq(lg) {
             width: 100%;
-            gap: px2Rem(20);
+          
             padding: px2Rem(20) px2Rem(10);
         }
     }
@@ -679,27 +680,27 @@ $breakpoints: (
         }
 
         @include mq() {
-            // width: vwt(525);
+           width: calc((100% - #{vwt(20)}) / 2);
             border-radius: vwt(24);
-            margin: 0 0 0 0;
+            margin: 0 0 vwt(20) 0;
             gap: vwt(20);
         }
 
         @include mq(lg) {
-            // width: px2Rem(525);
+            width: calc((100% - #{px2Rem(20)}) / 2);
             border-radius: px2Rem(24);
-            margin: 0 0 0 0;
+            margin: 0 0 px2Rem(20) 0;
             gap: px2Rem(20);
         }
     }
 
     &__item-special {
         @include mq() {
-            width: vwt(333);
+      width: calc((100% - #{vwt(20) * 2}) / 3);
         }
 
         @include mq(lg) {
-            width: px2Rem(333);
+                 width: calc((100% - #{px2Rem(20) * 2}) / 3);
         }
     }
 
@@ -824,13 +825,13 @@ $breakpoints: (
     &__list {
         @include mq() {
             display: flex;
-            gap: vwt(21);
-            justify-content: center;
-            align-items: center;
+            // gap: vwt(21);
+            justify-content: space-between;
+            // align-items: center;
         }
 
         @include mq(lg) {
-            gap: px2Rem(21)
+            // gap: px2Rem(21)
         }
     }
 
@@ -977,13 +978,13 @@ $breakpoints: (
             display: flex;
             align-items: center;
             gap: vwt(20);
-             margin:0;
+            margin: 0;
             padding: vwt(20) vwt(20) vwt(20) vwt(15);
         }
 
         @include mq(lg) {
-             gap: px2Rem(20);
-              margin:0;
+            gap: px2Rem(20);
+            margin: 0;
             padding: px2Rem(20) px2Rem(20) px2Rem(20) px2Rem(15);
         }
     }
@@ -1028,7 +1029,7 @@ $breakpoints: (
         align-items: center;
         width: vw(134);
         height: vw(28);
-           font-size: vw(13);
+        font-size: vw(13);
         background-color: #473221;
         border-radius: vw(4);
         color: #fff;
@@ -1653,7 +1654,7 @@ $breakpoints: (
         color: #fff;
         border: 2px solid #fff;
         padding: vw(30) vw(120);
-        border-radius: vw(40);
+        border-radius: 9999999px;
 
         &:hover {
             background-color: #fff;
@@ -1662,13 +1663,13 @@ $breakpoints: (
 
         @include mq() {
             padding: vwt(30) vwt(120);
-            border-radius: vwt(40);
+            border-radius: 9999999px;
             font-size: vwt(20);
         }
 
         @include mq(lg) {
             padding: px2Rem(30) px2Rem(120);
-            border-radius: px2Rem(40);
+            border-radius:9999999px;
             font-size: px2Rem(20);
         }
 
