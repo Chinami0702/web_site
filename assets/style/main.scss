@@ -54,7 +54,7 @@ $breakpoints: (
 //index
 //header
 .header {
-    padding: vw(20) 0 0 vw(16);
+    padding: vw(20) vw(16) ;
 
     @include mq() {
         padding: vwt(41) vwt(10) 0 vwt(10);
@@ -66,6 +66,8 @@ $breakpoints: (
     }
 
     &__container {
+        display: flex;
+        justify-content: space-between;
         @include mq() {
             max-width: vwt(1168);
             margin: 0 auto;
@@ -86,12 +88,12 @@ $breakpoints: (
 
         @include mq() {
             width: vwt(265);
-            // height: vwt(33);
+            
         }
 
         @include mq(lg) {
             width: px2Rem(265);
-            // height: px2Rem(33);
+        
         }
     }
 
@@ -101,13 +103,11 @@ $breakpoints: (
         position: absolute;
         top: 70px;
         left: 15px;
-        // width: vw(358);
         z-index: 9999;
         border-radius: vw(24);
 
         @include mq() {
             border-radius: vwt(24);
-            // width: vwt(358);
             display: flex;
             position: static;
             width: auto;
@@ -117,7 +117,6 @@ $breakpoints: (
 
         @include mq(lg) {
             border-radius: px2Rem(24);
-            // width: px2Rem(358);
             display: flex;
         }
     }
@@ -165,7 +164,7 @@ $breakpoints: (
 }
 
 .hamburger-menu {
-    width: 50px;
+    width: vw(24);
     position: relative;
     border: none;
     background: transparent;
@@ -176,53 +175,49 @@ $breakpoints: (
     @include mq() {
         display: none;
     }
-
-    @include mq(lg) {}
 }
 
 .hamburger-menu__bar {
-    display: inline-block;
-    width: 44%;
+    position: absolute;
+    left: 0;
+    width: 100%;
     height: 2px;
     background: #242424;
-    position: absolute;
-    left: vw(335);
-    transition: .5s;
+    transition: 0.4s ease;
 }
 
 .hamburger-menu__bar:first-child {
-    top: -30px;
+    top: 0;
 }
 
 .hamburger-menu__bar:nth-child(2) {
-    top: -23px;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .hamburger-menu__bar:last-child {
-    top: -15px;
+    top: 100%;
+    transform: translateY(-100%);
 }
 
-.hamburger-menu--open .hamburger-menu__bar {
-    top: vw(-20);
-}
-
-.hamburger-menu--open .hamburger-menu__bar:first-child {
-    transform: translateX(-20%) translateY(-20%) rotate(45deg);
-}
-
-.hamburger-menu--open .hamburger-menu__bar:last-child {
-    transform: translateX(-20%) translateY(-20%) rotate(-45deg);
+.hamburger-menu--open .hamburger-menu__bar:nth-child(1) {
+    top: 50%;
+    transform: translateY(-50%) rotate(45deg);
 }
 
 .hamburger-menu--open .hamburger-menu__bar:nth-child(2) {
-    display: none;
+    opacity: 0;
 }
 
+.hamburger-menu--open .hamburger-menu__bar:nth-child(3) {
+    top: 50%;
+    transform: translateY(-50%) rotate(-45deg);
+}
 
 //index
 //intro
 .intro {
-    padding: vw(20) vw(15) 0 vw(15);
+    padding: vw(18) vw(15) 0 vw(15);
 
     @include mq() {
         padding: vwt(55) vwt(10) 0 vwt(10);
@@ -279,8 +274,8 @@ $breakpoints: (
         font-size: vw(15);
         font-weight: 550;
         font-family: Noto Sans JP;
-        line-height: 1.75;
-        margin: 0 0 vw(28) 0;
+        line-height: 1.8;
+        margin: 0 0 vw(24) 0;
 
         @include mq() {
             font-size: vwt(15);
@@ -319,7 +314,7 @@ $breakpoints: (
 //index
 //about
 .about {
-    padding: vw(46) 0 0 0;
+    padding: vw(53) 0 0 0 ;
 
     @include mq() {
         padding: vwt(64) 0 0 0;
@@ -346,7 +341,7 @@ $breakpoints: (
         font-family: Montserrat;
         font-weight: 600;
         text-align: center;
-        margin: 0 0 vw(24) 0;
+        margin: 0 0 vw(23) 0;
 
         @include mq() {
             font-size: vwt(20);
@@ -365,7 +360,11 @@ $breakpoints: (
         color: #000;
         text-align: center;
         font-weight: 700;
-        margin-top: vw(20);
+        display: block;
+        line-height: 1.1;
+        margin: vw(6) 0 0 0;
+
+
 
         @include mq() {
             font-size: vwt(28);
@@ -402,7 +401,7 @@ $breakpoints: (
     &__box {
         background-color: rgba(255, 255, 255, 0.8);
         border-radius: vw(32);
-        padding: vw(24);
+        padding: vw(15) vw(20) vw(17) vw(25) ;
 
         @include mq() {
             padding: vwt(10);
@@ -419,6 +418,7 @@ $breakpoints: (
         font-size: vw(18);
         font-weight: 700;
         line-height: 1.75;
+        margin: 0 0 vw(7.6) 0;
 
         @include mq() {
             width: vwt(395);
@@ -436,7 +436,7 @@ $breakpoints: (
     &__text {
         font-size: vw(15);
         font-weight: 500;
-        line-height: 1.6;
+        line-height: 1.75;
 
         @include mq() {
             width: vwt(410);
@@ -465,7 +465,7 @@ $breakpoints: (
 //index
 //reasons
 .reasons {
-    padding: vw(56) vw(16) vw(56) vw(16);
+    padding: vw(52) vw(16) vw(36) vw(16);
     background-color: #f3f9f6;
 
     @include mq() {
@@ -488,12 +488,12 @@ $breakpoints: (
     }
 
     &__title {
-        font-size: vw(18);
+        font-size: vw(16);
         color: #168352;
         font-family: Montserrat;
         font-weight: 600;
         text-align: center;
-        margin: 0 0 vw(24) 0;
+        margin: 0 0 vw(23) 0;
 
         @include mq() {
             font-size: vwt(20);
@@ -512,6 +512,12 @@ $breakpoints: (
         color: #000;
         text-align: center;
         font-weight: 700;
+        display: block;
+        line-height: 1.1;
+        margin: vw(6) 0 0 0;
+    
+
+
 
         @include mq() {
             font-size: vwt(28);
@@ -524,7 +530,7 @@ $breakpoints: (
 
     &__text {
         background-color: #fff;
-        padding: vw(20) vw(16);
+        padding: vw(12) vw(16) vw(15) vw(16);
         border-bottom-left-radius: vw(24);
         border-bottom-right-radius: vw(24);
         margin: 0 0 vw(20) 0;
@@ -532,6 +538,7 @@ $breakpoints: (
         font-size: vw(18);
         font-weight: 700;
         color: #111111;
+        line-height: 1.7;
 
         @include mq() {
             width: vwt(369);
@@ -582,7 +589,7 @@ $breakpoints: (
 //index
 //service
 .service {
-    padding: vw(56) vw(16) vw(56) vw(16);
+    padding: vw(54) vw(16) vw(36) vw(16);
 
     &__container {
         @include mq() {
@@ -595,13 +602,13 @@ $breakpoints: (
         }
     }
 
-    &__title {
-        font-size: vw(18);
+     &__title {
+        font-size: vw(16);
         color: #168352;
         font-family: Montserrat;
         font-weight: 600;
         text-align: center;
-        margin: 0 0 vw(24) 0;
+        margin: 0 0 vw(22) 0;
 
         @include mq() {
             font-size: vwt(20);
@@ -620,6 +627,12 @@ $breakpoints: (
         color: #000;
         text-align: center;
         font-weight: 700;
+        display: block;
+        line-height: 1.1;
+        margin: vw(6) 0 0 0;
+    
+
+
 
         @include mq() {
             font-size: vwt(28);
@@ -629,18 +642,17 @@ $breakpoints: (
             font-size: px2Rem(28);
         }
     }
-
     &__list {
         @include mq() {
             display: flex;
             flex-wrap: wrap;
-          
+
 
             justify-content: space-between;
         }
 
         @include mq(lg) {
-                  display: flex;
+            display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
         }
@@ -650,18 +662,18 @@ $breakpoints: (
         width: vw(358);
         display: flex;
         align-items: center;
-       gap: vw(20);
-        padding: vw(20) vw(10);
+        gap: vw(18);
+        padding: vw(20) vw(24);
 
         @include mq() {
             width: 100%;
-          
+
             padding: vwt(20) vwt(10);
         }
 
         @include mq(lg) {
             width: 100%;
-          
+
             padding: px2Rem(20) px2Rem(10);
         }
     }
@@ -680,7 +692,7 @@ $breakpoints: (
         }
 
         @include mq() {
-           width: calc((100% - #{vwt(20)}) / 2);
+            width: calc((100% - #{vwt(20)}) / 2);
             border-radius: vwt(24);
             margin: 0 0 vwt(20) 0;
             gap: vwt(20);
@@ -696,11 +708,11 @@ $breakpoints: (
 
     &__item-special {
         @include mq() {
-      width: calc((100% - #{vwt(20) * 2}) / 3);
+            width: calc((100% - #{vwt(20) * 2}) / 3);
         }
 
         @include mq(lg) {
-                 width: calc((100% - #{px2Rem(20) * 2}) / 3);
+            width: calc((100% - #{px2Rem(20) * 2}) / 3);
         }
     }
 
@@ -765,7 +777,7 @@ $breakpoints: (
 //index
 //case
 .case {
-    padding: vw(56) vw(0) vw(56) vw(0);
+    padding: vw(53) vw(0) vw(23) vw(0);
     background-color: #f3f9f6;
 
     @include mq() {
@@ -787,13 +799,13 @@ $breakpoints: (
         }
     }
 
-    &__title {
-        font-size: vw(18);
+   &__title {
+        font-size: vw(16);
         color: #168352;
         font-family: Montserrat;
         font-weight: 600;
         text-align: center;
-        margin: 0 0 vw(24) 0;
+        margin: 0 0 vw(22) 0;
 
         @include mq() {
             font-size: vwt(20);
@@ -812,6 +824,12 @@ $breakpoints: (
         color: #000;
         text-align: center;
         font-weight: 700;
+        display: block;
+        line-height: 1.1;
+        margin: vw(6) 0 0 0;
+    
+
+
 
         @include mq() {
             font-size: vwt(28);
@@ -821,7 +839,6 @@ $breakpoints: (
             font-size: px2Rem(28);
         }
     }
-
     &__list {
         @include mq() {
             display: flex;
@@ -870,7 +887,8 @@ $breakpoints: (
         color: #09947b;
         font-size: vw(18);
         font-weight: 700;
-        margin: vw(16) 0 vw(32) vw(18);
+        margin: vw(7.7) 0 vw(26) vw(2);
+        line-height: 1.75;
 
         @include mq() {
             width: vwt(365);
@@ -889,7 +907,7 @@ $breakpoints: (
 //index
 //news
 .news {
-    padding: vw(56) vw(0) vw(56) vw(0);
+    padding: vw(52) vw(0) vw(60) vw(0);
 
     @include mq() {
         padding: vwt(56) vwt(0) vwt(56) vwt(0);
@@ -911,13 +929,13 @@ $breakpoints: (
     }
 
 
-    &__title {
-        font-size: vw(18);
+   &__title {
+        font-size: vw(16);
         color: #168352;
         font-family: Montserrat;
         font-weight: 600;
         text-align: center;
-        margin: 0 0 vw(24) 0;
+        margin: 0 0 vw(23) 0;
 
         @include mq() {
             font-size: vwt(20);
@@ -936,6 +954,12 @@ $breakpoints: (
         color: #000;
         text-align: center;
         font-weight: 700;
+        display: block;
+        line-height: 1.1;
+        margin: vw(6) 0 0 0;
+    
+
+
 
         @include mq() {
             font-size: vwt(28);
@@ -971,8 +995,8 @@ $breakpoints: (
     }
 
     &__item {
-        margin: vw(12) vw(20) vw(12) vw(15);
-        border-top: 2px solid #dddddd;
+        margin: vw(7) vw(20) vw(10) vw(15);
+        border-top: 1px solid #dddddd;
 
         @include mq() {
             display: flex;
@@ -990,14 +1014,15 @@ $breakpoints: (
     }
 
     &__item:last-child {
-        border-bottom: 2px solid #dddddd;
+
+        border-bottom: 1px solid #dddddd;
     }
 
     &__box {
         display: flex;
         align-items: center;
-        gap: vw(30);
-        margin: vw(16) 0;
+        gap: vw(18);
+        margin: vw(14) 0 vw(10) 0;
 
         @include mq() {
             gap: vwt(30);
@@ -1024,6 +1049,7 @@ $breakpoints: (
     }
 
     &__summery {
+        margin-top: vw(1);
         display: flex;
         justify-content: center;
         align-items: center;
@@ -1053,6 +1079,8 @@ $breakpoints: (
         font-size: vw(15);
         font-weight: 700;
         color: #09947b;
+        line-height: 1.75;
+        margin: 0 0 0 vw(2);
 
         @include mq() {
             font-size: vwt(15);
@@ -1062,18 +1090,15 @@ $breakpoints: (
             font-size: px2Rem(15);
         }
     }
-
-    &__text:last-child {
-        margin-bottom: vw(20);
-
-        @include mq() {
-            margin: 0;
-        }
-
-        @include mq(lg) {
-            margin: 0;
-        }
+    &__text-special{
+          font-size: vw(15);
+        font-weight: 700;
+        color: #09947b;
+        line-height: 1.75;
+        margin: vw(-2) 0 vw(10) 0;
     }
+
+   
 
     //button
     &__button {
@@ -1082,9 +1107,10 @@ $breakpoints: (
         height: vw(66);
         color: #fff;
         font-weight: 700;
+        font-size: vw(18);
         background-color: #09947b;
         border-radius: vw(33);
-        margin: vw(24) auto 0 auto;
+        margin: vw(25.5) auto 0 auto;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -1114,6 +1140,7 @@ $breakpoints: (
 //index
 //footer
 .footer {
+    height: vw(68);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -1669,7 +1696,7 @@ $breakpoints: (
 
         @include mq(lg) {
             padding: px2Rem(30) px2Rem(120);
-            border-radius:9999999px;
+            border-radius: 9999999px;
             font-size: px2Rem(20);
         }
 
