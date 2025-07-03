@@ -54,22 +54,23 @@ $breakpoints: (
 //index
 //header
 .header {
-    padding: vw(20) vw(16) ;
+    padding: vw(20) vw(16);
 
     @include mq() {
-        padding: vwt(41) vwt(10) 0 vwt(10);
+        padding: vwt(25) vwt(40) 0 vwt(35);
 
     }
 
     @include mq(lg) {
-        padding: px2Rem(41) px2Rem(10) 0 px2Rem(10);
+        padding: px2Rem(25) px2Rem(40) 0 px2Rem(35);
     }
 
     &__container {
         display: flex;
         justify-content: space-between;
+
         @include mq() {
-            max-width: vwt(1168);
+            max-width: vwt(1163);
             margin: 0 auto;
             display: flex;
             align-items: center;
@@ -78,7 +79,7 @@ $breakpoints: (
         }
 
         @include mq(lg) {
-            max-width: px2Rem(1168);
+            max-width: px2Rem(1163);
             margin: 0 auto;
         }
     }
@@ -88,12 +89,12 @@ $breakpoints: (
 
         @include mq() {
             width: vwt(265);
-            
+
         }
 
         @include mq(lg) {
             width: px2Rem(265);
-        
+
         }
     }
 
@@ -129,12 +130,12 @@ $breakpoints: (
         @include mq() {
             display: flex;
             width: auto;
-            gap: vwt(20);
+            gap: vwt(30);
         }
 
         @include mq(lg) {
             width: auto;
-            gap: px2Rem(20);
+            gap: px2Rem(30);
         }
     }
 
@@ -214,17 +215,37 @@ $breakpoints: (
     transform: translateY(-50%) rotate(-45deg);
 }
 
+//改行
+.next {
+    @include mq() {
+        display: none;
+    }
+
+    @include mq(lg) {}
+}
+
+//改行PC
+.next-pc {
+    display: none;
+
+    @include mq() {
+        display: flex;
+    }
+
+    @include mq(lg) {}
+}
+
 //index
 //intro
 .intro {
     padding: vw(18) vw(15) 0 vw(15);
 
     @include mq() {
-        padding: vwt(55) vwt(10) 0 vwt(10);
+        padding: vwt(70) vwt(10) 0 vwt(9);
     }
 
     @include mq(lg) {
-        padding: px2Rem(55) px2Rem(10) 0 px2Rem(10);
+        padding: px2Rem(70) px2Rem(10) 0 px2Rem(9);
     }
 
     &__container {
@@ -262,11 +283,11 @@ $breakpoints: (
         @include mq() {
             display: flex;
             justify-content: space-around;
-            gap: vwt(50);
+            gap: vwt(72);
         }
 
         @include mq(lg) {
-            gap: px2Rem(50);
+            gap: px2Rem(72);
         }
     }
 
@@ -280,13 +301,13 @@ $breakpoints: (
         @include mq() {
             font-size: vwt(15);
             width: vwt(532);
-            margin: 0 0 vwt(64) 0;
+            margin: 0 0 vwt(55) 0;
         }
 
         @include mq(lg) {
             font-size: px2Rem(15);
             width: px2Rem(532);
-            margin: 0 0 px2Rem(64) 0;
+            margin: 0 0 px2Rem(55) 0;
         }
     }
 
@@ -314,24 +335,25 @@ $breakpoints: (
 //index
 //about
 .about {
-    padding: vw(53) 0 0 0 ;
+    padding: vw(53) 0 0 0;
 
     @include mq() {
-        padding: vwt(64) 0 0 0;
+        padding: vwt(64) 0 vwt(63) 0;
     }
 
     @include mq(lg) {
-        padding: px2Rem(64) 0 0 0;
+        padding: px2Rem(64) 0 px2Rem(63) 0;
     }
 
     &__container {
         @include mq() {
             width: vwt(955);
-            margin: 0 auto;
+            margin: 0 auto ;
         }
 
         @include mq(lg) {
             width: px2Rem(955);
+            margin: 0 auto ;
         }
     }
 
@@ -345,12 +367,12 @@ $breakpoints: (
 
         @include mq() {
             font-size: vwt(20);
-            margin: 0 0 vwt(24) 0;
+            margin: 0 0 vwt(32) 0;
         }
 
         @include mq(lg) {
             font-size: px2Rem(20);
-            margin: 0 0 px2Rem(24) 0;
+            margin: 0 0 px2Rem(32) 0;
         }
     }
 
@@ -368,10 +390,12 @@ $breakpoints: (
 
         @include mq() {
             font-size: vwt(28);
+            margin: vwt(8) 0 0 0;
         }
 
         @include mq(lg) {
             font-size: px2Rem(28);
+            margin: px2Rem(8) 0 0 0;
         }
     }
 
@@ -389,27 +413,29 @@ $breakpoints: (
             justify-content: space-between;
             align-items: center;
             height: auto;
-            padding: vwt(32) vwt(10);
+            padding: 0;
+        
         }
 
         @include mq(lg) {
             height: auto;
-            padding: px2Rem(32) px2Rem(10);
+            padding: 0;
+            
         }
     }
 
     &__box {
         background-color: rgba(255, 255, 255, 0.8);
         border-radius: vw(32);
-        padding: vw(15) vw(20) vw(17) vw(25) ;
+        padding: vw(15) vw(20) vw(17) vw(25);
 
         @include mq() {
-            padding: vwt(10);
+            padding: 0;
             border-radius: vwt(32);
         }
 
         @include mq(lg) {
-            padding: px2Rem(10);
+            padding: 0;
             border-radius: px2Rem(32);
         }
     }
@@ -421,15 +447,15 @@ $breakpoints: (
         margin: 0 0 vw(7.6) 0;
 
         @include mq() {
-            width: vwt(395);
+            width: auto;
             font-size: vwt(20);
-            margin-bottom: vwt(40);
+            margin: 0 0 vwt(23) 0;
         }
 
         @include mq(lg) {
-            width: px2Rem(395);
+            width: auto;
             font-size: px2Rem(20);
-            margin-bottom: px2Rem(40);
+            margin: 0 0 px2Rem(23) 0;
         }
     }
 
@@ -441,11 +467,13 @@ $breakpoints: (
         @include mq() {
             width: vwt(410);
             font-size: vwt(15);
+            margin-top: vwt(25);
         }
 
         @include mq(lg) {
             width: px2Rem(410);
             font-size: px2Rem(15);
+            margin-top: px2Rem(25);
         }
     }
 
@@ -454,10 +482,12 @@ $breakpoints: (
 
         @include mq() {
             display: block;
+            
         }
 
         @include mq(lg) {
             display: block;
+
         }
     }
 }
@@ -478,12 +508,12 @@ $breakpoints: (
 
     &__container {
         @include mq() {
-            // width: vwt(1168);
+            max-width: vwt(1168);
             margin: 0 auto;
         }
 
         @include mq(lg) {
-            // width: px2Rem(1168);
+            max-width: px2Rem(1168);
         }
     }
 
@@ -515,7 +545,7 @@ $breakpoints: (
         display: block;
         line-height: 1.1;
         margin: vw(6) 0 0 0;
-    
+
 
 
 
@@ -602,7 +632,7 @@ $breakpoints: (
         }
     }
 
-     &__title {
+    &__title {
         font-size: vw(16);
         color: #168352;
         font-family: Montserrat;
@@ -630,7 +660,7 @@ $breakpoints: (
         display: block;
         line-height: 1.1;
         margin: vw(6) 0 0 0;
-    
+
 
 
 
@@ -642,6 +672,7 @@ $breakpoints: (
             font-size: px2Rem(28);
         }
     }
+
     &__list {
         @include mq() {
             display: flex;
@@ -799,7 +830,7 @@ $breakpoints: (
         }
     }
 
-   &__title {
+    &__title {
         font-size: vw(16);
         color: #168352;
         font-family: Montserrat;
@@ -827,7 +858,7 @@ $breakpoints: (
         display: block;
         line-height: 1.1;
         margin: vw(6) 0 0 0;
-    
+
 
 
 
@@ -839,6 +870,7 @@ $breakpoints: (
             font-size: px2Rem(28);
         }
     }
+
     &__list {
         @include mq() {
             display: flex;
@@ -929,7 +961,7 @@ $breakpoints: (
     }
 
 
-   &__title {
+    &__title {
         font-size: vw(16);
         color: #168352;
         font-family: Montserrat;
@@ -957,7 +989,7 @@ $breakpoints: (
         display: block;
         line-height: 1.1;
         margin: vw(6) 0 0 0;
-    
+
 
 
 
@@ -1090,15 +1122,16 @@ $breakpoints: (
             font-size: px2Rem(15);
         }
     }
-    &__text-special{
-          font-size: vw(15);
+
+    &__text-special {
+        font-size: vw(15);
         font-weight: 700;
         color: #09947b;
         line-height: 1.75;
         margin: vw(-2) 0 vw(10) 0;
     }
 
-   
+
 
     //button
     &__button {
