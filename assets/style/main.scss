@@ -348,12 +348,12 @@ $breakpoints: (
     &__container {
         @include mq() {
             width: vwt(955);
-            margin: 0 auto ;
+            margin: 0 auto;
         }
 
         @include mq(lg) {
             width: px2Rem(955);
-            margin: 0 auto ;
+            margin: 0 auto;
         }
     }
 
@@ -414,13 +414,13 @@ $breakpoints: (
             align-items: center;
             height: auto;
             padding: 0;
-        
+
         }
 
         @include mq(lg) {
             height: auto;
             padding: 0;
-            
+
         }
     }
 
@@ -482,7 +482,7 @@ $breakpoints: (
 
         @include mq() {
             display: block;
-            
+
         }
 
         @include mq(lg) {
@@ -551,12 +551,12 @@ $breakpoints: (
 
         @include mq() {
             font-size: vwt(28);
-              margin: vwt(9) 0 0 vwt(10);
+            margin: vwt(9) 0 0 vwt(10);
         }
 
         @include mq(lg) {
             font-size: px2Rem(28);
-              margin: px2Rem(9) 0 0 px2Rem(10);
+            margin: px2Rem(9) 0 0 px2Rem(10);
         }
     }
 
@@ -574,18 +574,20 @@ $breakpoints: (
 
         @include mq() {
             width: vwt(369);
-            padding: vwt(20) vwt(16);
+            padding: vwt(10) vwt(16) vwt(16) vwt(19);
             border-bottom-left-radius: vwt(24);
             border-bottom-right-radius: vwt(24);
             font-size: vwt(19);
+            margin: 0 0 0 0;
         }
 
         @include mq(lg) {
             width: px2Rem(369);
-            padding: px2Rem (20)px2Rem(16);
+            padding: px2Rem(10) px2Rem(16) px2Rem(16) px2Rem(19);
             border-bottom-left-radius: px2Rem(24);
             border-bottom-right-radius: px2Rem(24);
             font-size: px2Rem(19);
+            margin: 0 0 0 0;
         }
     }
 
@@ -623,14 +625,22 @@ $breakpoints: (
 .service {
     padding: vw(54) vw(16) vw(36) vw(16);
 
+    @include mq() {
+        padding: vwt(62) vwt(16) vwt(39) vwt(16);
+    }
+
+    @include mq(lg) {
+        padding: px2Rem(62) px2Rem(16) px2Rem(39) px2Rem(16);
+    }
+
     &__container {
         @include mq() {
-            max-width: vwt(1168);
+            max-width: vwt(1100);
             margin: 0 auto;
         }
 
         @include mq(lg) {
-            max-width: px2Rem(1168);
+            max-width: px2Rem(1100);
         }
     }
 
@@ -644,12 +654,12 @@ $breakpoints: (
 
         @include mq() {
             font-size: vwt(20);
-            margin: 0 0 vwt(24) 0;
+            margin: 0 0 vwt(32) 0;
         }
 
         @include mq(lg) {
             font-size: px2Rem(20);
-            margin: 0 0 px2Rem(24) 0;
+            margin: 0 0 px2Rem(32) 0;
         }
     }
 
@@ -663,15 +673,14 @@ $breakpoints: (
         line-height: 1.1;
         margin: vw(6) 0 0 0;
 
-
-
-
         @include mq() {
             font-size: vwt(28);
+            margin: vwt(13) 0 0 0;
         }
 
         @include mq(lg) {
             font-size: px2Rem(28);
+            margin: px2Rem(13) 0 0 0;
         }
     }
 
@@ -679,15 +688,14 @@ $breakpoints: (
         @include mq() {
             display: flex;
             flex-wrap: wrap;
+            row-gap: vwt(22);
 
 
             justify-content: space-between;
         }
 
         @include mq(lg) {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+            row-gap: px2Rem(22);
         }
     }
 
@@ -700,14 +708,27 @@ $breakpoints: (
 
         @include mq() {
             width: 100%;
+            gap: vwt(30);
 
-            padding: vwt(20) vwt(10);
+            padding: vwt(23) vwt(30);
         }
 
         @include mq(lg) {
             width: 100%;
+            gap: px2Rem(30);
+            padding: px2Rem(23) px2Rem(30);
+        }
+    }
 
-            padding: px2Rem(20) px2Rem(10);
+    &__link-special {
+        @include mq() {
+            padding: vwt(23) vwt(23) vwt(20) vwt(20);
+            gap: vwt(25);
+        }
+
+        @include mq(lg) {
+            padding: px2Rem(23) px2Rem(23) px2Rem(20) px2Rem(20);
+            gap: px2Rem(25);
         }
     }
 
@@ -725,14 +746,14 @@ $breakpoints: (
         }
 
         @include mq() {
-            width: calc((100% - #{vwt(20)}) / 2);
+            width: calc((100% - #{vwt(50)}) / 2);
             border-radius: vwt(24);
             margin: 0 0 vwt(20) 0;
             gap: vwt(20);
         }
 
         @include mq(lg) {
-            width: calc((100% - #{px2Rem(20)}) / 2);
+            width: calc((100% - #{px2Rem(50)}) / 2);
             border-radius: px2Rem(24);
             margin: 0 0 px2Rem(20) 0;
             gap: px2Rem(20);
@@ -741,11 +762,11 @@ $breakpoints: (
 
     &__item-special {
         @include mq() {
-            width: calc((100% - #{vwt(20) * 2}) / 3);
+            width: calc((100% - #{vwt(48) * 2}) / 3);
         }
 
         @include mq(lg) {
-            width: calc((100% - #{px2Rem(20) * 2}) / 3);
+            width: calc((100% - #{px2Rem(48) * 2}) / 3);
         }
     }
 
@@ -814,21 +835,21 @@ $breakpoints: (
     background-color: #f3f9f6;
 
     @include mq() {
-        padding: vwt(56) vwt(0) vwt(56) vwt(0);
+        padding: vwt(61) vwt(0) vwt(56) vwt(0);
     }
 
     @include mq(lg) {
-        padding: px2Rem(56) px2Rem(0) px2Rem(56) px2Rem(0);
+        padding: px2Rem(61) px2Rem(0) px2Rem(56) px2Rem(0);
     }
 
     &__container {
         @include mq() {
-            max-width: vwt(1168);
+            max-width: vwt(1200);
             margin: 0 auto;
         }
 
         @include mq(lg) {
-            max-width: px2Rem(1168);
+            max-width: px2Rem(1200);
         }
     }
 
@@ -862,27 +883,27 @@ $breakpoints: (
         margin: vw(6) 0 0 0;
 
 
-
-
         @include mq() {
             font-size: vwt(28);
+             margin: vwt(15) 0 0 0;
         }
 
         @include mq(lg) {
             font-size: px2Rem(28);
+             margin: px2Rem(15) 0 0 0;
         }
     }
 
     &__list {
         @include mq() {
             display: flex;
-            // gap: vwt(21);
-            justify-content: space-between;
+            gap: vwt(21);
+            justify-content: center;
             // align-items: center;
         }
 
         @include mq(lg) {
-            // gap: px2Rem(21)
+            gap: px2Rem(21)
         }
     }
 
@@ -906,7 +927,8 @@ $breakpoints: (
         margin: 0 auto;
 
         @include mq() {
-            width: 100%;
+           
+      width: 100%;
             height: vwt(226);
             margin: 0;
         }
