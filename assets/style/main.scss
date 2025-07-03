@@ -527,12 +527,12 @@ $breakpoints: (
 
         @include mq() {
             font-size: vwt(20);
-            margin: 0 0 vwt(24) 0;
+            margin: 0 0 vwt(34) 0;
         }
 
         @include mq(lg) {
             font-size: px2Rem(20);
-            margin: 0 0 px2Rem(24) 0;
+            margin: 0 0 px2Rem(34) 0;
         }
     }
 
@@ -551,10 +551,12 @@ $breakpoints: (
 
         @include mq() {
             font-size: vwt(28);
+              margin: vwt(9) 0 0 vwt(10);
         }
 
         @include mq(lg) {
             font-size: px2Rem(28);
+              margin: px2Rem(9) 0 0 px2Rem(10);
         }
     }
 

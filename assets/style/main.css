@@ -469,13 +469,13 @@
 @media screen and (min-width: 768px) {
   .reasons__title {
     font-size: 1.6129032258vw;
-    margin: 0 0 1.935483871vw 0;
+    margin: 0 0 2.7419354839vw 0;
   }
 }
 @media screen and (min-width: 1240px) {
   .reasons__title {
     font-size: 1.25rem;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 2.125rem 0;
   }
 }
 .reasons__translation {
@@ -491,11 +491,13 @@
 @media screen and (min-width: 768px) {
   .reasons__translation {
     font-size: 2.2580645161vw;
+    margin: 0.7258064516vw 0 0 0.8064516129vw;
   }
 }
 @media screen and (min-width: 1240px) {
   .reasons__translation {
     font-size: 1.75rem;
+    margin: 0.5625rem 0 0 0.625rem;
   }
 }
 .reasons__text {
