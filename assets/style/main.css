@@ -795,13 +795,13 @@
 }
 @media screen and (min-width: 768px) {
   .case__container {
-    max-width: 96.7741935484vw;
+    max-width: 94.1935483871vw;
     margin: 0 auto;
   }
 }
 @media screen and (min-width: 1240px) {
   .case__container {
-    max-width: 75rem;
+    max-width: 73rem;
   }
 }
 .case__title {
@@ -815,13 +815,13 @@
 @media screen and (min-width: 768px) {
   .case__title {
     font-size: 1.6129032258vw;
-    margin: 0 0 1.935483871vw 0;
+    margin: 0 0 2.1774193548vw 0;
   }
 }
 @media screen and (min-width: 1240px) {
   .case__title {
     font-size: 1.25rem;
-    margin: 0 0 1.5rem 0;
+    margin: 0 0 1.6875rem 0;
   }
 }
 .case__translation {
@@ -849,8 +849,7 @@
 @media screen and (min-width: 768px) {
   .case__list {
     display: flex;
-    gap: 1.8548387097vw;
-    justify-content: center;
+    justify-content: space-between;
   }
 }
 @media screen and (min-width: 1240px) {
@@ -863,11 +862,13 @@
 }
 @media screen and (min-width: 768px) {
   .case__item {
+    width: 29.7580645161vw;
     padding: 0;
   }
 }
 @media screen and (min-width: 1240px) {
   .case__item {
+    width: 23.0625rem;
     padding: 0;
   }
 }
@@ -899,16 +900,14 @@
 }
 @media screen and (min-width: 768px) {
   .case__text {
-    width: 29.435483871vw;
     font-size: 1.5322580645vw;
-    margin: 1.2903225806vw 0 2.5806451613vw 1.4516129032vw;
+    margin: 0.8064516129vw 0 2.5806451613vw 0vw;
   }
 }
 @media screen and (min-width: 1240px) {
   .case__text {
-    width: 22.8125rem;
     font-size: 1.1875rem;
-    margin: 1rem 0 2rem 1.125rem;
+    margin: 0.625rem 0 2rem 0rem;
   }
 }
 

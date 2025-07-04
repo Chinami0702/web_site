@@ -853,12 +853,12 @@ $breakpoints: (
 
     &__container {
         @include mq() {
-            max-width: vwt(1200);
+            max-width: vwt(1168);
             margin: 0 auto;
         }
 
         @include mq(lg) {
-            max-width: px2Rem(1200);
+            max-width: px2Rem(1168);
         }
     }
 
@@ -872,12 +872,12 @@ $breakpoints: (
 
         @include mq() {
             font-size: vwt(20);
-            margin: 0 0 vwt(24) 0;
+            margin: 0 0 vwt(27) 0;
         }
 
         @include mq(lg) {
             font-size: px2Rem(20);
-            margin: 0 0 px2Rem(24) 0;
+            margin: 0 0 px2Rem(27) 0;
         }
     }
 
@@ -906,9 +906,8 @@ $breakpoints: (
     &__list {
         @include mq() {
             display: flex;
-            gap: vwt(23);
-            justify-content: center;
-            // align-items: center;
+            justify-content: space-between;
+
         }
 
         @include mq(lg) {
@@ -920,11 +919,13 @@ $breakpoints: (
         padding: 0 vw(15);
 
         @include mq() {
+            width: vwt(369);
 
             padding: 0;
         }
 
         @include mq(lg) {
+            width: px2Rem(369);
             padding: 0;
         }
     }
@@ -956,15 +957,13 @@ $breakpoints: (
         line-height: 1.75;
 
         @include mq() {
-            width: vwt(365);
             font-size: vwt(19);
-            margin: vwt(16) 0 vwt(32) vwt(18);
+            margin: vwt(10) 0 vwt(32) vwt(0);
         }
 
         @include mq(lg) {
-            width: px2Rem(365);
             font-size: px2Rem(19);
-            margin: px2Rem(16) 0 px2Rem(32) px2Rem(18);
+            margin: px2Rem(10) 0 px2Rem(32) px2Rem(0);
         }
     }
 }
