@@ -1250,7 +1250,28 @@ $breakpoints: (
 //header-special
 .header-special {
     padding: vw(20) vw(15) vw(10) vw(15);
+
+    @include mq() {
+        padding: vwt(25) vwt(40) vwt(50) vwt(35);
+
+    }
+
+    @include mq(lg) {
+        padding: px2Rem(25) px2Rem(40) px2Rem(50) px2Rem(35);
+    }
+
 }
+
+.header__link-special {
+    @include mq() {
+        color: #168352;
+    }
+
+    @include mq(lg) {
+        color: #168352;
+    }
+}
+
 
 //price
 //cover
@@ -1270,13 +1291,13 @@ $breakpoints: (
         margin: 0 auto;
 
         @include mq() {
-            width: vwt(1168);
+            width: vwt(1200);
             margin: 0 auto;
             position: relative;
         }
 
         @include mq(lg) {
-            width: px2Rem(1168);
+            width: px2Rem(1200);
             margin: 0 auto;
             position: relative;
         }
@@ -1287,12 +1308,12 @@ $breakpoints: (
         margin: 0 auto vw(28) auto;
 
         @include mq() {
-            width: vwt(1168);
+            width: vwt(1200);
             margin: 0 auto;
         }
 
         @include mq(lg) {
-            width: px2Rem(1168);
+            width: px2Rem(1200);
             margin: 0 auto;
 
         }
@@ -1310,7 +1331,7 @@ $breakpoints: (
             bottom: 0;
             left: 0;
             background-color: #fff;
-            padding: vwt(39) vwt(40);
+            padding: vwt(34) vwt(40);
             border-top-right-radius: vwt(40);
         }
 
@@ -1321,7 +1342,7 @@ $breakpoints: (
             bottom: 0;
             left: 0;
             background-color: #fff;
-            padding: px2Rem(39) px2Rem(40);
+            padding: px2Rem(34) px2Rem(40);
             border-top-right-radius: px2Rem(40)
         }
     }
@@ -1335,12 +1356,12 @@ $breakpoints: (
         margin: 0 auto;
 
         @include mq() {
-            max-width: vwt(800);
+            max-width: vwt(1184);
             margin: 0 auto;
         }
 
         @include mq(lg) {
-            max-width: px2Rem(800);
+            max-width: px2Rem(1184);
             margin: 0 auto;
         }
     }
@@ -1377,13 +1398,13 @@ $breakpoints: (
         @include mq() {
             font-size: vwt(28);
             font-weight: 700;
-            margin: 0 0 vwt(20) 0;
+            margin: 0 0 vwt(24) 0;
         }
 
         @include mq(lg) {
             font-size: px2Rem(28);
             font-weight: 700;
-            margin: 0 0 px2Rem(20) 0;
+            margin: 0 0 px2Rem(24) 0;
         }
     }
 }
@@ -1397,12 +1418,12 @@ $breakpoints: (
 
     @include mq() {
         height: 5px;
-        margin-bottom: vwt(20);
+        margin-bottom: vwt(30);
     }
 
     @include mq(lg) {
         height: 5px;
-        margin-bottom: px2Rem(20);
+        margin-bottom: px2Rem(30);
 
     }
 }
@@ -1413,16 +1434,24 @@ $breakpoints: (
     background-color: #1b7f5b;
 
     @include mq() {
-        width: 10%;
+        width: 12.5%;
     }
 
     @include mq(lg) {
-        width: 10%;
+        width: 12.5%;
     }
 }
 
 .swiper {
-    --swiper-pagination-bottom: 50px;
+    --swiper-pagination-bottom: vw(50);
+
+    @include mq() {
+        --swiper-pagination-bottom: 81px;
+    }
+
+    @include mq(lg) {
+        --swiper-pagination-bottom: 81px;
+    }
 }
 
 .swiper-pagination-bullet-active {
@@ -1441,11 +1470,11 @@ $breakpoints: (
     padding: vw(10) vw(5);
 
     @include mq() {
-        padding: vwt(10) vwt(5);
+        padding: vwt(21) vwt(5);
     }
 
     @include mq(lg) {
-        padding: px2Rem(10) px2Rem(5);
+        padding: px2Rem(21) px2Rem(5);
     }
 
     &__container {
@@ -1474,14 +1503,14 @@ $breakpoints: (
             width: vwt(800);
             height: vwt(499.99);
             border-radius: vwt(24);
-            margin: 0 auto vwt(64) auto;
+            margin: 0 auto vwt(39) auto;
         }
 
         @include mq(lg) {
             width: px2Rem(800);
             height: px2Rem(499.99);
             border-radius: px2Rem(24);
-            margin: 0 auto px2Rem(64) auto;
+            margin: 0 auto px2Rem(39) auto;
         }
     }
 
@@ -1506,12 +1535,12 @@ $breakpoints: (
         margin: 0 auto;
 
         @include mq() {
-            width: vwt(800);
+            width: vwt(810);
             margin: 0 auto;
         }
 
         @include mq(lg) {
-            width: px2Rem(800);
+            width: px2Rem(810);
             margin: 0 auto;
         }
 
@@ -1527,14 +1556,14 @@ $breakpoints: (
             width: vwt(246);
             height: vwt(150);
             border-radius: vwt(24);
-            margin: 0 auto vwt(16) auto;
+            margin: 0 auto vwt(10) auto;
         }
 
         @include mq(lg) {
             width: px2Rem(246);
             height: px2Rem(150);
             border-radius: px2Rem(24);
-            margin: 0 auto px2Rem(16) auto;
+            margin: 0 auto px2Rem(10) auto;
         }
     }
 
@@ -1555,20 +1584,40 @@ $breakpoints: (
 
         @include mq() {
             font-size: vwt(18);
-            margin: 0 0 vwt(40) 0;
+            margin: 0 0 vwt(40) vwt(4);
             width: vwt(250);
         }
 
         @include mq(lg) {
             font-size: px2Rem(18);
-            margin: 0 0 px2Rem(40) 0;
+            margin: 0 0 px2Rem(40) px2Rem(4);
             width: px2Rem(250);
         }
     }
 
     &__txt-special {
         margin: 0 0 vw(36) 0;
+
+        @include mq() {
+            margin: 0 0 vwt(43) vwt(6);
+        }
+
+        @include mq(lg) {
+            margin: 0 0 px2Rem(43) px2Rem(6);
+        }
     }
+    &__txt-specials {
+        margin: 0 0 vw(36) 0;
+
+        @include mq() {
+            margin: 0 0 vwt(43) vwt(5);
+        }
+
+        @include mq(lg) {
+            margin: 0 0 px2Rem(43) px2Rem(5);
+        }
+    }
+
 }
 
 //price
@@ -1609,12 +1658,12 @@ $breakpoints: (
 
         @include mq() {
             font-size: vwt(32);
-            margin: 0 0 vwt(64) vwt(20);
+            margin: vwt(27) 0 vwt(40) 0;
         }
 
         @include mq(lg) {
             font-size: px2Rem(32);
-            margin: 0 0 px2Rem(64) px2Rem(20);
+            margin: px2Rem(27) 0 px2Rem(40) 0;
         }
     }
 
@@ -1634,6 +1683,14 @@ $breakpoints: (
 
 .progress-bar-special {
     margin-bottom: vw(20);
+
+    @include mq() {
+        margin-bottom: 0;
+    }
+
+    @include mq(lg) {
+        margin-bottom: 0;
+    }
 }
 
 //price
@@ -1642,11 +1699,11 @@ $breakpoints: (
     padding: vw(10) vw(0) vw(64) vw(0);
 
     @include mq() {
-        padding: vwt(10) vwt(0) vwt(64) vwt(0);
+        padding: vwt(14) vwt(0) vwt(73) vwt(0);
     }
 
     @include mq(lg) {
-        padding: px2Rem(10) px2Rem(0) px2Rem(64) px2Rem(0);
+        padding: px2Rem(14) px2Rem(0) px2Rem(73) px2Rem(0);
     }
 
     &__container {
@@ -1672,6 +1729,18 @@ $breakpoints: (
         margin: 0 0 vw(23) 0;
         padding: vw(3) 0 0 vw(20);
 
+        @include mq() {
+            font-size: vwt(23);
+            margin: 0 0 vwt(35) vwt(29);
+            padding: vwt(3) 0 0 vwt(20);
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(23);
+            margin: 0 0 px2Rem(35) px2Rem(29);
+            padding: px2Rem(3) 0 0 px2Rem(20);
+        }
+
         &::before {
             content: "";
             position: absolute;
@@ -1681,17 +1750,19 @@ $breakpoints: (
             width: vw(3);
             height: vw(30);
             background-color: #168352;
+
+            @include mq() {
+                width: vwt(3);
+                height: vwt(39);
+            }
+
+            @include mq(lg) {
+                width: px2Rem(3);
+                height: px2Rem(39);
+            }
         }
 
-        @include mq() {
-            font-size: vwt(20);
-            margin: 0 0 vwt(23) vwt(20);
-        }
 
-        @include mq(lg) {
-            font-size: px2Rem(20);
-            margin: 0 0 px2Rem(23) px2Rem(20);
-        }
     }
 
     &__table-first {
@@ -1702,12 +1773,12 @@ $breakpoints: (
         ;
 
         @include mq() {
-            width: vwt(752);
+            width: vwt(736);
             margin: 0 auto;
         }
 
         @include mq(lg) {
-            width: px2Rem(752);
+            width: px2Rem(736);
         }
     }
 
@@ -1734,14 +1805,14 @@ $breakpoints: (
 
         @include mq() {
             width: vwt(200);
-            height: vwt(64);
-            padding: vwt(24) 0 vwt(24) vwt(26);
+            height: vwt(62);
+            padding: vwt(24) 0 vwt(24) vwt(20);
         }
 
         @include mq(lg) {
             width: px2Rem(200);
-            height: px2Rem(64);
-            padding: px2Rem(24) 0 px2Rem(24) px2Rem(26);
+            height: px2Rem(62);
+            padding: px2Rem(24) 0 px2Rem(24) px2Rem(20);
         }
     }
 
@@ -1755,14 +1826,14 @@ $breakpoints: (
 
         @include mq() {
             width: vwt(541);
-            height: vwt(64);
-            padding: vwt(24) 0 vwt(24) vwt(26);
+            height: vwt(62);
+            padding: vwt(24) 0 vwt(24) vwt(23);
         }
 
         @include mq(lg) {
             width: px2Rem(541);
-            height: px2Rem(64);
-            padding: px2Rem(24) 0 px2Rem(24) px2Rem(26);
+            height: px2Rem(62);
+            padding: px2Rem(24) 0 px2Rem(24) px2Rem(23);
         }
     }
 }
@@ -1798,7 +1869,7 @@ $breakpoints: (
     }
 
     &__click {
-        display:  flex;
+        display: flex;
         align-items: center;
         justify-content: center;
         font-size: vw(20);
@@ -1837,20 +1908,30 @@ $breakpoints: (
     }
 }
 
+.cover__img-special{
+    margin: vw(20) 0 vw(28) 0;
+}
+.sections__list-special{
+    margin:vw(27) vw(11) 0 0;
+}
 //qa
 //qa
+
 .qa {
+    &__container{
+        padding: vw(40) vw(10);
+    }
     &__wrapper {
         width: vw(358);
         height: auto;
-        margin: vw(20) auto;
+        margin: 0 auto vw(24) auto;
         border: 1px solid #cccccc;
         border-radius: vw(24);
-        padding: vw(20) vw(30);
+        padding: vw(23) vw(23) vw(17) vw(23);
 
         @include mq() {
             width: vwt(800);
-            margin: vwt(20) auto;
+            margin: vwt(40) auto;
             border-radius: vwt(24);
             padding: vwt(20) vwt(30);
 
@@ -1858,7 +1939,7 @@ $breakpoints: (
 
         @include mq(lg) {
             width: px2Rem(800);
-            margin: px2Rem(20) auto;
+            margin: px2Rem(40) auto;
             border-radius: px2Rem(24);
             padding: px2Rem(20) px2Rem(30);
 
@@ -1878,7 +1959,7 @@ $breakpoints: (
     &__label {
         display: flex;
         align-items: center;
-        gap: vw(8);
+        gap: vw(17);
 
         @include mq() {
             gap: vwt(8);
@@ -1899,11 +1980,12 @@ $breakpoints: (
     }
 
     &__tag {
-        padding: vw(2) vw(8);
+        padding: vw(5) vw(11);
         border: 1px solid green;
         color: green;
-        font-size: vw(12);
+        font-size: vw(11);
         border-radius: vw(4);
+        font-weight: 400;
 
         @include mq() {
             padding: vwt(2) vwt(8);
@@ -1916,6 +1998,9 @@ $breakpoints: (
             font-size: px2Rem(12);
             border-radius: px2Rem(4);
         }
+    }
+    &__tag-second{
+        margin-right: vw(40);
     }
 
     &__toggle {
@@ -1935,8 +2020,9 @@ $breakpoints: (
 
     &__text {
         width: vw(228);
-        margin: vw(20) auto;
+        margin: 0 auto;
         font-weight: bold;
+        line-height: 1.75;
 
         @include mq() {
             width: vwt(743);
@@ -1950,10 +2036,11 @@ $breakpoints: (
     }
 
     &__answer {
-        margin-top: vw(12);
+        margin-top: vw(2);
         display: none;
         color: #333;
         font-size: vw(16);
+        line-height: 1.75;
 
         @include mq() {
             margin-top: vwt(12);
