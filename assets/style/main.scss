@@ -55,6 +55,12 @@ $breakpoints: (
 //header
 .header {
     padding: vw(20) vw(16);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 10000;
+    background: #fff;
 
     @include mq() {
         padding: vwt(25) vwt(40) 0 vwt(35);
@@ -239,13 +245,16 @@ $breakpoints: (
 //intro
 .intro {
     padding: vw(18) vw(15) 0 vw(15);
+    margin: vw(63) 0 0 0;
 
     @include mq() {
         padding: vwt(70) vwt(10) 0 vwt(9);
+        margin: vwt(93) 0 0 0;
     }
 
     @include mq(lg) {
         padding: px2Rem(70) px2Rem(10) 0 px2Rem(9);
+        margin: px2Rem(93) 0 0 0;
     }
 
     &__container {
@@ -1075,7 +1084,7 @@ $breakpoints: (
 
         border-bottom: 1px solid #dddddd;
 
-       
+
     }
 
     &__box {
@@ -1246,12 +1255,12 @@ $breakpoints: (
     padding: vw(20) vw(15) vw(10) vw(15);
 
     @include mq() {
-        padding: vwt(25) vwt(40) vwt(50) vwt(35);
+        padding: vwt(25) vwt(40) vwt(30) vwt(35);
 
     }
 
     @include mq(lg) {
-        padding: px2Rem(25) px2Rem(40) px2Rem(50) px2Rem(35);
+        padding: px2Rem(25) px2Rem(40) px2Rem(30) px2Rem(35);
     }
 
 }
@@ -1271,13 +1280,16 @@ $breakpoints: (
 //cover
 .cover {
     padding: vw(30) vw(5) vw(28) vw(0);
+    margin: vw(52) 0 0 0;
 
     @include mq() {
         padding: vwt(10) vwt(5);
+        margin: vwt(141) 0 0 0;
     }
 
     @include mq(lg) {
         padding: px2Rem(10) px2Rem(5);
+        margin: px2Rem(141) 0 0 0;
     }
 
     &__container {
@@ -1355,7 +1367,7 @@ $breakpoints: (
         }
 
         @include mq(lg) {
-            max-width: px2Rem(100);
+            max-width: px2Rem(1200);
             margin: 0 auto;
         }
     }
@@ -1379,20 +1391,20 @@ $breakpoints: (
     }
 }
 
-    .sections__list li+li::before {
-        content: "〉";
-        margin: 0 vw(3) 0 vw(5);
-        color: #000;
+.sections__list li+li::before {
+    content: "〉";
+    margin: 0 vw(3) 0 vw(5);
+    color: #000;
 
-        @include mq() {
-            margin: 0 vwt(3) 0 vwt(5);
-        }
-
-        @include mq(lg) {
-            margin: 0 px2Rem(3) 0 px2Rem(5);
-        }
-
+    @include mq() {
+        margin: 0 vwt(3) 0 vwt(5);
     }
+
+    @include mq(lg) {
+        margin: 0 px2Rem(3) 0 px2Rem(5);
+    }
+
+}
 
 
 
@@ -1480,11 +1492,11 @@ $breakpoints: (
     padding: vw(11) vw(5);
 
     @include mq() {
-        padding: vwt(21) vwt(5);
+        padding: vwt(22) vwt(5);
     }
 
     @include mq(lg) {
-        padding: px2Rem(21) px2Rem(5);
+        padding: px2Rem(22) px2Rem(5);
     }
 
     &__container {
@@ -1533,11 +1545,11 @@ $breakpoints: (
     padding: vw(10) vw(5);
 
     @include mq() {
-        padding: vwt(10) vwt(5);
+        padding: vwt(8) vwt(5);
     }
 
     @include mq(lg) {
-        padding: px2Rem(10) px2Rem(5);
+        padding: px2Rem(8) px2Rem(5);
     }
 
     &__container {
@@ -1638,11 +1650,11 @@ $breakpoints: (
     padding: vw(10) vw(00);
 
     @include mq() {
-        padding: vwt(10) vwt(5);
+        padding: vwt(12) vwt(5);
     }
 
     @include mq(lg) {
-        padding: px2Rem(10) px2Rem(5);
+        padding: px2Rem(12) px2Rem(5);
     }
 
     &__container {
@@ -1919,8 +1931,19 @@ $breakpoints: (
     }
 }
 
+.cover-three {
+    @include mq() {
+        margin-top: vwt(90);
+    }
+
+    @include mq(lg) {
+        margin-top: px2Rem(90);
+    }
+}
+
 .cover__img-special {
-    margin: vw(20) 0 vw(28) 0;
+    margin: vw(83) 0 vw(28) 0;
+
 
     @include mq() {
 
@@ -1963,11 +1986,11 @@ $breakpoints: (
         padding: vw(40) vw(10) vw(157) vw(10);
 
         @include mq() {
-            padding: vwt(40) vwt(10) vwt(53) vwt(10);
+            padding: vwt(38) vwt(10) vwt(53) vwt(10);
         }
 
         @include mq(lg) {
-            padding: px2Rem(40) px2Rem(10) px2Rem(53) px2Rem(10);
+            padding: px2Rem(38) px2Rem(10) px2Rem(53) px2Rem(10);
         }
     }
 

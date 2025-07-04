@@ -1,6 +1,12 @@
 @charset "UTF-8";
 .header {
   padding: 5.1282051282vw 4.1025641026vw;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 10000;
+  background: #fff;
 }
 @media screen and (min-width: 768px) {
   .header {
@@ -174,15 +180,18 @@
 }
 .intro {
   padding: 4.6153846154vw 3.8461538462vw 0 3.8461538462vw;
+  margin: 16.1538461538vw 0 0 0;
 }
 @media screen and (min-width: 768px) {
   .intro {
     padding: 5.6451612903vw 0.8064516129vw 0 0.7258064516vw;
+    margin: 7.5vw 0 0 0;
   }
 }
 @media screen and (min-width: 1240px) {
   .intro {
     padding: 4.375rem 0.625rem 0 0.5625rem;
+    margin: 5.8125rem 0 0 0;
   }
 }
 .intro__container {
@@ -1186,12 +1195,12 @@
 }
 @media screen and (min-width: 768px) {
   .header-special {
-    padding: 2.0161290323vw 3.2258064516vw 4.0322580645vw 2.8225806452vw;
+    padding: 2.0161290323vw 3.2258064516vw 2.4193548387vw 2.8225806452vw;
   }
 }
 @media screen and (min-width: 1240px) {
   .header-special {
-    padding: 1.5625rem 2.5rem 3.125rem 2.1875rem;
+    padding: 1.5625rem 2.5rem 1.875rem 2.1875rem;
   }
 }
 
@@ -1208,15 +1217,18 @@
 
 .cover {
   padding: 7.6923076923vw 1.2820512821vw 7.1794871795vw 0vw;
+  margin: 13.3333333333vw 0 0 0;
 }
 @media screen and (min-width: 768px) {
   .cover {
     padding: 0.8064516129vw 0.4032258065vw;
+    margin: 11.3709677419vw 0 0 0;
   }
 }
 @media screen and (min-width: 1240px) {
   .cover {
     padding: 0.625rem 0.3125rem;
+    margin: 8.8125rem 0 0 0;
   }
 }
 .cover__container {
@@ -1295,7 +1307,7 @@
 }
 @media screen and (min-width: 1240px) {
   .sections__container {
-    max-width: 6.25rem;
+    max-width: 75rem;
     margin: 0 auto;
   }
 }
@@ -1419,12 +1431,12 @@
 }
 @media screen and (min-width: 768px) {
   .gallery {
-    padding: 1.6935483871vw 0.4032258065vw;
+    padding: 1.7741935484vw 0.4032258065vw;
   }
 }
 @media screen and (min-width: 1240px) {
   .gallery {
-    padding: 1.3125rem 0.3125rem;
+    padding: 1.375rem 0.3125rem;
   }
 }
 .gallery__container {
@@ -1471,12 +1483,12 @@
 }
 @media screen and (min-width: 768px) {
   .feature {
-    padding: 0.8064516129vw 0.4032258065vw;
+    padding: 0.6451612903vw 0.4032258065vw;
   }
 }
 @media screen and (min-width: 1240px) {
   .feature {
-    padding: 0.625rem 0.3125rem;
+    padding: 0.5rem 0.3125rem;
   }
 }
 .feature__container {
@@ -1575,12 +1587,12 @@
 }
 @media screen and (min-width: 768px) {
   .price {
-    padding: 0.8064516129vw 0.4032258065vw;
+    padding: 0.9677419355vw 0.4032258065vw;
   }
 }
 @media screen and (min-width: 1240px) {
   .price {
-    padding: 0.625rem 0.3125rem;
+    padding: 0.75rem 0.3125rem;
   }
 }
 .price__container {
@@ -1857,8 +1869,19 @@
   }
 }
 
+@media screen and (min-width: 768px) {
+  .cover-three {
+    margin-top: 7.2580645161vw;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .cover-three {
+    margin-top: 5.625rem;
+  }
+}
+
 .cover__img-special {
-  margin: 5.1282051282vw 0 7.1794871795vw 0;
+  margin: 21.2820512821vw 0 7.1794871795vw 0;
 }
 @media screen and (min-width: 768px) {
   .cover__img-special {
@@ -1901,12 +1924,12 @@
 }
 @media screen and (min-width: 768px) {
   .qa__container {
-    padding: 3.2258064516vw 0.8064516129vw 4.2741935484vw 0.8064516129vw;
+    padding: 3.064516129vw 0.8064516129vw 4.2741935484vw 0.8064516129vw;
   }
 }
 @media screen and (min-width: 1240px) {
   .qa__container {
-    padding: 2.5rem 0.625rem 3.3125rem 0.625rem;
+    padding: 2.375rem 0.625rem 3.3125rem 0.625rem;
   }
 }
 .qa__wrapper {
