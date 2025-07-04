@@ -1180,8 +1180,12 @@
   }
 }
 
+.header-special {
+  padding: 5.1282051282vw 3.8461538462vw 2.5641025641vw 3.8461538462vw;
+}
+
 .cover {
-  padding: 2.5641025641vw 1.2820512821vw;
+  padding: 7.6923076923vw 1.2820512821vw 7.6923076923vw 0vw;
 }
 @media screen and (min-width: 768px) {
   .cover {
@@ -1212,8 +1216,8 @@
   }
 }
 .cover__img {
-  width: 91.7948717949vw;
-  margin: 0 auto 8.2051282051vw auto;
+  width: auto;
+  margin: 0 auto 7.1794871795vw auto;
 }
 @media screen and (min-width: 768px) {
   .cover__img {
@@ -1278,7 +1282,7 @@
   justify-content: flex-end;
   font-size: 3.0769230769vw;
   font-weight: 400;
-  margin: 0 0 8.2051282051vw 0;
+  margin: 0 2.8205128205vw 6.4102564103vw 0;
 }
 @media screen and (min-width: 768px) {
   .sections__list {
@@ -1296,7 +1300,7 @@
 .section__title {
   font-size: 5.641025641vw;
   font-weight: 700;
-  margin: 0 0 5.1282051282vw 0;
+  margin: 0 0 2.5641025641vw 0;
 }
 @media screen and (min-width: 768px) {
   .section__title {
@@ -1318,7 +1322,7 @@
   background-color: #e0e0e0;
   border-radius: 1px;
   overflow: hidden;
-  margin-bottom: 5.1282051282vw;
+  margin-bottom: 5.8974358974vw;
 }
 @media screen and (min-width: 768px) {
   .progress-bar {
@@ -1334,7 +1338,7 @@
 }
 
 .progress-fill {
-  width: 10%;
+  width: 14%;
   height: 100%;
   background-color: #1b7f5b;
 }
@@ -1350,7 +1354,16 @@
 }
 
 .swiper {
-  --swiper-pagination-bottom: 70px;
+  --swiper-pagination-bottom: 50px;
+}
+
+.swiper-pagination-bullet-active {
+  background-color: #168352 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  color: #168352 !important;
 }
 
 .gallery {
@@ -1386,7 +1399,7 @@
   width: 91.7948717949vw;
   height: 60.7692307692vw;
   border-radius: 6.1538461538vw;
-  margin: 0 auto 16.1538461538vw auto;
+  margin: 0 auto 10.5128205128vw auto;
 }
 @media screen and (min-width: 768px) {
   .gallery__img {
@@ -1438,7 +1451,7 @@
   width: 91.7948717949vw;
   height: 51.2820512821vw;
   border-radius: 6.1538461538vw;
-  margin: 0 auto 4.1025641026vw auto;
+  margin: 0 auto 2.3076923077vw auto;
 }
 @media screen and (min-width: 768px) {
   .feature__img {
@@ -1465,7 +1478,8 @@
 .feature__txt {
   font-size: 4.6153846154vw;
   font-weight: 700;
-  margin: 0 0 10.2564102564vw 0;
+  margin: 0 0 9.7435897436vw 0;
+  line-height: 1.68;
 }
 @media screen and (min-width: 768px) {
   .feature__txt {
@@ -1480,6 +1494,9 @@
     margin: 0 0 2.5rem 0;
     width: 15.625rem;
   }
+}
+.feature__txt-special {
+  margin: 0 0 9.2307692308vw 0;
 }
 
 .price {
@@ -1515,7 +1532,7 @@
   font-family: Montserrat;
   font-weight: 700;
   font-size: 8.2051282051vw;
-  margin: 0 0 16.4102564103vw 5.1282051282vw;
+  margin: 0 0 9.7435897436vw 0;
 }
 @media screen and (min-width: 768px) {
   .price__txt {
@@ -1542,6 +1559,10 @@
   .price__tax {
     font-size: 1rem;
   }
+}
+
+.progress-bar-special {
+  margin-bottom: 5.1282051282vw;
 }
 
 .spec {
@@ -1574,9 +1595,21 @@
   }
 }
 .spec__subtitle {
+  position: relative;
   font-size: 5.1282051282vw;
   font-weight: 700;
-  margin: 0 0 5.8974358974vw 5.1282051282vw;
+  margin: 0 0 5.8974358974vw 0;
+  padding: 0.7692307692vw 0 0 5.1282051282vw;
+}
+.spec__subtitle::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0.7692307692vw;
+  height: 7.6923076923vw;
+  background-color: #168352;
 }
 @media screen and (min-width: 768px) {
   .spec__subtitle {
@@ -1622,8 +1655,7 @@
   height: 10.2564102564vw;
   background-color: #f5f5f5;
   display: flex;
-  align-items: center;
-  padding: 0 0 0 5.1282051282vw;
+  padding: 2.5641025641vw 0 0 4.8717948718vw;
 }
 @media screen and (min-width: 768px) {
   .spec__header {
@@ -1641,7 +1673,7 @@
 }
 .spec__cell {
   width: 91.7948717949vw;
-  height: 10.2564102564vw;
+  height: 9.4871794872vw;
   display: flex;
   align-items: center;
   padding: 0 0 0 5.1282051282vw;
@@ -1692,9 +1724,15 @@
   }
 }
 .button__click {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 5.1282051282vw;
+  width: 91.7948717949vw;
+  height: 20.5128205128vw;
+  max-width: 102.5641025641vw;
   color: #fff;
   border: 2px solid #fff;
-  padding: 7.6923076923vw 30.7692307692vw;
   border-radius: 9999999px;
 }
 .button__click:hover {
@@ -1703,14 +1741,22 @@
 }
 @media screen and (min-width: 768px) {
   .button__click {
-    padding: 2.4193548387vw 9.6774193548vw;
+    font-size: 1.6129032258vw;
+    height: 6.4516129032vw;
+    font-size: 1.6129032258vw;
+    width: 28.8709677419vw;
+    max-width: 40.3225806452vw;
     border-radius: 9999999px;
     font-size: 1.6129032258vw;
   }
 }
 @media screen and (min-width: 1240px) {
   .button__click {
-    padding: 1.875rem 7.5rem;
+    font-size: 1.25rem;
+    height: 5rem;
+    font-size: 1.25rem;
+    width: 22.375rem;
+    max-width: 31.25rem;
     border-radius: 9999999px;
     font-size: 1.25rem;
   }

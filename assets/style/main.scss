@@ -1150,12 +1150,12 @@ $breakpoints: (
 
         @include mq() {
             font-size: vwt(15);
-             margin: 0 0 0 vwt(4);
+            margin: 0 0 0 vwt(4);
         }
 
         @include mq(lg) {
             font-size: px2Rem(15);
-             margin: 0 0 0 px2Rem(4);
+            margin: 0 0 0 px2Rem(4);
         }
     }
 
@@ -1173,7 +1173,7 @@ $breakpoints: (
 
         @include mq(lg) {
             font-size: px2Rem(15);
-            margin:  0;
+            margin: 0;
         }
     }
 
@@ -1233,24 +1233,29 @@ $breakpoints: (
     color: #fff;
 
     @include mq() {
-         height: vwt(96);
+        height: vwt(96);
         gap: vwt(27);
         padding: vwt(34) vwt(62);
         font-size: vwt(13);
     }
 
     @include mq(lg) {
-         height: px2Rem(96);
+        height: px2Rem(96);
         gap: px2Rem(27);
         padding: px2Rem(34) px2Rem(62);
         font-size: px2Rem(13);
     }
 }
 
+//header-special
+.header-special {
+    padding: vw(20) vw(15) vw(10) vw(15);
+}
+
 //price
 //cover
 .cover {
-    padding: vw(10) vw(5);
+    padding: vw(30) vw(5) vw(30) vw(0);
 
     @include mq() {
         padding: vwt(10) vwt(5);
@@ -1278,8 +1283,8 @@ $breakpoints: (
     }
 
     &__img {
-        width: vw(358);
-        margin: 0 auto vw(32) auto;
+        width: auto;
+        margin: 0 auto vw(28) auto;
 
         @include mq() {
             width: vwt(1168);
@@ -1345,7 +1350,7 @@ $breakpoints: (
         justify-content: flex-end;
         font-size: vw(12);
         font-weight: 400;
-        margin: 0 0 vw(32) 0;
+        margin: 0 vw(11) vw(25) 0;
 
         @include mq() {
             font-size: vwt(12);
@@ -1367,7 +1372,7 @@ $breakpoints: (
     &__title {
         font-size: vw(22);
         font-weight: 700;
-        margin: 0 0 vw(20) 0;
+        margin: 0 0 vw(10) 0;
 
         @include mq() {
             font-size: vwt(28);
@@ -1388,7 +1393,7 @@ $breakpoints: (
     background-color: #e0e0e0;
     border-radius: 1px;
     overflow: hidden;
-    margin-bottom: vw(20);
+    margin-bottom: vw(23);
 
     @include mq() {
         height: 5px;
@@ -1403,7 +1408,7 @@ $breakpoints: (
 }
 
 .progress-fill {
-    width: 10%;
+    width: 14%;
     height: 100%;
     background-color: #1b7f5b;
 
@@ -1417,8 +1422,18 @@ $breakpoints: (
 }
 
 .swiper {
-    --swiper-pagination-bottom: 70px;
+    --swiper-pagination-bottom: 50px;
 }
+
+.swiper-pagination-bullet-active {
+    background-color: #168352 !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: #168352 !important;
+}
+
 
 //price
 //gallery
@@ -1453,7 +1468,7 @@ $breakpoints: (
         width: vw(358);
         height: vw(237);
         border-radius: vw(24);
-        margin: 0 auto vw(63) auto;
+        margin: 0 auto vw(41) auto;
 
         @include mq() {
             width: vwt(800);
@@ -1506,7 +1521,7 @@ $breakpoints: (
         width: vw(358);
         height: vw(200);
         border-radius: vw(24);
-        margin: 0 auto vw(16) auto;
+        margin: 0 auto vw(9) auto;
 
         @include mq() {
             width: vwt(246);
@@ -1535,7 +1550,8 @@ $breakpoints: (
     &__txt {
         font-size: vw(18);
         font-weight: 700;
-        margin: 0 0 vw(40) 0;
+        margin: 0 0 vw(38) 0;
+        line-height: 1.68;
 
         @include mq() {
             font-size: vwt(18);
@@ -1548,6 +1564,10 @@ $breakpoints: (
             margin: 0 0 px2Rem(40) 0;
             width: px2Rem(250);
         }
+    }
+
+    &__txt-special {
+        margin: 0 0 vw(36) 0;
     }
 }
 
@@ -1585,7 +1605,7 @@ $breakpoints: (
         font-family: Montserrat;
         font-weight: 700;
         font-size: vw(32);
-        margin: 0 0 vw(64) vw(20);
+        margin: 0 0 vw(38) 0;
 
         @include mq() {
             font-size: vwt(32);
@@ -1610,6 +1630,10 @@ $breakpoints: (
             font-size: px2Rem(16);
         }
     }
+}
+
+.progress-bar-special {
+    margin-bottom: vw(20);
 }
 
 //price
@@ -1642,9 +1666,22 @@ $breakpoints: (
     }
 
     &__subtitle {
+        position: relative;
         font-size: vw(20);
         font-weight: 700;
-        margin: 0 0 vw(23) vw(20);
+        margin: 0 0 vw(23) 0;
+        padding: vw(3) 0 0 vw(20);
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            top: 0;
+            bottom: 0;
+            width: vw(3);
+            height: vw(30);
+            background-color: #168352;
+        }
 
         @include mq() {
             font-size: vwt(20);
@@ -1692,8 +1729,8 @@ $breakpoints: (
         height: vw(40);
         background-color: #f5f5f5;
         display: flex;
-        align-items: center;
-        padding: 0 0 0 vw(20);
+
+        padding: vw(10) 0 0 vw(19);
 
         @include mq() {
             width: vwt(200);
@@ -1710,7 +1747,7 @@ $breakpoints: (
 
     &__cell {
         width: vw(358);
-        height: vw(40);
+        height: vw(37);
         display: flex;
         align-items: center;
         padding: 0 0 0 vw(20);
@@ -1761,9 +1798,15 @@ $breakpoints: (
     }
 
     &__click {
+        display:  flex;
+        align-items: center;
+        justify-content: center;
+        font-size: vw(20);
+        width: vw(358);
+        height: vw(80);
+        max-width: vw(400);
         color: #fff;
         border: 2px solid #fff;
-        padding: vw(30) vw(120);
         border-radius: 9999999px;
 
         &:hover {
@@ -1772,13 +1815,21 @@ $breakpoints: (
         }
 
         @include mq() {
-            padding: vwt(30) vwt(120);
+            font-size: vwt(20);
+            height: vwt(80);
+            font-size: vwt(20);
+            width: vwt(358);
+            max-width: vwt(500);
             border-radius: 9999999px;
             font-size: vwt(20);
         }
 
         @include mq(lg) {
-            padding: px2Rem(30) px2Rem(120);
+            font-size: px2Rem(20);
+            height: px2Rem(80);
+            font-size: px2Rem(20);
+            width: px2Rem(358);
+            max-width: px2Rem(500);
             border-radius: 9999999px;
             font-size: px2Rem(20);
         }
