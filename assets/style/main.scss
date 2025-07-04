@@ -1075,13 +1075,7 @@ $breakpoints: (
 
         border-bottom: 1px solid #dddddd;
 
-        // @include mq() {
-        //     padding: vwt(20) vwt(20) vwt(13) vwt(0);
-        // }
-
-        // @include mq(lg) {
-        //     padding: px2Rem(20) px2Rem(20) px2Rem(13) px2Rem(0);
-        // }
+       
     }
 
     &__box {
