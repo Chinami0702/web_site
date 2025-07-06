@@ -1,11 +1,11 @@
-//ハンバーガーメニュー
+/*ハンバーガーメニュー*/
 $(function () {
     $('#js-hamburger-menu, .header__link').on('click', function () {
         $('.header__nav').slideToggle(500)
         $('.hamburger-menu').toggleClass('hamburger-menu--open')
     });
 });
-//写真
+/*写真*/
 const swiper = new Swiper('.swiper', {
     loop: true,
     autoplay: {
@@ -16,7 +16,7 @@ const swiper = new Swiper('.swiper', {
         clickable: true,
     },
 });
-//質問
+/*質問*/
 $(document).ready(function () {
     $('.qa__wrapper').on('click', function () {
         const $wrapper = $(this);

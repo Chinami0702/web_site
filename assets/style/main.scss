@@ -51,8 +51,8 @@ $breakpoints: (
     @return calc($px * 100vw / $pc-full-width);
 }
 
-//index
-//header
+/*index*/
+/*header*/
 .header {
     padding: vw(20) vw(16);
     position: fixed;
@@ -223,7 +223,7 @@ $breakpoints: (
     transform: translateY(-50%) rotate(-45deg);
 }
 
-//改行
+/*改行*/
 .next {
     @include mq() {
         display: none;
@@ -232,7 +232,7 @@ $breakpoints: (
     @include mq(lg) {}
 }
 
-//改行PC
+/*改行PC*/
 .next-pc {
     display: none;
 
@@ -243,8 +243,8 @@ $breakpoints: (
     @include mq(lg) {}
 }
 
-//index
-//intro
+
+/*intro*/
 .intro {
     padding: vw(18) vw(15) 0 vw(15);
     margin: vw(63) 0 0 0;
@@ -343,8 +343,8 @@ $breakpoints: (
     }
 }
 
-//index
-//about
+
+/*about*/
 .about {
     padding: vw(53) 0 0 0;
 
@@ -505,8 +505,8 @@ $breakpoints: (
     }
 }
 
-//index
-//reasons
+
+/*reasons*/
 .reasons {
     padding: vw(52) vw(16) vw(36) vw(16);
     background-color: #f3f9f6;
@@ -633,8 +633,8 @@ $breakpoints: (
     }
 }
 
-//index
-//service
+
+/*service*/
 .service {
     padding: vw(54) vw(16) vw(36) vw(16);
 
@@ -841,8 +841,8 @@ $breakpoints: (
     }
 }
 
-//index
-//case
+
+/*case*/
 .case {
     padding: vw(53) vw(0) vw(23) vw(0);
     background-color: #f3f9f6;
@@ -972,8 +972,8 @@ $breakpoints: (
     }
 }
 
-//index
-//news
+
+/*news*/
 .news {
     padding: vw(52) vw(0) vw(60) vw(0);
 
@@ -1185,7 +1185,7 @@ $breakpoints: (
 
 
 
-    //button
+    /*button*/
     &__button {
         cursor: pointer;
         width: vw(300);
@@ -1224,8 +1224,8 @@ $breakpoints: (
     }
 }
 
-//index
-//footer
+
+/*footer*/
 .footer {
     height: vw(68);
     display: flex;
@@ -1253,7 +1253,7 @@ $breakpoints: (
     }
 }
 
-//header-special
+/*header-special*/
 .header-special {
     padding: vw(20) vw(15) vw(10) vw(15);
 
@@ -1279,8 +1279,8 @@ $breakpoints: (
 }
 
 
-//price
-//cover
+
+/*cover*/
 .cover {
     padding: vw(30) vw(5) vw(28) vw(0);
     margin: vw(52) 0 0 0;
@@ -1358,7 +1358,7 @@ $breakpoints: (
 
 }
 
-//gototop
+/*gototop*/
 .sections {
     &__container {
         max-width: vw(368);
@@ -1412,8 +1412,8 @@ $breakpoints: (
 
 
 
-//price
-//section
+
+/*section*/
 .section {
     &__title {
         font-size: vw(22);
@@ -1489,8 +1489,8 @@ $breakpoints: (
 }
 
 
-//price
-//gallery
+
+/*gallery*/
 .gallery {
     padding: vw(11) vw(5);
 
@@ -1542,8 +1542,8 @@ $breakpoints: (
 
 }
 
-//price
-//feature
+
+/*feature*/
 .feature {
     padding: vw(10) vw(5);
 
@@ -1646,8 +1646,8 @@ $breakpoints: (
 
 }
 
-//price
-//price
+
+/*price*/
 
 .price {
     padding: vw(10) vw(00);
@@ -1719,8 +1719,7 @@ $breakpoints: (
     }
 }
 
-//price
-//spec
+/*spec*/
 .spec {
     padding: vw(10) vw(0) vw(64) vw(0);
 
@@ -1864,8 +1863,8 @@ $breakpoints: (
     }
 }
 
-//price
-//お問い合わせ
+
+/*お問い合わせ*/
 
 .button {
     background-image: url(/assets/image/faq.png);
@@ -1981,8 +1980,8 @@ $breakpoints: (
     }
 }
 
-//qa
-//qa
+
+/*qa*/
 
 .qa {
     &__container {
