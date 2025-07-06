@@ -108,10 +108,12 @@ $breakpoints: (
         display: none;
         background: #168352;
         position: absolute;
-        top: 70px;
-        left: 15px;
+        top: vw(60);
+        left: vw(16);
         z-index: 9999;
         border-radius: vw(24);
+        width: vw(358);
+       
 
         @include mq() {
             border-radius: vwt(24);
@@ -129,7 +131,7 @@ $breakpoints: (
     }
 
     &__list {
-        width: vw(358);
+        width: 100%;
         text-align: center;
         list-style: none;
 
@@ -441,11 +443,13 @@ $breakpoints: (
         @include mq() {
             padding: 0;
             border-radius: vwt(32);
+            margin-right: vwt(60);
         }
 
         @include mq(lg) {
             padding: 0;
             border-radius: px2Rem(32);
+            margin-right: px2Rem(60);
         }
     }
 
@@ -602,16 +606,16 @@ $breakpoints: (
 
     &__img {
         display: block;
-        width: vw(358);
+        width:100%;
         height: vw(201);
 
         @include mq() {
-            width: vwt(369);
+            width: 100%;
             height: auto;
         }
 
         @include mq(lg) {
-            width: px2Rem(369);
+            width:100%;
             height: auto;
         }
     }
