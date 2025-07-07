@@ -110,9 +110,10 @@ $breakpoints: (
         position: absolute;
         top: vw(60);
         left: vw(16);
+        right: vw(16);
         z-index: 9999;
         border-radius: vw(24);
-        width: vw(358);
+       
        
 
         @include mq() {
@@ -260,8 +261,7 @@ $breakpoints: (
     }
 
     &__container {
-        width: vw(358);
-        margin: 0 auto;
+    
 
         @include mq() {
             max-width: vwt(1168);
@@ -415,7 +415,6 @@ $breakpoints: (
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
-        height: vw(545);
         padding: vw(32) vw(16);
 
         @include mq() {
