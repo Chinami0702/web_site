@@ -308,6 +308,8 @@ $breakpoints: (
         font-family: Noto Sans JP;
         line-height: 1.8;
         margin: 0 0 vw(24) 0;
+        width: vw(350);
+        text-align: justify;
 
         @include mq() {
             font-size: vwt(15);
@@ -457,24 +459,27 @@ $breakpoints: (
         font-weight: 700;
         line-height: 1.75;
         margin: 0 0 vw(7.6) 0;
+        text-align: justify;
 
         @include mq() {
-            width: auto;
+            width: vwt(360);
             font-size: vwt(20);
             margin: 0 0 vwt(23) 0;
         }
 
         @include mq(lg) {
-            width: auto;
+            width: px2Rem(360);
             font-size: px2Rem(20);
             margin: 0 0 px2Rem(23) 0;
         }
     }
 
     &__text {
+        width: vw(300);
         font-size: vw(15);
         font-weight: 500;
         line-height: 1.75;
+        text-align: justify;
 
         @include mq() {
             width: vwt(410);
@@ -494,11 +499,16 @@ $breakpoints: (
 
         @include mq() {
             display: block;
+            width: vwt(390);
+            height: vwt(570);
 
         }
 
         @include mq(lg) {
             display: block;
+            width: px2Rem(390);
+            height: px2Rem(570);
+
 
         }
     }
