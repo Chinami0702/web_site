@@ -1690,6 +1690,7 @@ $breakpoints: (
         font-weight: 700;
         font-size: vw(32);
         margin: 0 0 vw(38) 0;
+        color: #168352;
 
         @include mq() {
             font-size: vwt(32);

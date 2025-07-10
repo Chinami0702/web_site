@@ -1641,6 +1641,7 @@
   font-weight: 700;
   font-size: 8.2051282051vw;
   margin: 0 0 9.7435897436vw 0;
+  color: #168352;
 }
 @media screen and (min-width: 768px) {
   .price__txt {
