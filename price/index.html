@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="  Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
+        content="Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
     <title>持続可能な未来農業を実現 | Kirameki Farm</title>
     <meta property="og:title" content="持続可能な未来農業を実現 | Kirameki Farm">
     <meta property="og:description"
         content="Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
     <meta property="og:type" content="article">
-    <meta property="og:utl" content="https://example.com/">
+    <meta property="og:url" content="https://example.com/price/">
     <meta property="og:site_name" content="Kirameki Farm">
     <!--resets.css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
@@ -33,8 +33,8 @@
 <body>
     <header class="header header-special">
         <div class="header__container">
-            <h1><a href="/"><img src="/assets/image/logo.svg" alt="Kirameki Farm" class="header__logo"></a>
-            </h1>
+            <div><a href="/"><img src="/assets/image/logo.svg" alt="Kirameki Farm" class="header__logo"></a>
+            </div>
             <button class="hamburger-menu" id="js-hamburger-menu">
                 <span class="hamburger-menu__bar"></span>
                 <span class="hamburger-menu__bar"></span>
@@ -50,6 +50,7 @@
         </div>
     </header><!--header-->
     <main>
+        <!--cover-->
         <div class="cover">
             <div class="cover__container">
                 <picture>
@@ -68,6 +69,7 @@
                 </ol>
             </div>
         </div>
+        <!--gallery-->
         <section class="gallery">
             <div class="gallery__container">
                 <h2 class="section__title">ギャラリー</h2>
@@ -106,6 +108,7 @@
 
             </div>
         </section><!--gallery-->
+        <!--feature-->
         <section class="feature">
             <div class="feature__container">
                 <h2 class="section__title">特長</h2>
@@ -125,7 +128,7 @@
                             <source media="(min-width: 768px)" srcset="/assets/image/feature_02_pc.png">
                             <img src="/assets/image/feature_02_sp.png" alt="" class="feature__img">
                         </picture>
-                        <p class="feature__txt feature__txt-special">高精度のカメラやセンサーを搭載しており<br
+                        <p class="feature__txt feature__txt-costom">高精度のカメラやセンサーを搭載しており<br
                                 class="next">、正確な土壌・作物の情報を収集でき、水や肥料などの資源を適切に配分できます。</p>
                     </div>
                     <div class="feature__wrapper">
@@ -133,12 +136,13 @@
                             <source media="(min-width: 768px)" srcset="/assets/image/feature_03_pc.png">
                             <img src="/assets/image/feature_03_sp.png" alt="" class="feature__img">
                         </picture>
-                        <p class="feature__txt feature__txt-specials">必要な場所にだけ肥料や農薬を散布することができます。これにより、農薬や肥料の<br
+                        <p class="feature__txt feature__txt-constoms">必要な場所にだけ肥料や農薬を散布することができます。これにより、農薬や肥料の<br
                                 class="next">過<br class="next-pc">剰使用が抑えられ、環境負荷やコスト削減に繋がります。</p>
                     </div>
                 </div>
             </div>
         </section><!--feature-->
+        <!--price-->
         <section class="price">
             <div class="price__container">
                 <h2 class="section__title">メーカー希望小売価格</h2>
@@ -147,7 +151,8 @@
                 </div>
                 <p class="price__txt">¥550,000<span class="price__tax">（税込）</span></p>
             </div>
-        </section>
+        </section><!--price-->
+        <!--spec-->
         <section class="spec">
             <div class="spec__container">
                 <h2 class="section__title">スペック</h2>
@@ -195,10 +200,13 @@
             <a href="/contact" class="button__click">お問い合わせ</a>
         </div>
     </main>
-    <footer class="footer">
-        <p><a href="/price">価格・スペック</a></p>
-        <p>|</p>
-        <p><a href="/faq">よくあるご質問</a></p>
+   
+    <footer class=" footer">
+        <ul>
+        <li><a href="/price">価格・スペック</a></li>
+        <li>|</li>
+        <li><a href="/faq">よくあるご質問</a></li>
+    </ul>
     </footer><!--footer-->
     <script src="/assets/script/jquery-3.7.1.min.js"></script>
     <script src="/assets/script/main.js"></script>

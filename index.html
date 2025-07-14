@@ -5,13 +5,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
-        content="  Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
+        content="Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
     <title>持続可能な未来農業を実現 | Kirameki Farm</title>
     <meta property="og:title" content="持続可能な未来農業を実現 | Kirameki Farm">
     <meta property="og:description"
         content="Kirameki Farmは革新的な農業機器とビッグデータ、自動運転のロボット、リジェネラティブ農業を駆使して持続可能な農業を目指すイノベーション企業です。次世代の子どもたちに環境に優しい未来農業を残すために、効率化と環境配慮を融合した活動を推進しています。">
     <meta property="og:type" content="article">
-    <meta property="og:utl" content="https://example.com/">
+    <meta property="og:url" content="https://example.com/">
     <meta property="og:site_name" content="Kirameki Farm">
     <!--resets.css-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/destyle.css@1.0.15/destyle.css">
@@ -31,6 +31,7 @@
 </head>
 
 <body>
+    <!--header-->
     <header class="header">
         <div class="header__container">
             <h1><a href="/"><img src="/assets/image/logo.svg" alt="Kirameki Farm" class="header__logo"></a>
@@ -42,7 +43,7 @@
             </button>
             <nav class="header__nav">
                 <ul class="header__list">
-                    <li class="header__item header__special"><a href="/" class="header__link">トップ</a></li>
+                    <li class="header__item header__top-custom"><a href="/" class="header__link">トップ</a></li>
                     <li class="header__item"><a href="/price" class="header__link">価格・スペック</a></li>
                     <li class="header__item"><a href="/faq" class="header__link">よくあるご質問</a></li>
                 </ul>
@@ -50,6 +51,7 @@
         </div>
     </header><!--header-->
     <main>
+        <!--intro-->
         <div class="intro">
             <div class="intro__container">
                 <div class="intro__wrapper">
@@ -62,14 +64,15 @@
                 </picture>
             </div>
         </div><!--intro-->
+        <!--about-->
         <section class="about">
             <div class="about__container">
                 <h2 class="about__title">About Us<span class="about__translation">私たちについて</span></h2>
                 <div class="about__wrapper">
                     <div class="about__box">
-                        <h3 class="about__subtitle">キラメキファームは、これからの農業を次世代の子どもたちに残すために
+                        <p class="about__subtitle">キラメキファームは、これからの農業を次世代の子どもたちに残すために
                             創設されたイノベーションカンパニーです。
-                        </h3>
+                        </p>
                         <p class="about__text">
                             キラメキファームは革新的デザインと最新技術を活用した農業機器メーカーです。未来の農業を実現するために、ビッグデータを駆使して省エネルギー・効率化を実現し、自動運転技術を搭載したロボットで一年中稼働することができる機器を提供します。リジェネラティブ農業を実現する技術を用いて、持続可能な農業システムをサポートします。私たちの社是は、次世代の子供たちに豊かな地球環境を残すこと。イノベーションを起こすことで農業に新たな価値を生み出し、地球環境保全に貢献することを目指しています。
                         </p>
@@ -81,6 +84,7 @@
                 </div>
             </div>
         </section><!--about-->
+        <!--reasons-->
         <section class="reasons">
             <div class="reasons__container">
                 <h2 class="reasons__title">Features<span class="reasons__translation">私たちが選ばれる３つの理由</span></h2>
@@ -109,6 +113,7 @@
                 </ul>
             </div>
         </section><!--reasons-->
+    <!--service-->
         <section class="service">
             <div class="service__container">
                 <h2 class="service__title">Products / Service<span class="service__translation">製品・サービス紹介</span>
@@ -138,42 +143,43 @@
                     </li>
 
 
-                    <li class="service__item service__item-special">
-                        <a href="#" class="service__link service__link-special">
+                    <li class="service__item service__item-costom">
+                        <a href="#" class="service__link service__link-costom">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/service_03_pc.png">
                                 <img src="/assets/image/service_03_sp.png" alt=""
-                                    class="service__img service__img-special">
+                                    class="service__img service__img-costom">
                             </picture>
                             <p class="service__txt service__txt-special">フューチャーファーム
                                 マスター</p>
                         </a>
                     </li>
-                    <li class="service__item service__item-special">
-                        <a href="#" class="service__link service__link-special">
+                    <li class="service__item service__item-costom">
+                        <a href="#" class="service__link service__link-costom">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/service_04_pc.png">
                                 <img src="/assets/image/service_04_sp.png" alt=""
-                                    class="service__img service__img-special">
+                                    class="service__img service__img-costom">
                             </picture>
-                            <p class="service__txt service__txt-special">ミラクルグローアシス
+                            <p class="service__txt service__txt-costom">ミラクルグローアシス
                                 ト</p>
                         </a>
                     </li>
-                    <li class="service__item service__item-special">
-                        <a href="#" class="service__link service__link-special">
+                    <li class="service__item service__item-costom">
+                        <a href="#" class="service__link service__link-costom">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/service_05_pc.png">
                                 <img src="/assets/image/service_05_sp.png" alt=""
-                                    class="service__img service__img-special">
+                                    class="service__img service__img-costom">
                             </picture>
-                            <p class="service__txt service__txt-special">インテリジェントプラ
+                            <p class="service__txt service__txt-costom">インテリジェントプラ
                                 ンター</p>
                         </a>
                     </li>
                 </ul>
             </div>
         </section><!--service-->
+        <!--case-->
         <section class="case">
             <div class="case__container">
                 <h2 class="case__title">Case<span class="case__translation">お客様の事例紹介</span></h2>
@@ -209,6 +215,7 @@
                 </ul>
             </div>
         </section><!--case-->
+        <!--news-->
         <section class="news">
             <div class="news__container">
                 <h2 class="news__title">News<span class="news__translation">お知らせ</span></h2>
@@ -216,14 +223,14 @@
                      <li class="news__item">
                         <div class="news__box">
                             <p class="news__date">2023.06.07</p>
-                            <p class="news__summery">お知らせ</p>
+                            <p class="news__sammery">お知らせ</p>
                         </div>
                         <p class="news__text news__text-special"><a href="#">新緑輝く！キラメキファームの都市型農園、地域コミュニティを育む</a></p>
                     </li>
                     <li class="news__item">
                         <div class="news__box">
                             <p class="news__date">2023.05.15</p>
-                            <p class="news__summery">お知らせ</p>
+                            <p class="news__sammery">お知らせ</p>
                         </div>
                         <p class="news__text"><a href="#">都心で発見！キラメキファームの屋上畑で緑のオアシスが広がる</a></p>
 
@@ -231,42 +238,45 @@
                     <li class="news__item">
                         <div class="news__box">
                             <p class="news__date">2023.04.05</p>
-                            <p class="news__summery">ニュースリリース</p>
+                            <p class="news__sammery">ニュースリリース</p>
                         </div>
                         <p class="news__text"><a href="#">食の安全を守る！キラメキファーム、農産物の品質管理に力を入れる</a></p>
                     </li>
                     <li class="news__item">
                         <div class="news__box">
                             <p class="news__date">2023.03.12</p>
-                            <p class="news__summery">ニュースリリース</p>
+                            <p class="news__sammery">ニュースリリース</p>
                         </div>
                         <p class="news__text"><a href="#">害虫撃退！キラメキファームの自然環境に優しい取り組み</a></p>
                     </li>
                     <li class="news__item">
                         <div class="news__box">
                             <p class="news__date">2023.02.01</p>
-                            <p class="news__summery">お知らせ</p>
+                            <p class="news__sammery">お知らせ</p>
                         </div>
                         <p class="news__text"><a href="#">キラメキファーム×最新ドローン技術 目覚ましい成果発表</a></p>
                     </li>
                     <li class="news__item">
                         <div class="news__box">
                             <p class="news__date">2023.01.25</p>
-                            <p class="news__summery">ニュースリリース</p>
+                            <p class="news__sammery">ニュースリリース</p>
                         </div>
                         <p class="news__text"><a href="#">キラメキファーム、無農薬野菜で子供たちの未来を支える</a></p>
                     </li>
                 </ul>
-                <div class="news__button">
-                    <p><a href="/news" class="news__btn">ニュース一覧へ</a></p>
-                </div>
+                <a href="/news" class="news__button">
+                    <p class="news__btn">ニュース一覧へ</p>
+                </a>
             </div>
         </section><!--news-->
     </main>
+  
     <footer class=" footer">
-        <p><a href="/price">価格・スペック</a></p>
-        <p>|</p>
-        <p><a href="/faq">よくあるご質問</a></p>
+        <ul>
+        <li><a href="/price">価格・スペック</a></li>
+        <li>|</li>
+        <li><a href="/faq">よくあるご質問</a></li>
+    </ul>
     </footer><!--footer-->
     <script src="/assets/script/jquery-3.7.1.min.js"></script>
     <script src="/assets/script/main.js"></script>
