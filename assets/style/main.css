@@ -7,17 +7,17 @@
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 10000;
+  z-index: 10;
   background: #fff;
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding: 2.0161290323vw 3.2258064516vw 0 2.8225806452vw;
+    padding: 2.0161290323vw 3.2258064516vw 2.0161290323vw 2.8225806452vw;
   }
 }
 @media screen and (min-width: 1240px) {
   .header {
-    padding: 1.5625rem 2.5rem 0 2.1875rem;
+    padding: 1.5625rem 2.5rem 1.5625rem 2.1875rem;
   }
 }
 .header__container {
@@ -1208,6 +1208,24 @@
     font-size: 0.8125rem;
   }
 }
+.footer__list {
+  display: flex;
+}
+@media screen and (min-width: 768px) {
+  .footer__list {
+    gap: 2.1774193548vw;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .footer__list {
+    gap: 1.6875rem;
+  }
+}
+.footer__list li:not(:last-child)::after {
+  content: "|";
+  margin-left: 0.5em;
+  color: #fff;
+}
 
 /*header-special*/
 .header-special {
@@ -1426,29 +1444,46 @@
   }
 }
 
-.swiper {
-  --swiper-pagination-bottom: 50px;
-}
-@media screen and (min-width: 768px) {
-  .swiper {
-    --swiper-pagination-bottom: 51px;
-  }
-}
-@media screen and (min-width: 1240px) {
-  .swiper {
-    --swiper-pagination-bottom: 51px;
-  }
+.swiper-pagination-bullet-active {
+  background-color: #168352;
 }
 
-.swiper-pagination-bullet-active {
-  background-color: #168352 !important;
+:root {
+  --swiper-theme-color: #168352 !important;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-  color: #168352 !important;
+  color: #168352;
 }
 
+.swiper-container {
+  position: relative;
+}
+
+.swiper {
+  position: relative;
+}
+
+.swiper-pagination {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: var(--swiper-pagination-bottom, -8vw); /* デフォルトはスマホ用 */
+}
+
+/* 画面幅768px以上（タブレット・PC） */
+@media (min-width: 768px) {
+  .swiper-pagination {
+    --swiper-pagination-bottom: -80px;
+  }
+}
+/* 画面幅1200px以上（大きいPCなど） */
+@media (min-width: 1200px) {
+  .swiper-pagination {
+    --swiper-pagination-bottom: -100px;
+  }
+}
 /*gallery*/
 .gallery {
   padding: 2.8205128205vw 1.2820512821vw;
@@ -1969,6 +2004,7 @@
   border: 1px solid #cccccc;
   border-radius: 6.1538461538vw;
   padding: 5.8974358974vw 5.8974358974vw 4.358974359vw 5.8974358974vw;
+  cursor: pointer;
 }
 @media screen and (min-width: 768px) {
   .qa__wrapper {
@@ -2118,5 +2154,20 @@
   .qa__answer--01 {
     margin-top: 0.75rem;
     font-size: 1rem;
+  }
+}
+.qa__q {
+  font-family: Montserrat;
+  color: #168352;
+  font-size: 6.1538461538vw;
+}
+@media screen and (min-width: 768px) {
+  .qa__q {
+    font-size: 1.935483871vw;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .qa__q {
+    font-size: 1.5rem;
   }
 }/*# sourceMappingURL=main.css.map */

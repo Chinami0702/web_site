@@ -7,14 +7,15 @@ $(function () {
 });
 /*写真*/
 const swiper = new Swiper('.swiper', {
-    loop: true,
-    autoplay: {
-        delay: 100000,
-    },
-    pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-    },
+  loop: true,
+  autoplay: {
+    delay: 100000,
+  },
+  spaceBetween: 20, 
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
 });
 /*質問*/
 $(document).ready(function () {

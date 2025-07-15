@@ -21,10 +21,10 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Noto+Sans+JP:wght@100..900&display=swap"
         rel="stylesheet">
+
     <!--自分のcss-->
     <link rel="stylesheet" href="/assets/style/main.css">
-    <!-- CSS -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+
     <!-- JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
 
@@ -80,8 +80,8 @@
                     <div class="swiper-wrapper">
                         <div class="swiper-slide">
                             <picture>
-                                <source media="(min-width: 768px)" srcset="/assets/image/gallery_pc.png">
-                                <img src="/assets/image/gallery_sp.png" alt="" class="gallery__img">
+                                <source media="(min-width: 768px)" srcset="/assets/image/gallery_01_pc.png">
+                                <img src="/assets/image/gallery_01_sp.png" alt="" class="gallery__img">
                             </picture>
                         </div>
                         <div class="swiper-slide">
@@ -96,16 +96,15 @@
                                 <img src="/assets/image/gallery_03_pc.png" alt="" class="gallery__img">
                             </picture>
                         </div>
-                         <div class="swiper-slide">
+                        <div class="swiper-slide">
                             <picture>
                                 <source media="(min-width: 768px)" srcset="/assets/image/gallery_04_pc.png">
                                 <img src="/assets/image/gallery_04_pc.png" alt="" class="gallery__img">
                             </picture>
                         </div>
-                        <div class="swiper-pagination"></div>
                     </div>
-                </div>
-
+                </div><!-- /.swiper -->
+                <div class="swiper-pagination"></div>
             </div>
         </section><!--gallery-->
         <!--feature-->
@@ -200,16 +199,18 @@
             <a href="/contact" class="button__click">お問い合わせ</a>
         </div>
     </main>
-   
+
     <footer class=" footer">
-        <ul>
-        <li><a href="/price">価格・スペック</a></li>
-        <li>|</li>
-        <li><a href="/faq">よくあるご質問</a></li>
-    </ul>
+        <ul class="footer__list">
+            <li><a href="/price">価格・スペック</a></li>
+            <li><a href="/faq">よくあるご質問</a></li>
+        </ul>
     </footer><!--footer-->
+    <!-- CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
     <script src="/assets/script/jquery-3.7.1.min.js"></script>
     <script src="/assets/script/main.js"></script>
+
 
 </body>
 

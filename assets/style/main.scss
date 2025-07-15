@@ -59,16 +59,16 @@ $breakpoints: (
     top: 0;
     left: 0;
     width: 100%;
-    z-index: 10000;
+    z-index: 10;
     background: #fff;
 
     @include mq() {
-        padding: vwt(25) vwt(40) 0 vwt(35);
+        padding: vwt(25) vwt(40) vwt(25) vwt(35);
 
     }
 
     @include mq(lg) {
-        padding: px2Rem(25) px2Rem(40) 0 px2Rem(35);
+        padding: px2Rem(25) px2Rem(40) px2Rem(25) px2Rem(35);
     }
 
     &__container {
@@ -163,7 +163,7 @@ $breakpoints: (
         @include mq(lg) {}
     }
 
-    &__top-custom{
+    &__top-custom {
         @include mq() {
             display: none;
         }
@@ -742,7 +742,7 @@ $breakpoints: (
         }
     }
 
-    &__link-costom{
+    &__link-costom {
         @include mq() {
             padding: vwt(23) vwt(23) vwt(20) vwt(20);
             gap: vwt(25);
@@ -782,7 +782,7 @@ $breakpoints: (
         }
     }
 
-    &__item-costom{
+    &__item-costom {
         @include mq() {
             width: calc((100% - #{vwt(48) * 2}) / 3);
         }
@@ -807,7 +807,7 @@ $breakpoints: (
         }
     }
 
-    &__txt-costom{
+    &__txt-costom {
         @include mq() {
             width: vwt(160);
             font-size: vwt(20);
@@ -1261,6 +1261,28 @@ $breakpoints: (
         padding: px2Rem(34) px2Rem(62);
         font-size: px2Rem(13);
     }
+
+    &__list {
+        display: flex;
+    }
+
+    @include mq() {
+        &__list {
+            gap: vwt(27);
+        }
+    }
+
+    @include mq(lg) {
+        &__list {
+            gap: px2Rem(27);
+        }
+    }
+
+    &__list li:not(:last-child)::after {
+        content: "|";
+        margin-left: 0.5em;
+        color: #fff;
+    }
 }
 
 /*header-special*/
@@ -1477,27 +1499,45 @@ $breakpoints: (
     }
 }
 
-.swiper {
-    --swiper-pagination-bottom: 50px;
-
-    @include mq() {
-        --swiper-pagination-bottom: 51px;
-    }
-
-    @include mq(lg) {
-        --swiper-pagination-bottom: 51px;
-    }
-}
 
 .swiper-pagination-bullet-active {
-    background-color: #168352 !important;
+    background-color: #168352 ;
+}
+:root {
+  --swiper-theme-color: #168352 !important; 
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #168352 !important;
+    color: #168352 ;
 }
 
+.swiper-container {
+  position: relative;
+}
+.swiper {
+  position: relative; 
+}
+.swiper-pagination {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: var(--swiper-pagination-bottom, -8vw); /* デフォルトはスマホ用 */
+}
+
+/* 画面幅768px以上（タブレット・PC） */
+@media (min-width: 768px) {
+  .swiper-pagination {
+    --swiper-pagination-bottom: -80px;
+  }
+}
+
+/* 画面幅1200px以上（大きいPCなど） */
+@media (min-width: 1200px) {
+  .swiper-pagination {
+    --swiper-pagination-bottom: -100px;
+  }
+}
 
 
 /*gallery*/
@@ -2014,6 +2054,7 @@ $breakpoints: (
         border: 1px solid #cccccc;
         border-radius: vw(24);
         padding: vw(23) vw(23) vw(17) vw(23);
+        cursor: pointer;
 
         @include mq() {
             width: vwt(800);
@@ -2170,6 +2211,20 @@ $breakpoints: (
         @include mq(lg) {
             margin-top: px2Rem(12);
             font-size: px2Rem(16);
+        }
+    }
+
+    &__q {
+        font-family: Montserrat;
+        color: #168352;
+        font-size: vw(24);
+
+        @include mq() {
+            font-size: vwt(24);
+        }
+
+        @include mq(lg) {
+            font-size: px2Rem(24);
         }
     }
 }
