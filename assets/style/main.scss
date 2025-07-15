@@ -247,16 +247,16 @@ $breakpoints: (
 
 /*intro*/
 .intro {
-    padding: vw(18) vw(15) 0 vw(15);
+    padding: vw(15) vw(15) 0 vw(15);
     margin: vw(63) 0 0 0;
 
     @include mq() {
-        padding: vwt(70) vwt(10) 0 vwt(9);
+        padding: vwt(69) vwt(10) 0 vwt(9);
         margin: vwt(93) 0 0 0;
     }
 
     @include mq(lg) {
-        padding: px2Rem(70) px2Rem(10) 0 px2Rem(9);
+        padding: px2Rem(69) px2Rem(10) 0 px2Rem(9);
         margin: px2Rem(93) 0 0 0;
     }
 
@@ -276,7 +276,7 @@ $breakpoints: (
     &__title {
         font-size: vw(28);
         font-weight: 700;
-        margin-bottom: vw(22);
+        margin-bottom: vw(24);
         font-family: Noto Sans JP;
 
         @include mq() {
@@ -310,7 +310,7 @@ $breakpoints: (
         margin: 0 0 vw(24) 0;
         width: vw(350);
         text-align: justify;
-        letter-spacing:0 ;
+        letter-spacing: 0;
 
         @include mq() {
             font-size: vwt(15);
@@ -352,11 +352,11 @@ $breakpoints: (
     padding: vw(53) 0 0 0;
 
     @include mq() {
-        padding: vwt(64) 0 vwt(63) 0;
+        padding: vwt(63) 0 vwt(63) 0;
     }
 
     @include mq(lg) {
-        padding: px2Rem(64) 0 px2Rem(63) 0;
+        padding: px2Rem(63) 0 px2Rem(63) 0;
     }
 
     &__container {
@@ -510,7 +510,7 @@ $breakpoints: (
             display: block;
             width: px2Rem(390);
             height: px2Rem(570);
-             border-radius: px2Rem(40);
+            border-radius: px2Rem(40);
 
 
         }
@@ -548,7 +548,7 @@ $breakpoints: (
         font-family: Montserrat;
         font-weight: 600;
         text-align: center;
-        margin: 0 0 vw(23) 0;
+        margin: 0 0 vw(25) 0;
 
         @include mq() {
             font-size: vwt(20);
@@ -654,11 +654,11 @@ $breakpoints: (
     padding: vw(54) vw(16) vw(36) vw(16);
 
     @include mq() {
-        padding: vwt(62) vwt(16) vwt(39) vwt(16);
+        padding: vwt(62) vwt(16) vwt(44) vwt(16);
     }
 
     @include mq(lg) {
-        padding: px2Rem(62) px2Rem(16) px2Rem(39) px2Rem(16);
+        padding: px2Rem(62) px2Rem(16) px2Rem(44) px2Rem(16);
     }
 
     &__container {
@@ -738,24 +738,24 @@ $breakpoints: (
             width: 100%;
             gap: vwt(30);
 
-            padding: vwt(23) vwt(30);
+            padding: vwt(24) vwt(30);
         }
 
         @include mq(lg) {
             width: 100%;
             gap: px2Rem(30);
-            padding: px2Rem(23) px2Rem(30);
+            padding: px2Rem(24) px2Rem(30);
         }
     }
 
     &__link-costom {
         @include mq() {
-            padding: vwt(23) vwt(23) vwt(20) vwt(20);
+            padding: vwt(19) vwt(23) vwt(20) vwt(20);
             gap: vwt(25);
         }
 
         @include mq(lg) {
-            padding: px2Rem(23) px2Rem(23) px2Rem(20) px2Rem(20);
+            padding: px2Rem(19) px2Rem(23) px2Rem(20) px2Rem(20);
             gap: px2Rem(25);
         }
     }
@@ -859,7 +859,7 @@ $breakpoints: (
 
 /*case*/
 .case {
-    padding: vw(53) vw(0) vw(23) vw(0);
+    padding: vw(52) vw(0) vw(23) vw(0);
     background-color: #f3f9f6;
 
     @include mq() {
@@ -891,12 +891,12 @@ $breakpoints: (
 
         @include mq() {
             font-size: vwt(20);
-            margin: 0 0 vwt(27) 0;
+            margin: 0 0 vwt(29) 0;
         }
 
         @include mq(lg) {
             font-size: px2Rem(20);
-            margin: 0 0 px2Rem(27) 0;
+            margin: 0 0 px2Rem(29) 0;
         }
     }
 
@@ -913,12 +913,12 @@ $breakpoints: (
 
         @include mq() {
             font-size: vwt(28);
-            margin: vwt(15) 0 0 0;
+            margin: vwt(12) 0 0 0;
         }
 
         @include mq(lg) {
             font-size: px2Rem(28);
-            margin: px2Rem(15) 0 0 0;
+            margin: px2Rem(12) 0 0 0;
         }
     }
 
@@ -961,13 +961,13 @@ $breakpoints: (
             width: 100%;
             height: vwt(226);
             margin: 0;
-               border-radius: vwt(24);
+            border-radius: vwt(24);
         }
 
         @include mq(lg) {
             width: 100%;
             height: px2Rem(226);
-               border-radius: px2Rem(24);
+            border-radius: px2Rem(24);
         }
     }
 
@@ -1091,13 +1091,13 @@ $breakpoints: (
             align-items: center;
             gap: vwt(18);
             margin: 0;
-            padding: vwt(15) vwt(20) vwt(13) vwt(0);
+            padding: vwt(15) vwt(20) vwt(14) vwt(0);
         }
 
         @include mq(lg) {
             gap: px2Rem(18);
             margin: 0;
-            padding: px2Rem(15) px2Rem(20) px2Rem(13) px2Rem(0);
+            padding: px2Rem(15) px2Rem(20) px2Rem(14) px2Rem(0);
         }
     }
 
@@ -1188,7 +1188,7 @@ $breakpoints: (
         font-weight: 700;
         color: #09947b;
         line-height: 1.75;
-        margin: vw(-2) 0 vw(10) 0;
+        margin: vw(-2) 0 vw(12) 0;
 
         @include mq() {
             font-size: vwt(15);
@@ -1230,7 +1230,7 @@ $breakpoints: (
             width: vwt(300);
             height: vwt(66);
             border-radius: vwt(33);
-            margin: vwt(35) auto 0 auto;
+            margin: vwt(31) auto 0 auto;
         }
 
         @include mq(lg) {
@@ -1238,7 +1238,7 @@ $breakpoints: (
             width: px2Rem(300);
             height: px2Rem(66);
             border-radius: px2Rem(33);
-            margin: px2Rem(35) auto 0 auto;
+            margin: px2Rem(31) auto 0 auto;
         }
     }
 }
@@ -1260,14 +1260,14 @@ $breakpoints: (
     @include mq() {
         height: vwt(96);
         gap: vwt(27);
-        padding: vwt(34) vwt(62);
+        padding: vwt(29) vwt(62);
         font-size: vwt(13);
     }
 
     @include mq(lg) {
         height: px2Rem(96);
         gap: px2Rem(27);
-        padding: px2Rem(34) px2Rem(62);
+        padding: px2Rem(29) px2Rem(62);
         font-size: px2Rem(13);
     }
 
@@ -1287,12 +1287,26 @@ $breakpoints: (
         }
     }
 
+
     &__list li:not(:last-child)::after {
         content: "|";
-        margin-left: 0.5em;
+        margin-left: vw(16);
         color: #fff;
+
+        @include mq() {
+            &__list li:not(:last-child)::after {
+                margin-left: vwt(10);
+            }
+
+            @include mq(lg) {
+                &__list li:not(:last-child)::after {
+                    margin-left: px2Rem(10);
+                }
+            }
+        }
     }
 }
+
 
 /*header-special*/
 .header-special {
@@ -1510,42 +1524,46 @@ $breakpoints: (
 
 
 .swiper-pagination-bullet-active {
-    background-color: #168352 ;
+    background-color: #168352;
 }
+
 :root {
-  --swiper-theme-color: #168352 !important; 
+    --swiper-theme-color: #168352 !important;
 }
 
 .swiper-button-next,
 .swiper-button-prev {
-    color: #168352 ;
+    color: #168352;
 }
 
 .swiper-container {
-  position: relative;
+    position: relative;
 }
+
 .swiper {
-  position: relative; 
+    position: relative;
 }
+
 .swiper-pagination {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: var(--swiper-pagination-bottom, -8vw); /* デフォルトはスマホ用 */
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: var(--swiper-pagination-bottom, -8vw);
+    /* デフォルトはスマホ用 */
 }
 
 /* 画面幅768px以上（タブレット・PC） */
 @media (min-width: 768px) {
-  .swiper-pagination {
-    --swiper-pagination-bottom: -80px;
-  }
+    .swiper-pagination {
+        --swiper-pagination-bottom: -80px;
+    }
 }
 
 /* 画面幅1200px以上（大きいPCなど） */
 @media (min-width: 1200px) {
-  .swiper-pagination {
-    --swiper-pagination-bottom: -100px;
-  }
+    .swiper-pagination {
+        --swiper-pagination-bottom: -100px;
+    }
 }
 
 
@@ -2237,29 +2255,30 @@ $breakpoints: (
         }
     }
 }
-.qa__toggle {
-  display: inline-block;
-  width: vw(6);
-  height: vw(6);
-  position: relative;
-  cursor: pointer;
-  vertical-align: middle;
 
-  &::after {
-    content: '';
-    position: absolute;
-    top: 50%;
-    right: 0;
-    transform: translateY(-50%);
-    width: 100%;
-    height: 100%;
-    background-image: url('/assets/image/icon_plus.png');
-    background-size: contain;
-    background-repeat: no-repeat;
-    transition: background-image 0.3s ease;
-  }
+.qa__toggle {
+    display: inline-block;
+    width: vw(6);
+    height: vw(6);
+    position: relative;
+    cursor: pointer;
+    vertical-align: middle;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateY(-50%);
+        width: 100%;
+        height: 100%;
+        background-image: url('/assets/image/icon_plus.png');
+        background-size: contain;
+        background-repeat: no-repeat;
+        transition: background-image 0.3s ease;
+    }
 }
 
 .qa__wrapper.active .qa__toggle::after {
-  background-image: url('/assets/image/icon_minus.png');
+    background-image: url('/assets/image/icon_minus.png');
 }
