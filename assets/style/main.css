@@ -249,6 +249,7 @@
   margin: 0 0 6.1538461538vw 0;
   width: 89.7435897436vw;
   text-align: justify;
+  letter-spacing: 0;
 }
 @media screen and (min-width: 768px) {
   .intro__text {
@@ -355,7 +356,7 @@
   }
 }
 .about__wrapper {
-  background-image: url(/assets/image/about_us_sp.png);
+  background-image: url(/assets/image/about_us_sp.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

@@ -310,6 +310,7 @@ $breakpoints: (
         margin: 0 0 vw(24) 0;
         width: vw(350);
         text-align: justify;
+        letter-spacing:0 ;
 
         @include mq() {
             font-size: vwt(15);
@@ -413,7 +414,7 @@ $breakpoints: (
     }
 
     &__wrapper {
-        background-image: url(/assets/image/about_us_sp.png);
+        background-image: url(/assets/image/about_us_sp.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
