@@ -446,6 +446,7 @@
     display: block;
     width: 31.4516129032vw;
     height: 45.9677419355vw;
+    border-radius: 3.2258064516vw;
   }
 }
 @media screen and (min-width: 1240px) {
@@ -453,6 +454,7 @@
     display: block;
     width: 24.375rem;
     height: 35.625rem;
+    border-radius: 2.5rem;
   }
 }
 
@@ -560,17 +562,20 @@
   display: block;
   width: 100%;
   height: 51.5384615385vw;
+  border-radius: 6.1538461538vw;
 }
 @media screen and (min-width: 768px) {
   .reasons__img {
     width: 100%;
     height: auto;
+    border-radius: 1.935483871vw;
   }
 }
 @media screen and (min-width: 1240px) {
   .reasons__img {
     width: 100%;
     height: auto;
+    border-radius: 1.5rem;
   }
 }
 @media screen and (min-width: 768px) {
@@ -893,18 +898,21 @@
   width: 100%;
   height: 51.5384615385vw;
   margin: 0 auto;
+  border-radius: 6.1538461538vw;
 }
 @media screen and (min-width: 768px) {
   .case__img {
     width: 100%;
     height: 18.2258064516vw;
     margin: 0;
+    border-radius: 1.935483871vw;
   }
 }
 @media screen and (min-width: 1240px) {
   .case__img {
     width: 100%;
     height: 14.125rem;
+    border-radius: 1.5rem;
   }
 }
 .case__text {
@@ -1866,7 +1874,7 @@
 
 /*お問い合わせ*/
 .button {
-  background-image: url(/assets/image/faq.png);
+  background-image: url(/assets/image/faq_sp.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -1878,7 +1886,7 @@
 }
 @media screen and (min-width: 768px) {
   .button {
-    background-image: url(/assets/image/faq_pc.png);
+    background-image: url(/assets/image/faq_pc.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;

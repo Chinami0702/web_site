@@ -501,6 +501,7 @@ $breakpoints: (
             display: block;
             width: vwt(390);
             height: vwt(570);
+            border-radius: vwt(40);
 
         }
 
@@ -508,6 +509,7 @@ $breakpoints: (
             display: block;
             width: px2Rem(390);
             height: px2Rem(570);
+             border-radius: px2Rem(40);
 
 
         }
@@ -617,15 +619,18 @@ $breakpoints: (
         display: block;
         width: 100%;
         height: vw(201);
+        border-radius: vw(24);
 
         @include mq() {
             width: 100%;
             height: auto;
+            border-radius: vwt(24);
         }
 
         @include mq(lg) {
             width: 100%;
             height: auto;
+            border-radius: px2Rem(24);
         }
     }
 
@@ -948,17 +953,20 @@ $breakpoints: (
         width: 100%;
         height: vw(201);
         margin: 0 auto;
+        border-radius: vw(24);
 
         @include mq() {
 
             width: 100%;
             height: vwt(226);
             margin: 0;
+               border-radius: vwt(24);
         }
 
         @include mq(lg) {
             width: 100%;
             height: px2Rem(226);
+               border-radius: px2Rem(24);
         }
     }
 
@@ -1918,7 +1926,7 @@ $breakpoints: (
 /*お問い合わせ*/
 
 .button {
-    background-image: url(/assets/image/faq.png);
+    background-image: url(/assets/image/faq_sp.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -1929,7 +1937,7 @@ $breakpoints: (
     font-weight: 700;
 
     @include mq() {
-        background-image: url(/assets/image/faq_pc.png);
+        background-image: url(/assets/image/faq_pc.jpg);
         background-repeat: no-repeat;
         background-size: cover;
         background-position: center;
