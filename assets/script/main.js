@@ -5,6 +5,7 @@ $(function () {
         $('.hamburger-menu').toggleClass('hamburger-menu--open')
     });
 });
+
 /*写真*/
 const swiper = new Swiper('.swiper', {
   loop: true,
@@ -19,15 +20,11 @@ const swiper = new Swiper('.swiper', {
 });
 /*質問*/
 $(document).ready(function () {
-    $('.qa__wrapper').on('click', function () {
-        const $wrapper = $(this);
-        const $answer = $wrapper.find('.qa__answer');
-        const $toggleImg = $wrapper.find('.qa__toggle');
-        const isVisible = $answer.is(':visible');
+  $('.qa__wrapper').on('click', function () {
+    const $wrapper = $(this);
+    const $answer = $wrapper.find('.qa__answer');
 
-        $answer.slideToggle(300);
-
-        // アイコンを切り替える
-        $toggleImg.attr('src', isVisible ? '/assets/image/icon_plus.png' : '/assets/image/icon_minus.png');
-    });
+    $answer.slideToggle(300);
+    $wrapper.toggleClass('active');
+  });
 });

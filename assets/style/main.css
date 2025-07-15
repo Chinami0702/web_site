@@ -2170,4 +2170,30 @@
   .qa__q {
     font-size: 1.5rem;
   }
+}
+
+.qa__toggle {
+  display: inline-block;
+  width: 5.1282051282vw;
+  height: 5.1282051282vw;
+  position: relative;
+  cursor: pointer;
+  vertical-align: middle;
+}
+.qa__toggle::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 100%;
+  background-image: url("/assets/image/icon_plus.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  transition: background-image 0.3s ease;
+}
+
+.qa__wrapper.active .qa__toggle::after {
+  background-image: url("/assets/image/icon_minus.png");
 }/*# sourceMappingURL=main.css.map */
