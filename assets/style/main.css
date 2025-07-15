@@ -1205,7 +1205,7 @@
   .footer {
     height: 7.7419354839vw;
     gap: 2.1774193548vw;
-    padding: 2.3387096774vw 5vw;
+    padding: 2.1774193548vw 5vw;
     font-size: 1.0483870968vw;
   }
 }
@@ -1213,7 +1213,7 @@
   .footer {
     height: 6rem;
     gap: 1.6875rem;
-    padding: 1.8125rem 3.875rem;
+    padding: 1.6875rem 3.875rem;
     font-size: 0.8125rem;
   }
 }
@@ -1222,12 +1222,12 @@
 }
 @media screen and (min-width: 768px) {
   .footer__list {
-    gap: 2.1774193548vw;
+    gap: 1.2903225806vw;
   }
 }
 @media screen and (min-width: 1240px) {
   .footer__list {
-    gap: 1.6875rem;
+    gap: 1rem;
   }
 }
 .footer__list li:not(:last-child)::after {
@@ -1236,13 +1236,23 @@
   color: #fff;
 }
 @media screen and (min-width: 768px) {
-  .footer__list li:not(:last-child)::after__list li:not(:last-child)::after {
-    margin-left: 0.8064516129vw;
+  .footer__list li:not(:last-child)::after {
+    margin-left: 2.1774193548vw;
   }
 }
-@media screen and (min-width: 768px) and (min-width: 1240px) {
-  .footer__list li:not(:last-child)::after__list li:not(:last-child)::after {
-    margin-left: 0.625rem;
+@media screen and (min-width: 1240px) {
+  .footer__list li:not(:last-child)::after {
+    margin-left: 1.6875rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .footer__item {
+    font-size: 1.1290322581vw;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .footer__item {
+    font-size: 0.875rem;
   }
 }
 

@@ -1260,14 +1260,14 @@ $breakpoints: (
     @include mq() {
         height: vwt(96);
         gap: vwt(27);
-        padding: vwt(29) vwt(62);
+        padding: vwt(27) vwt(62);
         font-size: vwt(13);
     }
 
     @include mq(lg) {
         height: px2Rem(96);
         gap: px2Rem(27);
-        padding: px2Rem(29) px2Rem(62);
+        padding: px2Rem(27) px2Rem(62);
         font-size: px2Rem(13);
     }
 
@@ -1277,13 +1277,13 @@ $breakpoints: (
 
     @include mq() {
         &__list {
-            gap: vwt(27);
+            gap: vwt(16);
         }
     }
 
     @include mq(lg) {
         &__list {
-            gap: px2Rem(27);
+            gap: px2Rem(16);
         }
     }
 
@@ -1294,18 +1294,24 @@ $breakpoints: (
         color: #fff;
 
         @include mq() {
-            &__list li:not(:last-child)::after {
-                margin-left: vwt(10);
-            }
+            margin-left: vwt(27);
+        }
 
-            @include mq(lg) {
-                &__list li:not(:last-child)::after {
-                    margin-left: px2Rem(10);
-                }
-            }
+        @include mq(lg) {
+            margin-left: px2Rem(27);
         }
     }
+    &__item{
+        @include mq() {
+            font-size: vwt(14);
+        }
+        @include mq(lg) {
+            font-size: px2Rem(14);
+        }
+    }
+
 }
+
 
 
 /*header-special*/
