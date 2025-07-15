@@ -34,12 +34,12 @@ li {
 }
 @media screen and (min-width: 768px) {
   .header {
-    padding: 25px 40px 25px 35px;
+    padding: 19px 40px 25px 19px;
   }
 }
 @media screen and (min-width: 1240px) {
   .header {
-    padding: 25px 40px 25px 35px;
+    padding: 19px 40px 25px 19px;
   }
 }
 .header__container {
@@ -48,7 +48,7 @@ li {
 }
 @media screen and (min-width: 768px) {
   .header__container {
-    max-width: 1163px;
+    max-width: 1190px;
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -57,7 +57,7 @@ li {
 }
 @media screen and (min-width: 1240px) {
   .header__container {
-    max-width: 1163px;
+    max-width: 1190px;
     margin: 0 auto;
   }
 }
@@ -67,11 +67,13 @@ li {
 @media screen and (min-width: 768px) {
   .header__logo {
     width: 265px;
+    margin-left: 20px;
   }
 }
 @media screen and (min-width: 1240px) {
   .header__logo {
     width: 265px;
+    margin-left: 20px;
   }
 }
 .header__nav {
@@ -109,13 +111,15 @@ li {
   .header__list {
     display: flex;
     width: auto;
-    gap: 30px;
+    gap: 38px;
+    margin-left: 40px;
   }
 }
 @media screen and (min-width: 1240px) {
   .header__list {
     width: auto;
-    gap: 30px;
+    gap: 38px;
+    margin-left: 40px;
   }
 }
 .header__link {
@@ -212,13 +216,13 @@ li {
 }
 @media screen and (min-width: 768px) {
   .intro {
-    padding: 69px 10px 0 9px;
+    padding: 57px 10px 0 12px;
     margin: 93px 0 0 0;
   }
 }
 @media screen and (min-width: 1240px) {
   .intro {
-    padding: 69px 10px 0 9px;
+    padding: 57px 10px 0 12px;
     margin: 93px 0 0 0;
   }
 }
@@ -255,12 +259,12 @@ li {
   .intro__wrapper {
     display: flex;
     justify-content: space-around;
-    gap: 72px;
+    gap: 66px;
   }
 }
 @media screen and (min-width: 1240px) {
   .intro__wrapper {
-    gap: 72px;
+    gap: 66px;
   }
 }
 .intro__text {
@@ -276,14 +280,14 @@ li {
   .intro__text {
     font-size: 15px;
     width: 532px;
-    margin: 0 0 55px 0;
+    margin: 12px 0 57px 0;
   }
 }
 @media screen and (min-width: 1240px) {
   .intro__text {
     font-size: 15px;
     width: 532px;
-    margin: 0 0 55px 0;
+    margin: 12px 0 57px 0;
   }
 }
 .intro__img {
@@ -319,12 +323,12 @@ li {
 }
 @media screen and (min-width: 768px) {
   .about {
-    padding: 63px 0 63px 0;
+    padding: 56px 0 63px 0;
   }
 }
 @media screen and (min-width: 1240px) {
   .about {
-    padding: 63px 0 63px 0;
+    padding: 56px 0 63px 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -372,13 +376,13 @@ li {
 @media screen and (min-width: 768px) {
   .about__translation {
     font-size: 28px;
-    margin: 8px 0 0 0;
+    margin: 5px 0 0 0;
   }
 }
 @media screen and (min-width: 1240px) {
   .about__translation {
     font-size: 28px;
-    margin: 8px 0 0 0;
+    margin: 5px 0 0 0;
   }
 }
 .about__wrapper {
@@ -395,13 +399,13 @@ li {
     justify-content: space-between;
     align-items: center;
     height: auto;
-    padding: 0 13px 0 0;
+    padding: 0 15px 0 0;
   }
 }
 @media screen and (min-width: 1240px) {
   .about__wrapper {
     height: auto;
-    padding: 0 13px 0 0;
+    padding: 0 15px 0 0;
   }
 }
 .about__box {
@@ -431,16 +435,17 @@ li {
 }
 @media screen and (min-width: 768px) {
   .about__subtitle {
-    width: 360px;
+    width: 409px;
     font-size: 20px;
-    margin: 0 0 23px 0;
+    margin: -3px 0 23px 0;
+    word-break: strict;
   }
 }
 @media screen and (min-width: 1240px) {
   .about__subtitle {
-    width: 360px;
+    width: 409px;
     font-size: 20px;
-    margin: 0 0 23px 0;
+    margin: -3px 0 23px 0;
   }
 }
 .about__text {
@@ -455,6 +460,7 @@ li {
     width: 410px;
     font-size: 15px;
     margin-top: 25px;
+    font-weight: 400;
   }
 }
 @media screen and (min-width: 1240px) {
@@ -491,12 +497,12 @@ li {
 }
 @media screen and (min-width: 768px) {
   .reasons {
-    padding: 64px 16px 64px 16px;
+    padding: 54px 16px 64px 13px;
   }
 }
 @media screen and (min-width: 1240px) {
   .reasons {
-    padding: 64px 16px 64px 16px;
+    padding: 54px 16px 64px 13px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -521,13 +527,13 @@ li {
 @media screen and (min-width: 768px) {
   .reasons__title {
     font-size: 20px;
-    margin: 0 0 34px 0;
+    margin: 0 0 31px 0;
   }
 }
 @media screen and (min-width: 1240px) {
   .reasons__title {
     font-size: 20px;
-    margin: 0 0 34px 0;
+    margin: 0 0 31px 0;
   }
 }
 .reasons__translation {
@@ -543,13 +549,13 @@ li {
 @media screen and (min-width: 768px) {
   .reasons__translation {
     font-size: 28px;
-    margin: 9px 0 0 10px;
+    margin: 8px 0 0 5px;
   }
 }
 @media screen and (min-width: 1240px) {
   .reasons__translation {
     font-size: 28px;
-    margin: 9px 0 0 10px;
+    margin: 8px 0 0 5px;
   }
 }
 .reasons__text {
@@ -567,7 +573,7 @@ li {
 @media screen and (min-width: 768px) {
   .reasons__text {
     width: 369px;
-    padding: 10px 16px 16px 19px;
+    padding: 10px 16px 16px 22px;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     font-size: 19px;
@@ -577,7 +583,7 @@ li {
 @media screen and (min-width: 1240px) {
   .reasons__text {
     width: 369px;
-    padding: 10px 16px 16px 19px;
+    padding: 10px 16px 16px 22px;
     border-bottom-left-radius: 24px;
     border-bottom-right-radius: 24px;
     font-size: 19px;
@@ -588,20 +594,23 @@ li {
   display: block;
   width: 100%;
   height: 201px;
-  border-radius: 24px;
+  border-top-left-radius: 24px;
+  border-top-right-radius: 24px;
 }
 @media screen and (min-width: 768px) {
   .reasons__img {
     width: 100%;
     height: auto;
-    border-radius: 24px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
   }
 }
 @media screen and (min-width: 1240px) {
   .reasons__img {
     width: 100%;
     height: auto;
-    border-radius: 24px;
+    border-top-left-radius: 24px;
+    border-top-right-radius: 24px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -623,12 +632,12 @@ li {
 }
 @media screen and (min-width: 768px) {
   .service {
-    padding: 62px 16px 44px 16px;
+    padding: 58px 16px 44px 16px;
   }
 }
 @media screen and (min-width: 1240px) {
   .service {
-    padding: 62px 16px 44px 16px;
+    padding: 58px 16px 44px 16px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -675,13 +684,13 @@ li {
 @media screen and (min-width: 768px) {
   .service__translation {
     font-size: 28px;
-    margin: 13px 0 0 0;
+    margin: 8px 0 0 0;
   }
 }
 @media screen and (min-width: 1240px) {
   .service__translation {
     font-size: 28px;
-    margin: 13px 0 0 0;
+    margin: 8px 0 0 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -708,25 +717,25 @@ li {
   .service__link {
     width: 100%;
     gap: 30px;
-    padding: 24px 30px;
+    padding: 23px 30px;
   }
 }
 @media screen and (min-width: 1240px) {
   .service__link {
     width: 100%;
     gap: 30px;
-    padding: 24px 30px;
+    padding: 23px 30px;
   }
 }
 @media screen and (min-width: 768px) {
   .service__link-costom {
-    padding: 19px 23px 20px 20px;
+    padding: 17px 23px 20px 20px;
     gap: 25px;
   }
 }
 @media screen and (min-width: 1240px) {
   .service__link-costom {
-    padding: 19px 23px 20px 20px;
+    padding: 17px 23px 20px 20px;
     gap: 25px;
   }
 }
@@ -777,11 +786,13 @@ li {
 @media screen and (min-width: 768px) {
   .service__txt {
     font-size: 24px;
+    width: auto;
   }
 }
 @media screen and (min-width: 1240px) {
   .service__txt {
     font-size: 24px;
+    width: auto;
   }
 }
 @media screen and (min-width: 768px) {
@@ -833,12 +844,12 @@ li {
 }
 @media screen and (min-width: 768px) {
   .case {
-    padding: 61px 0px 26px 0px;
+    padding: 55px 0px 26px 0px;
   }
 }
 @media screen and (min-width: 1240px) {
   .case {
-    padding: 61px 0px 26px 0px;
+    padding: 55px 0px 26px 0px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -885,13 +896,13 @@ li {
 @media screen and (min-width: 768px) {
   .case__translation {
     font-size: 28px;
-    margin: 12px 0 0 0;
+    margin: 7px 0 0 0;
   }
 }
 @media screen and (min-width: 1240px) {
   .case__translation {
     font-size: 28px;
-    margin: 12px 0 0 0;
+    margin: 7px 0 0 0;
   }
 }
 @media screen and (min-width: 768px) {
@@ -969,12 +980,12 @@ li {
 }
 @media screen and (min-width: 768px) {
   .news {
-    padding: 58px 10px 70px 10px;
+    padding: 55px 10px 70px 10px;
   }
 }
 @media screen and (min-width: 1240px) {
   .news {
-    padding: 58px 10px 70px 10px;
+    padding: 55px 10px 70px 10px;
   }
 }
 @media screen and (min-width: 768px) {
@@ -1021,13 +1032,13 @@ li {
 @media screen and (min-width: 768px) {
   .news__translation {
     font-size: 28px;
-    margin: 13px 0 0 0;
+    margin: 6px 0 0 0;
   }
 }
 @media screen and (min-width: 1240px) {
   .news__translation {
     font-size: 28px;
-    margin: 13px 0 0 0;
+    margin: 6px 0 0 0;
   }
 }
 .news__wrapper {
@@ -1064,14 +1075,14 @@ li {
     align-items: center;
     gap: 18px;
     margin: 0;
-    padding: 15px 20px 14px 0px;
+    padding: 15px 20px 15px 0px;
   }
 }
 @media screen and (min-width: 1240px) {
   .news__item {
     gap: 18px;
     margin: 0;
-    padding: 15px 20px 14px 0px;
+    padding: 15px 20px 15px 0px;
   }
 }
 .news__item:last-child {
@@ -1079,6 +1090,16 @@ li {
 }
 .news__item--costom {
   padding: 14px 0px 8px 0px;
+}
+@media screen and (min-width: 768px) {
+  .news__item--costom {
+    padding: 14px 0px 20px 0px;
+  }
+}
+@media screen and (min-width: 1240px) {
+  .news__item--costom {
+    padding: 14px 0px 20px 0px;
+  }
 }
 .news__box {
   display: flex;
