@@ -1364,7 +1364,7 @@ li {
 
 /*header-special*/
 .header-special {
-    padding: vw(20) vw(15) vw(10) vw(15);
+    padding: vw(15) vw(15) vw(10) vw(16);
 
     @include mq() {
         padding: vwt(25) vwt(40) vwt(30) vwt(35);
@@ -1391,7 +1391,7 @@ li {
 
 /*cover*/
 .cover {
-    padding: vw(30) vw(5) vw(28) vw(0);
+    padding: vw(31) vw(5) vw(16) vw(4);
     margin: vw(52) 0 0 0;
 
     @include mq() {
@@ -1423,7 +1423,7 @@ li {
 
     &__img {
         width: vw(358);
-        margin: 0 auto vw(28) auto;
+        margin: 0 auto vw(19) auto;
 
         @include mq() {
             width: vwt(1200);
@@ -1489,7 +1489,7 @@ li {
         justify-content: flex-end;
         font-size: vw(12);
         font-weight: 400;
-        margin: 0 vw(5) vw(25) 0;
+        margin: 0 vw(3) vw(14) 0;
 
         @include mq() {
             font-size: vwt(12);
@@ -1527,7 +1527,7 @@ li {
     &__title {
         font-size: vw(22);
         font-weight: 700;
-        margin: 0 0 vw(10) 0;
+        margin: 0 0 vw(4) 0;
 
         @include mq() {
             font-size: vwt(28);
@@ -1548,7 +1548,7 @@ li {
     background-color: #e0e0e0;
     border-radius: 1px;
     overflow: hidden;
-    margin-bottom: vw(23);
+    margin-bottom: vw(25);
 
     @include mq() {
         height: 5px;
@@ -1603,17 +1603,15 @@ li {
     left: 50%;
     transform: translateX(-50%);
     bottom: var(--swiper-pagination-bottom, -8vw);
-    /* デフォルトはスマホ用 */
 }
 
-/* 画面幅768px以上（タブレット・PC） */
 @media (min-width: 768px) {
     .swiper-pagination {
         --swiper-pagination-bottom: -80px;
     }
 }
 
-/* 画面幅1200px以上（大きいPCなど） */
+
 @media (min-width: 1200px) {
     .swiper-pagination {
         --swiper-pagination-bottom: -100px;
@@ -1676,7 +1674,7 @@ li {
 
 /*feature*/
 .feature {
-    padding: vw(10) vw(5);
+    padding: vw(1) vw(5);
 
     @include mq() {
         padding: vwt(8) vwt(5);
@@ -1705,8 +1703,8 @@ li {
     &__img {
         width: vw(358);
         height: vw(200);
-        border-radius: vw(24);
-        margin: 0 auto vw(9) auto;
+        border-radius: vw(16);
+        margin: 0 auto vw(8) auto;
 
         @include mq() {
             width: vwt(246);
@@ -1735,8 +1733,8 @@ li {
     &__txt {
         font-size: vw(18);
         font-weight: 700;
-        margin: 0 0 vw(38) 0;
-        line-height: 1.68;
+        margin: 0 0 vw(33) 0;
+        line-height: 1.75;
 
         @include mq() {
             font-size: vwt(18);
@@ -1781,7 +1779,7 @@ li {
 /*price*/
 
 .price {
-    padding: vw(10) vw(00);
+    padding: vw(15) vw(00) vw(2) vw(0);
 
     @include mq() {
         padding: vwt(12) vwt(5);
@@ -1840,7 +1838,7 @@ li {
 }
 
 .progress-bar-special {
-    margin-bottom: vw(20);
+    margin-bottom: vw(9);
 
     @include mq() {
         margin-bottom: 0;
@@ -1853,7 +1851,7 @@ li {
 
 /*spec*/
 .spec {
-    padding: vw(10) vw(0) vw(64) vw(0);
+    padding: vw(2) vw(0) vw(64) vw(0);
 
     @include mq() {
         padding: vwt(14) vwt(0) vwt(73) vwt(0);

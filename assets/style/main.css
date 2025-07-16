@@ -1310,7 +1310,7 @@ li {
 
 /*header-special*/
 .header-special {
-  padding: 20px 15px 10px 15px;
+  padding: 15px 15px 10px 16px;
 }
 @media screen and (min-width: 768px) {
   .header-special {
@@ -1336,7 +1336,7 @@ li {
 
 /*cover*/
 .cover {
-  padding: 30px 5px 28px 0px;
+  padding: 31px 5px 16px 4px;
   margin: 52px 0 0 0;
 }
 @media screen and (min-width: 768px) {
@@ -1371,7 +1371,7 @@ li {
 }
 .cover__img {
   width: 358px;
-  margin: 0 auto 28px auto;
+  margin: 0 auto 19px auto;
 }
 @media screen and (min-width: 768px) {
   .cover__img {
@@ -1437,7 +1437,7 @@ li {
   justify-content: flex-end;
   font-size: 12px;
   font-weight: 400;
-  margin: 0 5px 25px 0;
+  margin: 0 3px 14px 0;
 }
 @media screen and (min-width: 768px) {
   .sections__list {
@@ -1472,7 +1472,7 @@ li {
 .section__title {
   font-size: 22px;
   font-weight: 700;
-  margin: 0 0 10px 0;
+  margin: 0 0 4px 0;
 }
 @media screen and (min-width: 768px) {
   .section__title {
@@ -1494,7 +1494,7 @@ li {
   background-color: #e0e0e0;
   border-radius: 1px;
   overflow: hidden;
-  margin-bottom: 23px;
+  margin-bottom: 25px;
 }
 @media screen and (min-width: 768px) {
   .progress-bar {
@@ -1551,16 +1551,13 @@ li {
   left: 50%;
   transform: translateX(-50%);
   bottom: var(--swiper-pagination-bottom, -8vw);
-  /* デフォルトはスマホ用 */
 }
 
-/* 画面幅768px以上（タブレット・PC） */
 @media (min-width: 768px) {
   .swiper-pagination {
     --swiper-pagination-bottom: -80px;
   }
 }
-/* 画面幅1200px以上（大きいPCなど） */
 @media (min-width: 1200px) {
   .swiper-pagination {
     --swiper-pagination-bottom: -100px;
@@ -1621,7 +1618,7 @@ li {
 
 /*feature*/
 .feature {
-  padding: 10px 5px;
+  padding: 1px 5px;
 }
 @media screen and (min-width: 768px) {
   .feature {
@@ -1652,8 +1649,8 @@ li {
 .feature__img {
   width: 358px;
   height: 200px;
-  border-radius: 24px;
-  margin: 0 auto 9px auto;
+  border-radius: 16px;
+  margin: 0 auto 8px auto;
 }
 @media screen and (min-width: 768px) {
   .feature__img {
@@ -1680,8 +1677,8 @@ li {
 .feature__txt {
   font-size: 18px;
   font-weight: 700;
-  margin: 0 0 38px 0;
-  line-height: 1.68;
+  margin: 0 0 33px 0;
+  line-height: 1.75;
 }
 @media screen and (min-width: 768px) {
   .feature__txt {
@@ -1726,7 +1723,7 @@ li {
 
 /*price*/
 .price {
-  padding: 10px 0px;
+  padding: 15px 0px 2px 0px;
 }
 @media screen and (min-width: 768px) {
   .price {
@@ -1789,7 +1786,7 @@ li {
 }
 
 .progress-bar-special {
-  margin-bottom: 20px;
+  margin-bottom: 9px;
 }
 @media screen and (min-width: 768px) {
   .progress-bar-special {
@@ -1804,7 +1801,7 @@ li {
 
 /*spec*/
 .spec {
-  padding: 10px 0px 64px 0px;
+  padding: 2px 0px 64px 0px;
 }
 @media screen and (min-width: 768px) {
   .spec {
