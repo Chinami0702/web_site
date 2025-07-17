@@ -1602,19 +1602,19 @@ li {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    bottom: var(--swiper-pagination-bottom, -8vw);
+    bottom: var(--swiper-pagination-bottom, 10px);
 }
 
 @media (min-width: 768px) {
     .swiper-pagination {
-        --swiper-pagination-bottom: -80px;
+        --swiper-pagination-bottom: 2px;
     }
 }
 
 
 @media (min-width: 1200px) {
     .swiper-pagination {
-        --swiper-pagination-bottom: -100px;
+        --swiper-pagination-bottom: 2px;
     }
 }
 
@@ -1651,20 +1651,20 @@ li {
         width: vw(358);
         height: vw(237);
         border-radius: vw(24);
-        margin: 0 auto vw(41) auto;
+
 
         @include mq() {
             width: vwt(800);
             height: vwt(499.99);
             border-radius: vwt(24);
-            margin: 0 auto vwt(39) auto;
+  
         }
 
         @include mq(lg) {
             width: px2Rem(800);
             height: px2Rem(499.99);
             border-radius: px2Rem(24);
-            margin: 0 auto px2Rem(39) auto;
+     
         }
     }
 
