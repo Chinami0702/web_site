@@ -5,7 +5,7 @@ $pc-content-width: 1240;
 $breakpoint-md: 768;
 $breakpoint-lg: $pc-content-width;
 
-$production: 0;
+$production: 1;
 
 $breakpoints: (
     "md": "screen and (min-width: #{$breakpoint-md}px)",
