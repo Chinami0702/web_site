@@ -1426,14 +1426,15 @@ li {
         margin: 0 auto vw(19) auto;
 
         @include mq() {
-            width: vwt(1200);
+            width: auto;
             margin: 0 auto;
+            height: auto;
         }
 
         @include mq(lg) {
-            width: px2Rem(1200);
+            width: auto;
             margin: 0 auto;
-
+   height: auto;
         }
     }
 
@@ -2401,8 +2402,8 @@ li {
 
 .qa__toggle {
     display: inline-block;
-    width: vw(6);
-    height: vw(6);
+    width: vw(13);
+    height: vw(13);
     position: relative;
     cursor: pointer;
     vertical-align: middle;
