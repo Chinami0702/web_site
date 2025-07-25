@@ -50,27 +50,28 @@ $breakpoints: (
 
     @return calc($px * 100vw / $pc-full-width);
 }
+
 /* ベースのスタイル
 ------------------------------------------ */
 
 body {
-  font-family: "Noto Sans JP", sans-serif;
-  line-height: 1.75;
-  color: #333;
+    font-family: "Noto Sans JP", sans-serif;
+    line-height: 1.75;
+    color: #333;
 }
 
 a {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 img {
-  max-width: 100%;
-  height: auto;
-  vertical-align: bottom;
+    max-width: 100%;
+    height: auto;
+    vertical-align: bottom;
 }
 
 li {
-  list-style: none;
+    list-style: none;
 }
 
 /*index*/
@@ -336,7 +337,7 @@ li {
         line-height: 1.75;
         margin: 0 0 vw(25) 0;
         width: vw(350);
-      line-break: anywhere;
+        line-break: anywhere;
 
         @include mq() {
             font-size: vwt(15);
@@ -371,8 +372,9 @@ li {
         }
     }
 }
+
 /*inline*/
-.inline{
+.inline {
     display: inline-block;
 }
 
@@ -489,7 +491,7 @@ li {
         font-weight: 700;
         line-height: 1.75;
         margin: 0 0 vw(7.6) 0;
-       
+
 
         @include mq() {
             width: vwt(409);
@@ -651,21 +653,21 @@ li {
         display: block;
         width: 100%;
         height: vw(201);
-        border-top-left-radius:vw(24) ;
-        border-top-right-radius:vw(24) ;
+        border-top-left-radius: vw(24);
+        border-top-right-radius: vw(24);
 
         @include mq() {
             width: 100%;
             height: auto;
-             border-top-left-radius:vwt(24) ;
-        border-top-right-radius:vwt(24) ;
+            border-top-left-radius: vwt(24);
+            border-top-right-radius: vwt(24);
         }
 
         @include mq(lg) {
             width: 100%;
             height: auto;
-            border-top-left-radius:px2Rem(24) ;
-        border-top-right-radius:px2Rem(24) ;
+            border-top-left-radius: px2Rem(24);
+            border-top-right-radius: px2Rem(24);
         }
     }
 
@@ -1144,11 +1146,14 @@ li {
 
 
     }
-    &__item--costom{
+
+    &__item--costom {
         padding: vw(14) vw(0) vw(8) vw(0);
+
         @include mq() {
             padding: vwt(14) vwt(0) vwt(20) vwt(0);
         }
+
         @include mq(lg) {
             padding: px2Rem(14) px2Rem(0) px2Rem(20) px2Rem(0);
         }
@@ -1349,10 +1354,12 @@ li {
             margin-left: px2Rem(27);
         }
     }
-    &__item{
+
+    &__item {
         @include mq() {
             font-size: vwt(14);
         }
+
         @include mq(lg) {
             font-size: px2Rem(14);
         }
@@ -1434,7 +1441,7 @@ li {
         @include mq(lg) {
             width: auto;
             margin: 0 auto;
-   height: auto;
+            height: auto;
         }
     }
 
@@ -1456,7 +1463,7 @@ li {
 
         @include mq(lg) {
             font-size: px2Rem(36);
-           margin-right: px2Rem(1);
+            margin-right: px2Rem(1);
             position: absolute;
             bottom: -1px;
             left: -1px;
@@ -1584,7 +1591,14 @@ li {
 
 :root {
     --swiper-theme-color: #168352 !important;
+    --swiper-pagination-bullet-inactive-color: #fff ;
 }
+
+// .swiper-pagination-bullet {
+//   background-color: white !important; 
+// }
+
+
 
 .swiper-button-next,
 .swiper-button-prev {
@@ -1658,14 +1672,14 @@ li {
             width: vwt(800);
             height: vwt(499.99);
             border-radius: vwt(24);
-  
+
         }
 
         @include mq(lg) {
             width: px2Rem(800);
             height: px2Rem(499.99);
             border-radius: px2Rem(24);
-     
+
         }
     }
 
@@ -1851,6 +1865,7 @@ li {
         margin-bottom: 0;
     }
 }
+
 .progress-bar-specials {
     margin-bottom: vw(18);
 
@@ -1970,8 +1985,10 @@ li {
         height: vw(40);
         background-color: #f5f5f5;
         display: flex;
+        align-items: center;
+        
 
-        padding: vw(5) 0 0 vw(19);
+        padding: vw(0) 0 0 vw(19);
 
         @include mq() {
             width: vwt(200);
@@ -2007,7 +2024,6 @@ li {
         }
     }
 }
-
 
 /*お問い合わせ*/
 
@@ -2165,59 +2181,75 @@ li {
             padding: px2Rem(22) px2Rem(20) px2Rem(17) px2Rem(30);
 
         }
+
+        &.active .qa__toggle::after {
+            background-image: url('/assets/image/icon_minus.png');
+            width: vw(12);
+            @include mq() {
+                width: vwt(20);
+            }
+            @include mq(lg) {
+                width: px2Rem(20);
+            }
+        }
     }
-    &__wrapper--01{
-       padding: vw(24) vw(23) vw(17) vw(23);
-       @include mq() {
+
+    &__wrapper--01 {
+        padding: vw(24) vw(23) vw(17) vw(23);
+
+        @include mq() {
             padding: vwt(22) vwt(20) vwt(19) vwt(30);
         }
 
         @include mq(lg) {
             padding: px2Rem(22) px2Rem(20) px2Rem(19) px2Rem(30);
-        } 
+        }
     }
-      &__wrapper--02{
-       padding: vw(22) vw(23) vw(17) vw(23);
 
-       @include mq() {
+    &__wrapper--02 {
+        padding: vw(22) vw(23) vw(17) vw(23);
+
+        @include mq() {
             padding: vwt(22) vwt(20) vwt(17) vwt(30);
         }
 
         @include mq(lg) {
             padding: px2Rem(22) px2Rem(20) px2Rem(17) px2Rem(30);
-        } 
+        }
     }
 
     &__top-row {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        height: vw(22);
-
-        @include mq() {}
-
-        @include mq(lg) {}
+      
     }
-    &__top-row--02{
+
+    &__top-row--02 {
         margin: vw(2) 0 vw(1) 0;
+
         @include mq() {
             margin: vwt(2) 0 0 0;
         }
+
         @include mq(lg) {
             margin: px2Rem(2) 0 0 0;
         }
     }
 
     &__label {
+        font-size: vw(16);
         display: flex;
         align-items: center;
         gap: vw(13);
 
         @include mq() {
+            font-size: vwt(18);
             gap: vwt(16);
         }
 
         @include mq(lg) {
+            font-size: px2Rem(18);
             gap: px2Rem(16);
         }
     }
@@ -2265,23 +2297,38 @@ li {
     }
 
     &__toggle {
+        width: vw(13);
+        height: vw(13);
         font-size: vw(20);
-        background: none;
-        border: none;
         cursor: pointer;
 
+        &::after {
+            content: '';
+            display: block;
+            width: 100%;
+            height: 100%;
+            background-image: url('/assets/image/icon_plus.png');
+            background-size: contain;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
         @include mq() {
-            font-size: vwt(20);
+            width: vwt(20);
+            height: vwt(20);
             margin-right: vwt(15);
         }
 
         @include mq(lg) {
-            font-size: px2Rem(20);
+            width: px2Rem(20);
+            height: px2Rem(20);
             margin-right: px2Rem(15);
         }
     }
 
+
     &__text {
+        font-size: vw(16);
         width: vw(235);
         margin: 0 auto;
         font-weight: bold;
@@ -2338,47 +2385,62 @@ li {
             font-size: px2Rem(16);
         }
     }
-    &__answer--02{
+
+    &__answer--02 {
         margin: vw(1) 0 0 vw(3);
+
         @include mq() {
             margin: vwt(14) 0 0 vwt(3);
         }
+
         @include mq(lg) {
             margin: px2Rem(14) 0 0 px2Rem(3);
         }
     }
-    &__answer--03{
-          margin: vw(2) 0 0 vw(3);
-          @include mq() {
+
+    &__answer--03 {
+        margin: vw(2) 0 0 vw(3);
+
+        @include mq() {
             margin: vwt(19) 0 0 vwt(3);
-    }
+        }
+
         @include mq(lg) {
             margin: px2Rem(19) 0 0 px2Rem(3);
         }
     }
-    &__answer--04{
+
+    &__answer--04 {
         margin: vw(3) 0 0 vw(3);
+
         @include mq() {
             margin: vwt(18) 0 0 vwt(3);
         }
+
         @include mq(lg) {
             margin: px2Rem(18) 0 0 px2Rem(3);
         }
     }
-    &__answer--05{
+
+    &__answer--05 {
         margin: vw(1) 0 0 vw(3);
+
         @include mq() {
             margin: vwt(17) 0 0 vwt(3);
         }
+
         @include mq(lg) {
             margin: px2Rem(17) 0 0 px2Rem(3);
         }
     }
-    &__answer--06{
+
+    &__answer--06 {
         margin: vw(11) 0 0 vw(3);
+
         @include mq() {
             margin: vwt(19) 0 0 vwt(3);
         }
+
         @include mq(lg) {
             margin: px2Rem(19) 0 0 px2Rem(3);
         }
@@ -2388,7 +2450,7 @@ li {
         font-family: Montserrat;
         color: #168352;
         font-size: vw(24);
-    
+
 
         @include mq() {
             font-size: vwt(24);
@@ -2398,32 +2460,4 @@ li {
             font-size: px2Rem(24);
         }
     }
-}
-
-.qa__toggle {
-    display: inline-block;
-    width: vw(13);
-    height: vw(13);
-    position: relative;
-    cursor: pointer;
-    vertical-align: middle;
-
-    &::after {
-        content: '';
-        position: absolute;
-        top: 50%;
-        right: 0;
-        transform: translateY(-50%);
-        width: 100%;
-        height: 100%;
-        background-image: url('/assets/image/icon_plus.png');
-        background-size: contain;
-        background-repeat: no-repeat;
-        transition: background-image 0.3s ease;
-    }
-}
-
-.qa__wrapper.active .qa__toggle::after {
-    background-image: url('/assets/image/icon_minus.png');
-    width: vw(20);
 }
