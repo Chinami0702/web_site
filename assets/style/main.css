@@ -1533,7 +1533,8 @@ li {
 
 :root {
   --swiper-theme-color: #168352 !important;
-  --swiper-pagination-bullet-inactive-color: #fff ;
+  --swiper-pagination-bullet-inactive-color: #eee;
+  --swiper-pagination-bullet-inactive-opacity:1;
 }
 
 .swiper-button-next,
